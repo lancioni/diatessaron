@@ -7,9 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.google.jplurk.PlurkSettings;
-import com.google.jplurk.exception.PlurkException;
-
 /**
  * Servlet implementation class JarTest
  */
