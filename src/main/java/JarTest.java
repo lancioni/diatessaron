@@ -7,7 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import opennlp.ccg.grammar.Grammar;
+import com.google.jplurk.PlurkSettings;
+import com.google.jplurk.exception.PlurkException;
 
 /**
  * Servlet implementation class JarTest
@@ -28,8 +29,8 @@ public class JarTest extends HttpServlet {
 	                    HttpServletResponse response)
 	            throws ServletException, IOException
 	  {
-		  Grammar parse_grammar;
-	      // Set response content type
+		  
+		  // Set response content type
 		  response.setCharacterEncoding("UTF-8");
 	      response.setContentType("text/html");
 
