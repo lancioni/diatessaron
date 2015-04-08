@@ -19,7 +19,7 @@ public class Uploads extends HttpServlet {
 	  public void init() throws ServletException
 	  {
 	      // Do required initialization
-	      message = "Hello World";
+	      message = "مرحبًا أيها العالم!";
 	  }
 
 	  public void doGet(HttpServletRequest request,
@@ -27,6 +27,7 @@ public class Uploads extends HttpServlet {
 	            throws ServletException, IOException
 	  {
 	      // Set response content type
+		  response.setCharacterEncoding("UTF-8");
 	      response.setContentType("text/html");
 
 	      // Actual logic goes here.
