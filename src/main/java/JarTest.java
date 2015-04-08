@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class JarTest
+ * Servlet implementation class Uploads
  */
-@WebServlet("/jartest")
+@WebServlet("/uploads")
 public class JarTest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -7,8 +7,16 @@
   <servlet-name>Uploads</servlet-name>
   <servlet-class>Uploads</servlet-class>
  </servlet>
+ <servlet>
+  <servlet-name>JarTest</servlet-name>
+  <servlet-class>JarTest</servlet-class>
+ </servlet>
  <servlet-mapping>
   <servlet-name>Uploads</servlet-name>
   <url-pattern>/uploads</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>JarTest</servlet-name>
+  <url-pattern>/jartest</url-pattern>
  </servlet-mapping>
 </web-app>
