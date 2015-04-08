@@ -41,7 +41,7 @@ import opennlp.ccg.synsem.LF;
 import opennlp.ccg.synsem.Sign;
 import opennlp.ccg.synsem.SignScorer;
 import opennlp.ccg.test.RegressionInfo;
-import opennlp.ccgbank.extract.Testbed;
+//import opennlp.ccgbank.extract.Testbed;
 
 /**
  * Creates a testbed file by parsing a text file.
@@ -160,8 +160,8 @@ public class Parse {
 				convertedLF = HyloHelper.compactAndConvertNominals(flatLF, index, thisParse);
 				// get pred info
 				predInfoMap.clear();
-				Testbed.extractPredInfo(flatLF, predInfoMap);
-				predInfo = Testbed.getPredInfo(predInfoMap);
+				///Testbed.extractPredInfo(flatLF, predInfoMap);
+				///predInfo = Testbed.getPredInfo(predInfoMap);
 			    }
 			    // add test item, sign
 			    Element item = RegressionInfo.makeTestItem(grammar, line, 1, convertedLF);
@@ -174,9 +174,9 @@ public class Parse {
 			    fullWordsElt.addContent(tokenizer.format(thisParse.getWords()));
 			    item.addContent(fullWordsElt);
 			    if (predInfo != null) {
-				Element predInfoElt = new Element("pred-info");
-				predInfoElt.setAttribute("data", predInfo);
-				item.addContent(predInfoElt);
+				///Element predInfoElt = new Element("pred-info");
+				///predInfoElt.setAttribute("data", predInfo);
+				///item.addContent(predInfoElt);
 			    }
 			}
 		} catch (ParseException e) {
