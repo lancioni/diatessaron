@@ -19,7 +19,7 @@ public class Uploads extends HttpServlet {
 	  public void init() throws ServletException
 	  {
 	      // Do required initialization
-	      message = "مرحبًا أيها العالم!";
+	      message = "مرحبًا أيها العالم! إني وصلت...";
 	  }
 
 	  public void doGet(HttpServletRequest request,
@@ -32,7 +32,7 @@ public class Uploads extends HttpServlet {
 
 	      // Actual logic goes here.
 	      PrintWriter out = response.getWriter();
-	      out.println("<h1>" + message + "</h1>");
+	      out.println("<h1 align=\"right\">" + message + "</h1>");
 	  }
 	  
 	  public void destroy()
