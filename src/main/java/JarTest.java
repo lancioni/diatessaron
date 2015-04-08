@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import opennlp.ccg.grammar.Grammar;
+
 /**
  * Servlet implementation class JarTest
  */
@@ -19,13 +21,14 @@ public class JarTest extends HttpServlet {
 	  public void init() throws ServletException
 	  {
 	      // Do required initialization
-	      message = "مرحبًا أيها العالم! إني وصلت...";
+	      message = "هذا هو الجارتست";
 	  }
 
 	  public void doGet(HttpServletRequest request,
 	                    HttpServletResponse response)
 	            throws ServletException, IOException
 	  {
+		  Grammar parse_grammar;
 	      // Set response content type
 		  response.setCharacterEncoding("UTF-8");
 	      response.setContentType("text/html");
