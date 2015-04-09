@@ -7,8 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import opennlp.ccg.grammar.*;
-
 /**
  * Servlet implementation class JarTest
  */
@@ -17,7 +15,6 @@ public class JarTest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	private String message;
-	private Grammar grammar;
 
 	  public void init() throws ServletException
 	  {
