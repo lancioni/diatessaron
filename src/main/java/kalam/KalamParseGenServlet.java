@@ -350,6 +350,7 @@ public class KalamParseGenServlet extends HttpServlet {
 
                 String sessionID = request.getSession().getId();
                 String tmpFile = "/WEB-INF/grammars/" + sessionID + ".xml";
+                log(tmpFile);
                 String outputfile = this.getServletContext().getRealPath(tmpFile);
                 //ByteArrayOutputStream outputfile = new ByteArrayOutputStream();
                 parse_grammar.saveToXml(convertedLF, "", outputfile);
@@ -548,7 +549,7 @@ public class KalamParseGenServlet extends HttpServlet {
         ArrayList<String> names = new ArrayList<String>(Arrays.asList(f.list()));*/
 
         File dir = new File(this.getServletContext().getRealPath("/WEB-INF/grammars/"));
-        //log(this.getServletContext().getRealPath("/WEB-INF/grammars/"));
+        log(this.getServletContext().getRealPath("/WEB-INF/grammars/"));
         String[] files;
         files = dir.list(new FilenameFilter() {
    @Override
