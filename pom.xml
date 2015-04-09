@@ -122,6 +122,11 @@
 		  <artifactId>jline</artifactId>
 		  <version>1.0</version>
 		</dependency>
+		<dependency>
+		  <groupId>opennlp</groupId>
+		  <artifactId>openccg</artifactId>
+		  <version>0.9.5</version>
+		</dependency>
 	</dependencies>
 	<profiles>
 		<profile>
