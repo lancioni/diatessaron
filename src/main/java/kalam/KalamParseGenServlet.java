@@ -548,6 +548,7 @@ public class KalamParseGenServlet extends HttpServlet {
         ArrayList<String> names = new ArrayList<String>(Arrays.asList(f.list()));*/
 
         File dir = new File(this.getServletContext().getRealPath("/WEB-INF/grammars/"));
+        //log(this.getServletContext().getRealPath("/WEB-INF/grammars/"));
         String[] files;
         files = dir.list(new FilenameFilter() {
    @Override

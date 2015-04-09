@@ -10,8 +10,8 @@
         <link href="css/semdic.css" rel="stylesheet" type="text/css" />
 
 
-        <title>The BuckPark Corpus</title>
-        <script src="js/jquery-1.10.2.min.js"></script>
+        <title>Parsing and Generation</title>
+        <script src="js/jquery-1.11.2.min.js"></script>
         <script>
         $(document).ready(function(event) {
 //                alert('Loaded!');
