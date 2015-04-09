@@ -12,7 +12,6 @@ import java.net.*;
 import org.jgrapht.*;
 import org.jgrapht.graph.*;
 
-import opennlp.ccg.grammar.*;
 
 /**
  * Servlet implementation class JarTest
@@ -22,7 +21,6 @@ public class JarTest extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	private String message;
-	private Grammar parse_grammar;
 
 	  public void init() throws ServletException
 	  {
