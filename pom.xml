@@ -53,34 +53,59 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.jdom</groupId>
-			<artifactId>jdom</artifactId>
-			<version>1.1</version>
+		  <groupId>org.apache.ant</groupId>
+		  <artifactId>ant</artifactId>
+		  <version>1.9.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.jgrapht</groupId>
-			<artifactId>jgrapht-jdk1.5</artifactId>
-			<version>0.7.3</version>
+		  <groupId>org.apache.ant</groupId>
+		  <artifactId>ant-junit</artifactId>
+		  <version>1.9.0</version>
 		</dependency>
 		<dependency>
-			<groupId>trove</groupId>
-			<artifactId>trove</artifactId>
-			<version>1.0.2</version>
+		  <groupId>org.apache.ant</groupId>
+		  <artifactId>ant-junit4</artifactId>
+		  <version>1.9.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.ant</groupId>
-			<artifactId>ant</artifactId>
-			<version>1.9.0</version>
+		  <groupId>org.apache.ant</groupId>
+		  <artifactId>ant-launcher</artifactId>
+		  <version>1.9.0</version>
 		</dependency>
 		<dependency>
-			<groupId>net.sf.jopt-simple</groupId>
-			<artifactId>jopt-simple</artifactId>
-			<version>3.1</version>
+		  <groupId>javacc</groupId>
+		  <artifactId>javacc</artifactId>
+		  <version>4.0</version>
 		</dependency>
 		<dependency>
-			<groupId>jline</groupId>
-			<artifactId>jline</artifactId>
-			<version>1.0</version>
+		  <groupId>org.jdom</groupId>
+		  <artifactId>jdom</artifactId>
+		  <version>1.1</version>
+		</dependency>		
+		<dependency>
+		  <groupId>net.sf.jopt-simple</groupId>
+		  <artifactId>jopt-simple</artifactId>
+		  <version>3.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>junit</groupId>
+		  <artifactId>junit</artifactId>
+		  <version>4.10</version>
+		</dependency>
+		<dependency>
+		  <groupId>trove</groupId>
+		  <artifactId>trove</artifactId>
+		  <version>1.0.2</version>
+		</dependency>
+		<dependency>
+		  <groupId>xerces</groupId>
+		  <artifactId>xercesImpl</artifactId>
+		  <version>2.9.0</version>
+		</dependency>		
+		<dependency>
+		  <groupId>xml-apis</groupId>
+		  <artifactId>xml-apis</artifactId>
+		  <version>1.3.04</version>
 		</dependency>
 	</dependencies>
 	<profiles>
