@@ -669,7 +669,7 @@ public class KalamParseGenServlet extends HttpServlet {
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, JSONException {
-        
+        log("here");
         globalCount++;
         response.setContentType("text/html; charset=utf-8");
         out = response.getWriter();
