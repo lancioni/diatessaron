@@ -1,0 +1,160 @@
+
+\data\
+ngram 1=23
+ngram 2=40
+ngram 3=43
+ngram 4=38
+
+\1-grams:
+-1.770852	.	-0.220374
+-0.770852	</s>
+-99	<s>	-1.151354
+-1.293731	I	-0.3793926
+-1.770852	a	-0.278366
+-1.770852	beautiful	-0.2860528
+-1.293731	book	-0.3272146
+-1.770852	boy	-0.293606
+-1.469822	boys	-0.579396
+-1.293731	eat	-0.2233185
+-1.770852	me	-0.220374
+-1.770852	peaches	-0.220374
+-1.168792	policeman	-0.2809435
+-1.469822	policemen	-0.1913594
+-1.770852	quits	-0.293606
+-1.168792	saw	-0.1212426
+-1.469822	see	-0.1137546
+-1.770852	service	-0.293606
+-1.770852	sleep	-0.220374
+-1.770852	sleeps	-0.220374
+-1.469822	tall	-0.1833905
+-1.469822	that	-0.08446519
+-0.6916708	the	-0.3548615
+
+\2-grams:
+-0.30103	. </s>
+-0.5463598	<s> I	0
+-0.1783831	<s> the	-0.2478289
+-0.6812412	I saw	-0.1648102
+-0.3802112	I see	0
+-0.30103	a book	-0.06694677
+-0.30103	beautiful tall	-0.20412
+-0.3802112	book </s>
+-0.6812412	book that	-0.20412
+-0.30103	boy quits	0
+-0.1249387	boys eat	0.20412
+-0.3802112	eat </s>
+-0.6812412	eat the	-0.2760561
+-0.30103	me </s>
+-0.30103	peaches </s>
+-0.5698753	policeman saw	-0.08562899
+-0.8709053	policeman sleeps	0
+-0.8709053	policeman that	-0.20412
+-0.69897	policemen eat	-0.06694677
+-0.69897	policemen sleep	0
+-0.30103	quits .	0
+-0.8709053	saw </s>
+-0.8709053	saw me	0
+-0.5698753	saw the	-0.1421563
+-0.69897	see a	0
+-0.69897	see the	-0.249558
+-0.30103	service boy	0
+-0.30103	sleep </s>
+-0.30103	sleeps </s>
+-0.69897	tall policeman	-0.2382391
+-0.69897	tall service	0
+-0.69897	that saw	-0.1648102
+-0.69897	that the	-0.2213375
+-1.252725	the beautiful	0
+-0.9516953	the book	0.20412
+-0.9516953	the boys	0
+-1.252725	the peaches	0
+-0.7756041	the policeman	-0.2013271
+-0.9516953	the policemen	0
+-1.252725	the tall	-0.20412
+
+\3-grams:
+-0.30103	quits . </s>
+-0.6812412	<s> I saw	0
+-0.3802112	<s> I see	0
+-0.30103	see a book	0
+-0.30103	the beautiful tall	0
+-0.30103	a book </s>
+-0.69897	the book </s>
+-0.69897	the book that	0
+-0.30103	service boy quits	0
+-0.1249387	the boys eat	0
+-0.69897	boys eat </s>
+-0.69897	boys eat the	0
+-0.30103	policemen eat </s>
+-0.30103	saw me </s>
+-0.30103	the peaches </s>
+-0.30103	tall policeman that	0
+-0.3802112	the policeman saw	0
+-0.6812412	the policeman sleeps	0
+-0.69897	the policemen eat	0
+-0.69897	the policemen sleep	0
+-0.30103	boy quits .	0
+-0.30103	I saw the	-0.20412
+-0.69897	policeman saw </s>
+-0.69897	policeman saw me	0
+-0.30103	that saw the	-0.20412
+-0.69897	I see a	0
+-0.69897	I see the	0
+-0.30103	tall service boy	0
+-0.30103	policemen sleep </s>
+-0.30103	policeman sleeps </s>
+-0.30103	beautiful tall policeman	0
+-0.30103	the tall service	0
+-0.30103	book that the	0
+-0.30103	policeman that saw	0
+-1.007825	<s> the beautiful	0
+-0.7067953	<s> the boys	0
+-0.7067953	<s> the policeman	0.20412
+-0.7067953	<s> the policemen	0
+-0.30103	eat the peaches	0
+-0.69897	saw the book	-0.20412
+-0.69897	saw the tall	0
+-0.30103	see the book	-0.20412
+-0.30103	that the policeman	-0.06694677
+
+\4-grams:
+-0.30103	boy quits . </s>
+-0.30103	I see a book
+-0.30103	<s> the beautiful tall
+-0.30103	see a book </s>
+-0.30103	saw the book that
+-0.30103	see the book </s>
+-0.30103	tall service boy quits
+-0.1249387	<s> the boys eat
+-0.69897	the boys eat </s>
+-0.69897	the boys eat the
+-0.30103	the policemen eat </s>
+-0.30103	policeman saw me </s>
+-0.30103	eat the peaches </s>
+-0.30103	beautiful tall policeman that
+-0.69897	<s> the policeman saw
+-0.69897	<s> the policeman sleeps
+-0.30103	that the policeman saw
+-0.69897	<s> the policemen eat
+-0.69897	<s> the policemen sleep
+-0.30103	service boy quits .
+-0.30103	<s> I saw the
+-0.69897	the policeman saw </s>
+-0.69897	the policeman saw me
+-0.30103	policeman that saw the
+-0.69897	<s> I see a
+-0.69897	<s> I see the
+-0.30103	the tall service boy
+-0.30103	the policemen sleep </s>
+-0.30103	the policeman sleeps </s>
+-0.30103	the beautiful tall policeman
+-0.30103	saw the tall service
+-0.30103	the book that the
+-0.30103	tall policeman that saw
+-0.30103	boys eat the peaches
+-0.30103	I saw the book
+-0.30103	that saw the tall
+-0.30103	I see the book
+-0.30103	book that the policeman
+
+\end\

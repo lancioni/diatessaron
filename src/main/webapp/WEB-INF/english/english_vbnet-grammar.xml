@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar name="english_semantics_vbnet_to.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../grammar.xsd">
+  <lexicon file="english_vbnet-lexicon.xml"/>
+  <morphology file="english_vbnet-morph.xml"/>
+  <rules file="english_vbnet-rules.xml"/>
+  <types file="english_vbnet-types.xml"/>
+</grammar>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types name="ArabicBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../types.xsd">
+  <type name="CASE"/>
+  <type name="nom" parents="CASE"/>
+  <type name="obl" parents="CASE"/>
+  <type name="gen" parents="obl"/>
+  <type name="acc" parents="obl"/>
+  <type name="status"/>
+  <type name="open" parents="status"/>
+  <type name="closed" parents="status"/>
+  <type name="SEM-NUM"/>
+  <type name="any_num-X" parents="SEM-NUM"/>
+  <type name="sg-X" parents="any_num-X"/>
+  <type name="pl-X" parents="any_num-X"/>
+  <type name="du-X" parents="pl-X"/>
+  <type name="abs-pl-X" parents="pl-X"/>
+  <type name="SEM-PERS"/>
+  <type name="nonabsent" parents="SEM-PERS"/>
+  <type name="absent" parents="SEM-PERS"/>
+  <type name="speaker" parents="nonabsent"/>
+  <type name="addressee" parents="nonabsent"/>
+  <type name="NTYPE"/>
+  <type name="any_ntype" parents="NTYPE"/>
+  <type name="noun" parents="any_ntype"/>
+  <type name="pronoun" parents="any_ntype"/>
+  <type name="DET"/>
+  <type name="any_def" parents="DET"/>
+  <type name="def" parents="any_def"/>
+  <type name="indef" parents="any_def"/>
+  <type name="SYN-STATUS"/>
+  <type name="syn_open" parents="SYN-STATUS"/>
+  <type name="syn_closed" parents="SYN-STATUS"/>
+  <type name="PERS"/>
+  <type name="non-3rd" parents="PERS"/>
+  <type name="3rd" parents="PERS"/>
+  <type name="1st" parents="non-3rd"/>
+  <type name="2nd" parents="non-3rd"/>
+  <type name="NUM"/>
+  <type name="sg" parents="NUM"/>
+  <type name="non-sg" parents="NUM"/>
+  <type name="du" parents="non-sg"/>
+  <type name="pl" parents="non-sg"/>
+  <type name="TENSE"/>
+  <type name="past" parents="TENSE"/>
+  <type name="pres" parents="TENSE"/>
+  <type name="ontology"/>
+  <type name="sem-obj" parents="ontology"/>
+  <type name="phys-obj" parents="sem-obj"/>
+  <type name="situation" parents="sem-obj"/>
+  <type name="animate-being" parents="phys-obj"/>
+  <type name="thing" parents="phys-obj"/>
+  <type name="person" parents="animate-being"/>
+  <type name="animal" parents="animate-being"/>
+  <type name="male" parents="animal person"/>
+  <type name="female" parents="animal person"/>
+  <type name="change" parents="situation"/>
+  <type name="state" parents="situation"/>
+  <type name="action" parents="change"/>
+  <type name="GEN"/>
+  <type name="mas" parents="GEN"/>
+  <type name="fem" parents="GEN"/>
+  <type name="AGR_DET"/>
+  <type name="agr_cons" parents="AGR_DET"/>
+  <type name="agr_def" parents="AGR_DET"/>
+  <type name="agr_indef" parents="AGR_DET"/>
+</types>

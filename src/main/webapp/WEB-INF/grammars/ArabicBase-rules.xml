@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules name="ArabicBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../rules.xsd">
+  <typechanging name="typechange-1">
+    <arg>
+      <atomcat type="n">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="X"/>
+            </lf>
+          </feat>
+          <feat attr="CASE">
+            <featvar name="CASE"/>
+          </feat>
+          <feat attr="GEN">
+            <featvar name="GEN"/>
+          </feat>
+          <feat attr="NUM">
+            <featvar name="NUM"/>
+          </feat>
+          <feat attr="ANIM">
+            <featvar name="ANIM"/>
+          </feat>
+          <feat attr="AGR_DET" val="agr_def"/>
+          <feat attr="PERS">
+            <featvar name="PERS"/>
+          </feat>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <atomcat type="np">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="X"/>
+            </lf>
+          </feat>
+          <feat attr="PERS" val="3rd"/>
+        </fs>
+        <lf>
+          <satop nomvar="X:sem-obj">
+            <diamond mode="Det">
+              <prop name="def"/>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </result>
+  </typechanging>
+  <typechanging name="typechange-2">
+    <arg>
+      <atomcat type="n">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="X"/>
+            </lf>
+          </feat>
+          <feat attr="CASE">
+            <featvar name="CASE"/>
+          </feat>
+          <feat attr="GEN">
+            <featvar name="GEN"/>
+          </feat>
+          <feat attr="NUM">
+            <featvar name="NUM"/>
+          </feat>
+          <feat attr="ANIM">
+            <featvar name="ANIM"/>
+          </feat>
+          <feat attr="AGR_DET" val="agr_indef"/>
+          <feat attr="PERS">
+            <featvar name="PERS"/>
+          </feat>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <atomcat type="np">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="X"/>
+            </lf>
+          </feat>
+          <feat attr="PERS" val="3rd"/>
+        </fs>
+        <lf>
+          <satop nomvar="X:sem-obj">
+            <diamond mode="Det">
+              <prop name="indef"/>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </result>
+  </typechanging>
+  <application dir="forward"/>
+  <application dir="backward"/>
+  <composition harmonic="true" dir="forward"/>
+  <composition harmonic="true" dir="backward"/>
+  <substitution harmonic="true" dir="forward"/>
+  <substitution harmonic="true" dir="backward"/>
+  <typeraising dir="forward" useDollar="false"/>
+  <typeraising dir="backward" useDollar="true"/>
+  <composition harmonic="false" dir="forward"/>
+  <composition harmonic="false" dir="backward"/>
+  <substitution harmonic="false" dir="forward"/>
+  <substitution harmonic="false" dir="backward"/>
+</rules>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar name="tinytiny_multi.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../grammar.xsd">
+  <lexicon file="tinytiny_multi-lexicon.xml"/>
+  <morphology file="tinytiny_multi-morph.xml"/>
+  <rules file="tinytiny_multi-rules.xml"/>
+  <types file="tinytiny_multi-types.xml"/>
+</grammar>

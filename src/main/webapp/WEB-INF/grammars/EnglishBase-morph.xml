@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<morph name="EnglishBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../morph.xsd">
+  <entry word="=." pos="Pun" stem="=."/>
+  <entry word="," pos="Punc" stem=","/>
+  <entry word="?" pos="Punc" stem="?"/>
+  <entry word="that" pos="RelPron" stem="that"/>
+  <entry word="I" macros="@1st @sg @nom @speaker @sg-X" pos="X" stem="speaker" class="person" pred="context"/>
+  <entry word="me" macros="@1st @sg @acc @speaker @sg-X" pos="X" stem="speaker" class="person" pred="context"/>
+  <entry word="we" macros="@1st @pl @nom @speaker @pl-X" pos="X" stem="speaker" class="person" pred="context"/>
+  <entry word="us" macros="@1st @pl @acc @speaker @pl-X" pos="X" stem="speaker" class="person" pred="context"/>
+  <entry word="you" macros="@2nd @addressee @any_num-X" pos="X" stem="addressee" class="animate-being" pred="context"/>
+  <entry word="he" macros="@3rd @sg @nom @absent @sg-X" pos="X" stem="absent_male" class="male" pred="context"/>
+  <entry word="him" macros="@3rd @sg @acc @absent @sg-X" pos="X" stem="absent_male" class="male" pred="context"/>
+  <entry word="she" macros="@3rd @sg @nom @absent @sg-X" pos="X" stem="absent_female" class="female" pred="context"/>
+  <entry word="her" macros="@3rd @sg @acc @absent @sg-X" pos="X" stem="absent_female" class="female" pred="context"/>
+  <entry word="it" macros="@3rd @sg @absent @sg-X" pos="X" stem="absent_thing" class="thing" pred="context"/>
+  <entry word="they" macros="@3rd @pl @nom @absent @pl-X" pos="X" stem="absent_any" class="sem-obj" pred="context"/>
+  <entry word="them" macros="@3rd @pl @acc @absent @pl-X" pos="X" stem="absent_any" class="sem-obj" pred="context"/>
+  <entry word="book" macros="@sg @sg-X" pos="N" stem="book-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="books" macros="@pl @pl-X" pos="N" stem="book-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="volume" macros="@sg @sg-X" pos="N" stem="volume-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="volumes" macros="@pl @pl-X" pos="N" stem="volume-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="peach" macros="@sg @sg-X" pos="N" stem="peach-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="peaches" macros="@pl @pl-X" pos="N" stem="peach-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="man" macros="@sg @sg-X" pos="N" stem="man-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="men" macros="@pl @pl-X" pos="N" stem="man-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="man" macros="@sg @sg-X" pos="garbageN" stem="man-garbage_man%1:18:00::garbageN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="men" macros="@pl @pl-X" pos="garbageN" stem="man-garbage_man%1:18:00::garbageN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="dustman" macros="@sg @sg-X" pos="N" stem="dustman-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="dustmen" macros="@pl @pl-X" pos="N" stem="dustman-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="garbageman" macros="@sg @sg-X" pos="N" stem="garbageman-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="garbagemen" macros="@pl @pl-X" pos="N" stem="garbageman-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="collector" macros="@sg @sg-X" pos="garbageN" stem="collector-garbage_man%1:18:00::garbageN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="collectors" macros="@pl @pl-X" pos="garbageN" stem="collector-garbage_man%1:18:00::garbageN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="carter" macros="@sg @sg-X" pos="garbageN" stem="carter-garbage_man%1:18:00::garbageN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="carters" macros="@pl @pl-X" pos="garbageN" stem="carter-garbage_man%1:18:00::garbageN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="hauler" macros="@sg @sg-X" pos="garbageN" stem="hauler-garbage_man%1:18:00::garbageN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="haulers" macros="@pl @pl-X" pos="garbageN" stem="hauler-garbage_man%1:18:00::garbageN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="collector" macros="@sg @sg-X" pos="refuseN" stem="collector-garbage_man%1:18:00::refuseN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="collectors" macros="@pl @pl-X" pos="refuseN" stem="collector-garbage_man%1:18:00::refuseN" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="garbage" macros="@sg @sg-X" pos="N" stem="garbage-garbage%1:27:00::N" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="garbages" macros="@pl @pl-X" pos="N" stem="garbage-garbage%1:27:00::N" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="garbage" pos="Empty" stem="garbage-empty"/>
+  <entry word="refuse" macros="@sg @sg-X" pos="N" stem="refuse-garbage%1:27:00::N" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="refuses" macros="@pl @pl-X" pos="N" stem="refuse-garbage%1:27:00::N" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="refuse" pos="Empty" stem="refuse-empty"/>
+  <entry word="waste" macros="@sg @sg-X" pos="foodN" stem="waste-garbage%1:27:00::foodN" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="wastes" macros="@pl @pl-X" pos="foodN" stem="waste-garbage%1:27:00::foodN" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="food" macros="@sg @sg-X" pos="N" stem="food-food%1:03:00::N" pred="food%1:03:00::" class="thing"/>
+  <entry word="foods" macros="@pl @pl-X" pos="N" stem="food-food%1:03:00::N" pred="food%1:03:00::" class="thing"/>
+  <entry word="food" pos="Empty" stem="food-empty"/>
+  <entry word="policeman" macros="@sg @sg-X" pos="N" stem="policeman-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="policemen" macros="@pl @pl-X" pos="N" stem="policeman-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="officer" macros="@sg @sg-X" pos="policeN" stem="officer-policeman%1:18:00::policeN" pred="policeman%1:18:00::" class="person"/>
+  <entry word="officers" macros="@pl @pl-X" pos="policeN" stem="officer-policeman%1:18:00::policeN" pred="policeman%1:18:00::" class="person"/>
+  <entry word="officer" macros="@sg @sg-X" pos="N" stem="officer-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="officers" macros="@pl @pl-X" pos="N" stem="officer-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="police" macros="@sg @sg-X" pos="N" stem="police-police%1:14:00::N" pred="police%1:14:00::" class="thing"/>
+  <entry word="polices" macros="@pl @pl-X" pos="N" stem="police-police%1:14:00::N" pred="police%1:14:00::" class="thing"/>
+  <entry word="police" pos="Empty" stem="police-empty"/>
+  <entry word="tall" pos="Y" stem="tall-tall%3:00:00::" pred="tall%3:00:00::" class="state"/>
+  <entry word="handsome" pos="Y" stem="handsome-handsome%5:00:00:beautiful:00" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="fine-looking" pos="Y" stem="fine-looking-handsome%5:00:00:beautiful:00" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="good-looking" pos="Y" stem="good-looking-handsome%5:00:00:beautiful:00" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="better-looking" pos="Y" stem="better-looking-handsome%5:00:00:beautiful:00" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="well-favored" pos="Y" stem="well-favored-handsome%5:00:00:beautiful:00" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="well-favoured" pos="Y" stem="well-favoured-handsome%5:00:00:beautiful:00" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="go" macros="@pres @non-3rd @sg" pos="V" stem="go-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="goes" macros="@pres @3rd @sg" pos="V" stem="go-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="go" macros="@pres @pl" pos="V" stem="go-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="went" macros="@past" pos="V" stem="go-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="depart" macros="@pres @non-3rd @sg" pos="V" stem="depart-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="departs" macros="@pres @3rd @sg" pos="V" stem="depart-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="depart" macros="@pres @pl" pos="V" stem="depart-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="departed" macros="@past" pos="V" stem="depart-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="sleep" macros="@pres @non-3rd @sg" pos="V" stem="sleep-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="sleeps" macros="@pres @3rd @sg" pos="V" stem="sleep-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="sleep" macros="@pres @pl" pos="V" stem="sleep-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="slept" macros="@past" pos="V" stem="sleep-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="slumber" macros="@pres @non-3rd @sg" pos="V" stem="slumber-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="slumbers" macros="@pres @3rd @sg" pos="V" stem="slumber-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="slumber" macros="@pres @pl" pos="V" stem="slumber-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="slumbered" macros="@past" pos="V" stem="slumber-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="kip" macros="@pres @non-3rd @sg" pos="V" stem="kip-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="kips" macros="@pres @3rd @sg" pos="V" stem="kip-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="kip" macros="@pres @pl" pos="V" stem="kip-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="kipped" macros="@past" pos="V" stem="kip-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="give" macros="@pres @non-3rd @sg" pos="V" stem="give-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="gives" macros="@pres @3rd @sg" pos="V" stem="give-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="give" macros="@pres @pl" pos="V" stem="give-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="gave" macros="@past" pos="V" stem="give-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="quit" macros="@pres @non-3rd @sg" pos="V" stem="quit-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="quits" macros="@pres @3rd @sg" pos="V" stem="quit-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="quit" macros="@pres @pl" pos="V" stem="quit-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="quitted" macros="@past" pos="V" stem="quit-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="eat" macros="@pres @non-3rd @sg" pos="V" stem="eat-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="eats" macros="@pres @3rd @sg" pos="V" stem="eat-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="eat" macros="@pres @pl" pos="V" stem="eat-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="ate" macros="@past" pos="V" stem="eat-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="eat" macros="@pres @non-3rd @sg" pos="V" stem="eat-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="eats" macros="@pres @3rd @sg" pos="V" stem="eat-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="eat" macros="@pres @pl" pos="V" stem="eat-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="ate" macros="@past" pos="V" stem="eat-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="see" macros="@pres @non-3rd @sg" pos="V" stem="see-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="sees" macros="@pres @3rd @sg" pos="V" stem="see-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="see" macros="@pres @pl" pos="V" stem="see-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="saw" macros="@past" pos="V" stem="see-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="up" pos="Empty" stem="up-empty"/>
+  <entry word="the" macros="@def" pos="Det" stem="thedet"/>
+  <entry word="a" macros="@indef @sg" pos="Det" stem="adet"/>
+  <entry word="an" macros="@indef @sg" pos="Det" stem="andet"/>
+  <macro name="@1st">
+    <fs id="2">
+      <feat attr="PERS" val="1st"/>
+    </fs>
+  </macro>
+  <macro name="@2nd">
+    <fs id="2">
+      <feat attr="PERS" val="2nd"/>
+    </fs>
+  </macro>
+  <macro name="@3rd">
+    <fs id="2">
+      <feat attr="PERS" val="3rd"/>
+    </fs>
+  </macro>
+  <macro name="@abs-pl-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="abs-pl-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@absent">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="absent"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@acc">
+    <fs id="2">
+      <feat attr="CASE" val="acc"/>
+    </fs>
+  </macro>
+  <macro name="@addressee">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="addressee"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@any_def">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="any_def"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@any_num-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="any_num-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@closed">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Status">
+          <prop name="closed"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@def">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="def"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@du">
+    <fs id="2">
+      <feat attr="NUM" val="du"/>
+    </fs>
+  </macro>
+  <macro name="@du-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="du-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@indef">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="indef"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@nom">
+    <fs id="2">
+      <feat attr="CASE" val="nom"/>
+    </fs>
+  </macro>
+  <macro name="@non-3rd">
+    <fs id="2">
+      <feat attr="PERS" val="non-3rd"/>
+    </fs>
+  </macro>
+  <macro name="@non-sg">
+    <fs id="2">
+      <feat attr="NUM" val="non-sg"/>
+    </fs>
+  </macro>
+  <macro name="@nonabsent">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="nonabsent"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@open">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Status">
+          <prop name="open"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@past">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Tense">
+          <prop name="past"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pl">
+    <fs id="2">
+      <feat attr="NUM" val="pl"/>
+    </fs>
+  </macro>
+  <macro name="@pl-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="pl-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pres">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Tense">
+          <prop name="pres"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@sg">
+    <fs id="2">
+      <feat attr="NUM" val="sg"/>
+    </fs>
+  </macro>
+  <macro name="@sg-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="sg-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@speaker">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="speaker"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@syn_closed">
+    <fs id="1">
+      <feat attr="SYN-STATUS" val="syn_closed"/>
+    </fs>
+  </macro>
+  <macro name="@syn_open">
+    <fs id="1">
+      <feat attr="SYN-STATUS" val="syn_open"/>
+    </fs>
+  </macro>
+</morph>

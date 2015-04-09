@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><xml>
+  <lf>
+    <satop nom="w1:thing">
+      <prop name="book%1:06:00::"/>
+      <diamond mode="Det">
+        <prop name="def"/>
+      </diamond>
+      <diamond mode="Num">
+        <prop name="sg-X"/>
+      </diamond>
+    </satop>
+  </lf>
+  <target>the book</target>
+</xml>

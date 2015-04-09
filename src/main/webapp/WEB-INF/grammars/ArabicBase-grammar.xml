@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar name="ArabicBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../grammar.xsd">
+  <lexicon file="ArabicBase-lexicon.xml"/>
+  <morphology file="ArabicBase-morph.xml"/>
+  <rules file="ArabicBase-rules.xml"/>
+  <types file="ArabicBase-types.xml"/>
+</grammar>

@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ccg-lexicon name="ArabicBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../lexicon.xsd">
+  <family name="Punc" pos="Punc" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="punc">
+        <fs/>
+      </atomcat>
+    </entry>
+    <member stem=","/>
+    <member stem="?"/>
+  </family>
+  <family name="Pun" indexRel="Status" pos="Pun" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs inheritsFrom="1">
+            <feat attr="SYN_STATUS" val="syn_open"/>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="*"/>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+            <feat attr="SYN_STATUS" val="syn_closed"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <diamond mode="Status">
+              <prop name="closed"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="ـ."/>
+  </family>
+  <family name="Empty" indexRel="*NoSem*" pos="Empty" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="empty">
+        <fs>
+          <feat attr="lex" val="[*DEFAULT*]"/>
+        </fs>
+      </atomcat>
+    </entry>
+    <member stem="up-empty"/>
+  </family>
+  <family name="RelPron" indexRel="GenRel" pos="RelPron" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="np">
+          <fs inheritsFrom="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="CASE">
+              <featvar name="CASE"/>
+            </feat>
+            <feat attr="DET" val="def"/>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="^"/>
+        <atomcat type="np">
+          <fs inheritsFrom="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="CASE">
+              <featvar name="CASE"/>
+            </feat>
+            <feat attr="DET" val="def"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="X:sem-obj">
+            <diamond mode="GenRel">
+              <nomvar name="E"/>
+              <diamond mode="Patient">
+                <nomvar name="X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="اللَّذِي"/>
+  </family>
+  <family name="N" pos="N" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="n">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="X"/>
+            </lf>
+          </feat>
+          <feat attr="NTYPE" val="noun"/>
+        </fs>
+        <lf>
+          <satop nomvar="X:sem-obj">
+            <prop name="[*DEFAULT*]"/>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::"/>
+    <member stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::"/>
+    <member stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::"/>
+    <member stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::"/>
+    <member stem="sing-peach%1:13:00::props" pred="peach%1:13:00::"/>
+    <member stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::"/>
+    <member stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::"/>
+    <member stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::"/>
+  </family>
+  <family name="A" pos="Y" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="n">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="CASE">
+              <featvar name="CASE"/>
+            </feat>
+            <feat attr="GEN">
+              <featvar name="GEN"/>
+            </feat>
+            <feat attr="NUM">
+              <featvar name="NUM"/>
+            </feat>
+            <feat attr="PERS">
+              <featvar name="PERS"/>
+            </feat>
+            <feat attr="DET">
+              <featvar name="DET"/>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="\" mode="^"/>
+        <atomcat type="n">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="CASE">
+              <featvar name="CASE"/>
+            </feat>
+            <feat attr="GEN">
+              <featvar name="GEN"/>
+            </feat>
+            <feat attr="NUM">
+              <featvar name="NUM"/>
+            </feat>
+            <feat attr="PERS">
+              <featvar name="PERS"/>
+            </feat>
+            <feat attr="DET">
+              <featvar name="DET"/>
+            </feat>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="X">
+            <diamond mode="GenRel">
+              <nomvar name="Y"/>
+              <prop name="[*DEFAULT*]"/>
+              <diamond mode="Topic">
+                <nomvar name="X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::"/>
+    <member stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::"/>
+    <member stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00"/>
+    <member stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00"/>
+  </family>
+  <family name="Pro" pos="Pro" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="np">
+        <fs id="2">
+          <feat attr="index">
+            <lf>
+              <nomvar name="X"/>
+            </lf>
+          </feat>
+          <feat attr="NTYPE" val="pronoun"/>
+        </fs>
+        <lf>
+          <satop nomvar="X:sem-obj">
+            <prop name="[*DEFAULT*]"/>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="speaker" pred="context"/>
+    <member stem="addressee" pred="context"/>
+    <member stem="male_addressee" pred="context"/>
+    <member stem="female_addressee" pred="context"/>
+    <member stem="absent" pred="context"/>
+  </family>
+  <family name="IntransV" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="nom"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs1s" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="speaker"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s1s" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s1s" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s1s" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs2ms" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:male"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s2ms" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s2ms" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s2ms" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs2fs" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:female"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s2fs" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s2fs" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s2fs" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs3ms" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s3ms" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s3ms" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s3ms" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs3fs" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s3fs" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s3fs" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s3fs" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs2d" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="du-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s2d" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s2d" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s2d" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs3md" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="du-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s3md" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s3md" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s3md" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs3fd" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="du-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s3fd" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s3fd" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s3fd" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs1p" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="speaker"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="pl-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s1p" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s1p" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s1p" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs2mp" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:male"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="abs-pl-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s2mp" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s2mp" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s2mp" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs2fp" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:female"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="abs-pl-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s2fp" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s2fp" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s2fp" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs3mp" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="abs-pl-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s3mp" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s3mp" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s3mp" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="IntransVs3fp" pos="V" closed="true">
+    <entry name="Entry-1">
+      <atomcat type="s">
+        <fs id="1">
+          <feat attr="index">
+            <lf>
+              <nomvar name="E"/>
+            </lf>
+          </feat>
+        </fs>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="abs-pl-X"/>
+              </diamond>
+            </diamond>
+          </satop>
+        </lf>
+      </atomcat>
+    </entry>
+    <member stem="أْكُل-eat%2:34:01::-s3fp" pred="eat%2:34:01::"/>
+    <member stem="ذْهَب-go%2:38:01::-s3fp" pred="go%2:38:01::"/>
+    <member stem="نام-sleep%2:42:00::-s3fp" pred="sleep%2:42:00::"/>
+  </family>
+  <family name="TransV" pos="V" closed="true">
+    <entry name="nomObj">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+            <feat attr="NTYPE" val="noun"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="nom"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <entry name="proObj">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="2">
+            <feat attr="index">
+              <lf>
+                <nomvar name="X"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="nom"/>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+            <feat attr="NTYPE" val="pronoun"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs1s" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="speaker"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s1s" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s1s" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs2ms" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:male"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s2ms" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s2ms" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs2fs" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:female"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s2fs" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s2fs" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs3ms" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s3ms" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s3ms" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs3fs" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="sg-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s3fs" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s3fs" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs2d" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="du-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s2d" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s2d" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs3md" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="du-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s3md" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s3md" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs3fd" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="du-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s3fd" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s3fd" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs1p" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:animate-being"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="speaker"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="pl-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s1p" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s1p" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs2mp" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:male"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="abs-pl-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s2mp" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s2mp" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs2fp" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:female"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="addressee"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="abs-pl-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s2fp" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s2fp" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs3mp" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="abs-pl-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s3mp" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s3mp" pred="eat%2:34:00::"/>
+  </family>
+  <family name="TransVs3fp" pos="V" closed="true">
+    <entry name="Entry-1">
+      <complexcat>
+        <atomcat type="s">
+          <fs id="1">
+            <feat attr="index">
+              <lf>
+                <nomvar name="E"/>
+              </lf>
+            </feat>
+          </fs>
+        </atomcat>
+        <slash dir="/" mode="&gt;"/>
+        <atomcat type="np">
+          <fs id="3">
+            <feat attr="index">
+              <lf>
+                <nomvar name="Y"/>
+              </lf>
+            </feat>
+            <feat attr="CASE" val="acc"/>
+          </fs>
+        </atomcat>
+        <lf>
+          <satop nomvar="E:action">
+            <prop name="[*DEFAULT*]"/>
+            <diamond mode="Actor">
+              <nomvar name="X:sem-obj"/>
+              <prop name="context"/>
+              <diamond mode="Pers">
+                <prop name="absent"/>
+              </diamond>
+              <diamond mode="Num">
+                <prop name="abs-pl-X"/>
+              </diamond>
+            </diamond>
+            <diamond mode="Patient">
+              <nomvar name="Y:sem-obj"/>
+            </diamond>
+          </satop>
+        </lf>
+      </complexcat>
+    </entry>
+    <member stem="شاهِد-see%2:39:00::-s3fp" pred="see%2:39:00::"/>
+    <member stem="أْكُل-eat%2:34:00::-s3fp" pred="eat%2:34:00::"/>
+  </family>
+</ccg-lexicon>

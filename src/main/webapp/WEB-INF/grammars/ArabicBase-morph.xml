@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<morph name="ArabicBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../morph.xsd">
+  <entry word="ـ." pos="Pun" stem="ـ."/>
+  <entry word="," pos="Punc" stem=","/>
+  <entry word="?" pos="Punc" stem="?"/>
+  <entry word="الَّذِي" macros="@mas @sg" pos="RelPron" stem="اللَّذِي"/>
+  <entry word="الَّتِي" macros="@fem @sg" pos="RelPron" stem="اللَّذِي"/>
+  <entry word="اللَّذانِ" macros="@mas @du @nom" pos="RelPron" stem="اللَّذِي"/>
+  <entry word="اللَّذَيْنِ" macros="@mas @du @obl" pos="RelPron" stem="اللَّذِي"/>
+  <entry word="اللَّتانِ" macros="@fem @du @nom" pos="RelPron" stem="اللَّذِي"/>
+  <entry word="اللَّتَيْنِ" macros="@fem @du @obl" pos="RelPron" stem="اللَّذِي"/>
+  <entry word="الَّذِينَ" macros="@mas @pl" pos="RelPron" stem="اللَّذِي"/>
+  <entry word="اللَّوَاتِي" macros="@fem @pl" pos="RelPron" stem="اللَّذِي"/>
+  <entry word="أَنا" macros="@1st @sg @nom @speaker @sg-X" pos="Pro" stem="speaker" class="person" pred="context"/>
+  <entry word="ـنِي" macros="@1st @sg @acc @speaker @sg-X" pos="Pro" stem="speaker" class="person" pred="context"/>
+  <entry word="نَحْنُ" macros="@1st @non-sg @nom @speaker @pl-X" pos="Pro" stem="speaker" class="person" pred="context"/>
+  <entry word="ـنا" macros="@1st @non-sg @acc @speaker @pl-X" pos="Pro" stem="speaker" class="person" pred="context"/>
+  <entry word="أَنْتُما" macros="@2nd @du @nom @addressee @du-X" pos="Pro" stem="addressee" class="animate-being" pred="context"/>
+  <entry word="ـكُما" macros="@2nd @du @acc @addressee @du-X" pos="Pro" stem="addressee" class="animate-being" pred="context"/>
+  <entry word="أَنْتَ" macros="@2nd @sg @nom @mas @addressee @sg-X" pos="Pro" stem="male_addressee" class="male" pred="context"/>
+  <entry word="ـكَ" macros="@2nd @sg @acc @mas @addressee @sg-X" pos="Pro" stem="male_addressee" class="male" pred="context"/>
+  <entry word="أَنْتُمْ" macros="@2nd @pl @nom @mas @addressee @abs-pl-X" pos="Pro" stem="male_addressee" class="male" pred="context"/>
+  <entry word="ـكُمْ" macros="@2nd @pl @acc @mas @addressee @abs-pl-X" pos="Pro" stem="male_addressee" class="male" pred="context"/>
+  <entry word="أَنْتِ" macros="@2nd @sg @nom @fem @addressee @sg-X" pos="Pro" stem="female_addressee" class="female" pred="context"/>
+  <entry word="ـكِ" macros="@2nd @sg @acc @fem @addressee @sg-X" pos="Pro" stem="female_addressee" class="female" pred="context"/>
+  <entry word="أَنْتُنَّ" macros="@2nd @pl @nom @fem @addressee @abs-pl-X" pos="Pro" stem="female_addressee" class="female" pred="context"/>
+  <entry word="ـكُنَّ" macros="@2nd @pl @acc @fem @addressee @abs-pl-X" pos="Pro" stem="female_addressee" class="female" pred="context"/>
+  <entry word="هُوَ" macros="@3rd @sg @nom @mas @absent @sg-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="ـهُ" macros="@3rd @sg @acc @mas @absent @sg-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="هِيَ" macros="@3rd @sg @nom @fem @absent @sg-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="ـها" macros="@3rd @sg @acc @fem @absent @sg-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="هُما" macros="@3rd @du @nom @absent @du-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="ـهُما" macros="@3rd @du @acc @absent @du-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="هُمْ" macros="@3rd @pl @nom @mas @absent @abs-pl-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="ـهُمْ" macros="@3rd @pl @acc @mas @absent @abs-pl-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="هُنَّ" macros="@3rd @pl @acc @fem @absent @abs-pl-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="ـهُنَّ" macros="@3rd @pl @acc @fem @absent @abs-pl-X" pos="Pro" stem="absent" class="sem-obj" pred="context"/>
+  <entry word="كِتابٌ" macros="@sg @agr_indef @nom @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابٍ" macros="@sg @agr_indef @gen @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابًا" macros="@sg @agr_indef @acc @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابُ" macros="@sg @agr_cons @nom @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابِ" macros="@sg @agr_cons @gen @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابَ" macros="@sg @agr_cons @acc @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْكِتابُ" macros="@sg @agr_def @nom @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْكِتابِ" macros="@sg @agr_def @gen @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْكِتابَ" macros="@sg @agr_def @acc @mas @sg-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابانِ" macros="@du @agr_indef @nom @mas @du-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابَيْنِ" macros="@du @agr_indef @obl @mas @du-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابا" macros="@du @agr_cons @nom @mas @du-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كِتابَيْ" macros="@du @agr_cons @obl @mas @du-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْكِتابانِ" macros="@du @agr_def @nom @mas @du-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْكِتابَيْنِ" macros="@du @agr_def @obl @mas @du-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كُتُبٌ" macros="@sg @agr_indef @nom @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كُتُبٍ" macros="@sg @agr_indef @gen @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كُتُبًا" macros="@sg @agr_indef @acc @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كُتُبُ" macros="@sg @agr_cons @nom @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كُتُبِ" macros="@sg @agr_cons @gen @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="كُتُبَ" macros="@sg @agr_cons @acc @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْكُتُبُ" macros="@sg @agr_def @nom @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْكُتُبِ" macros="@sg @agr_def @gen @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْكُتُبَ" macros="@sg @agr_def @acc @fem @abs-pl-X" pos="N" stem="كِتاب-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدٌ" macros="@sg @agr_indef @nom @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدٍ" macros="@sg @agr_indef @gen @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدًا" macros="@sg @agr_indef @acc @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدُ" macros="@sg @agr_cons @nom @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدِ" macros="@sg @agr_cons @gen @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدَ" macros="@sg @agr_cons @acc @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْمُجَلَّدُ" macros="@sg @agr_def @nom @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْمُجَلَّدِ" macros="@sg @agr_def @gen @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْمُجَلَّدَ" macros="@sg @agr_def @acc @mas @sg-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدانِ" macros="@du @agr_indef @nom @mas @du-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدَيْنِ" macros="@du @agr_indef @obl @mas @du-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدا" macros="@du @agr_cons @nom @mas @du-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّدَيْ" macros="@du @agr_cons @obl @mas @du-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْمُجَلَّدانِ" macros="@du @agr_def @nom @mas @du-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْمُجَلَّدَيْنِ" macros="@du @agr_def @obl @mas @du-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّداتٌ" macros="@sg @agr_indef @nom @fem @abs-pl-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّداتٍ" macros="@sg @agr_indef @obl @fem @abs-pl-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّداتُ" macros="@sg @agr_cons @nom @fem @abs-pl-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="مُجَلَّداتِ" macros="@sg @agr_cons @obl @fem @abs-pl-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْمُجَلَّداتُ" macros="@sg @agr_def @nom @fem @abs-pl-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="الْمُجَلَّداتِ" macros="@sg @agr_def @obl @fem @abs-pl-X" pos="N" stem="مُجَلَّد-book%1:06:00::props" pred="book%1:06:00::" class="thing"/>
+  <entry word="رَجُلٌ" macros="@sg @agr_indef @nom @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلٍ" macros="@sg @agr_indef @gen @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلًا" macros="@sg @agr_indef @acc @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلُ" macros="@sg @agr_cons @nom @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلِ" macros="@sg @agr_cons @gen @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلَ" macros="@sg @agr_cons @acc @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الرَّجُلُ" macros="@sg @agr_def @nom @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الرَّجُلِ" macros="@sg @agr_def @gen @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الرَّجُلَ" macros="@sg @agr_def @acc @mas @sg-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلانِ" macros="@du @agr_indef @nom @mas @du-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلَيْنِ" macros="@du @agr_indef @obl @mas @du-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلا" macros="@du @agr_cons @nom @mas @du-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رَجُلَيْ" macros="@du @agr_cons @obl @mas @du-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الرَّجُلانِ" macros="@du @agr_def @nom @mas @du-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الرَّجُلَيْنِ" macros="@du @agr_def @obl @mas @du-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رِجالٌ" macros="@pl @agr_indef @nom @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رِجالٍ" macros="@pl @agr_indef @gen @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رِجالًا" macros="@pl @agr_indef @acc @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رِجالُ" macros="@pl @agr_cons @nom @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رِجالِ" macros="@pl @agr_cons @gen @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="رِجالَ" macros="@pl @agr_cons @acc @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الرِّجالُ" macros="@pl @agr_def @nom @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الرِّجالِ" macros="@pl @agr_def @gen @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الرِّجالَ" macros="@pl @agr_def @acc @mas @abs-pl-X" pos="N" stem="رَجُل-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرٌ" macros="@sg @agr_indef @nom @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرٍ" macros="@sg @agr_indef @gen @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرًا" macros="@sg @agr_indef @acc @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرُ" macros="@sg @agr_cons @nom @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرِ" macros="@sg @agr_cons @gen @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرَ" macros="@sg @agr_cons @acc @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الذَّكَرُ" macros="@sg @agr_def @nom @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الذَّكَرِ" macros="@sg @agr_def @gen @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الذَّكَرَ" macros="@sg @agr_def @acc @mas @sg-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرانِ" macros="@du @agr_indef @nom @mas @du-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرَيْنِ" macros="@du @agr_indef @obl @mas @du-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرا" macros="@du @agr_cons @nom @mas @du-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذَكَرَيْ" macros="@du @agr_cons @obl @mas @du-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الذَّكَرانِ" macros="@du @agr_def @nom @mas @du-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الذَّكَرَيْنِ" macros="@du @agr_def @obl @mas @du-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذُكُورٌ" macros="@pl @agr_indef @nom @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذُكُورٍ" macros="@pl @agr_indef @gen @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذُكُورًا" macros="@pl @agr_indef @acc @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذُكُورُ" macros="@pl @agr_cons @nom @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذُكُورِ" macros="@pl @agr_cons @gen @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="ذُكُورَ" macros="@pl @agr_cons @acc @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الذُّكُورُ" macros="@pl @agr_def @nom @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الذُّكُورِ" macros="@pl @agr_def @gen @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="الذُّكُورَ" macros="@pl @agr_def @acc @mas @abs-pl-X" pos="N" stem="ذَكَر-man%1:18:00::props" pred="man%1:18:00::" class="person"/>
+  <entry word="دُرّاقَةٌ" macros="@sg @agr_indef @nom @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَةٍ" macros="@sg @agr_indef @gen @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَةً" macros="@sg @agr_indef @acc @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَةُ" macros="@sg @agr_cons @nom @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَةِ" macros="@sg @agr_cons @gen @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَةَ" macros="@sg @agr_cons @acc @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="الدُّرّاقَةُ" macros="@sg @agr_def @nom @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="الدُّرّاقَةِ" macros="@sg @agr_def @gen @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="الدُّرّاقَةَ" macros="@sg @agr_def @acc @fem @sg-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَتانِ" macros="@du @agr_indef @nom @fem @du-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَتَيْنِ" macros="@du @agr_indef @obl @fem @du-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَتا" macros="@du @agr_cons @nom @fem @du-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَتَيْ" macros="@du @agr_cons @obl @fem @du-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="الدُّرّاقَتانِ" macros="@du @agr_def @nom @fem @du-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="الدُّرّاقَتَيْنِ" macros="@du @agr_def @obl @fem @du-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقٌ" macros="@sg @agr_indef @nom @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقٍ" macros="@sg @agr_indef @gen @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقًا" macros="@sg @agr_indef @acc @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقُ" macros="@sg @agr_cons @nom @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقِ" macros="@sg @agr_cons @gen @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="دُرّاقَ" macros="@sg @agr_cons @acc @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="الدُّرّاقُ" macros="@sg @agr_def @nom @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="الدُّرّاقِ" macros="@sg @agr_def @gen @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="الدُّرّاقَ" macros="@sg @agr_def @acc @fem @abs-pl-X" pos="N" stem="sing-peach%1:13:00::props" pred="peach%1:13:00::" class="thing"/>
+  <entry word="زَبّالٌ" macros="@sg @agr_indef @nom @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالٍ" macros="@sg @agr_indef @gen @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالًا" macros="@sg @agr_indef @acc @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالُ" macros="@sg @agr_cons @nom @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالِ" macros="@sg @agr_cons @gen @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالَ" macros="@sg @agr_cons @acc @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="الزَّبّالُ" macros="@sg @agr_def @nom @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="الزَّبّالِ" macros="@sg @agr_def @gen @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="الزَّبّالَ" macros="@sg @agr_def @acc @mas @sg-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالانِ" macros="@du @agr_indef @nom @mas @du-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالَيْنِ" macros="@du @agr_indef @obl @mas @du-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالا" macros="@du @agr_cons @nom @mas @du-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالَيْ" macros="@du @agr_cons @obl @mas @du-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="الزَّبّالانِ" macros="@du @agr_def @nom @mas @du-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="الزَّبّالَيْنِ" macros="@du @agr_def @obl @mas @du-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالُونَ" macros="@pl @agr_indef @nom @mas @abs-pl-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالِينَ" macros="@pl @agr_indef @obl @mas @abs-pl-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالُو" macros="@pl @agr_cons @nom @mas @abs-pl-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زَبّالِي" macros="@pl @agr_cons @obl @mas @abs-pl-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="الزَّبّالُونَ" macros="@pl @agr_def @nom @mas @abs-pl-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="الزَّبّالِينَ" macros="@pl @agr_def @obl @mas @abs-pl-X" pos="N" stem="زَبّال-garbage_man%1:18:00::props" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="زُبالَةٌ" macros="@sg @agr_indef @nom @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="زُبالَةٍ" macros="@sg @agr_indef @gen @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="زُبالَةً" macros="@sg @agr_indef @acc @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="زُبالَةُ" macros="@sg @agr_cons @nom @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="زُبالَةِ" macros="@sg @agr_cons @gen @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="زُبالَةَ" macros="@sg @agr_cons @acc @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="الزُّبالَةُ" macros="@sg @agr_def @nom @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="الزُّبالَةِ" macros="@sg @agr_def @gen @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="الزُّبالَةَ" macros="@sg @agr_def @acc @fem @sg-X" pos="N" stem="زُبالَة-garbage%1:27:00::props" pred="garbage%1:27:00::" class="thing"/>
+  <entry word="شُرْطِيٌ" macros="@sg @agr_indef @nom @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيٍ" macros="@sg @agr_indef @gen @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيًا" macros="@sg @agr_indef @acc @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيُ" macros="@sg @agr_cons @nom @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيِ" macros="@sg @agr_cons @gen @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيَ" macros="@sg @agr_cons @acc @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="الشُّرْطِيُ" macros="@sg @agr_def @nom @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="الشُّرْطِيِ" macros="@sg @agr_def @gen @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="الشُّرْطِيَ" macros="@sg @agr_def @acc @mas @sg-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيانِ" macros="@du @agr_indef @nom @mas @du-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيَيْنِ" macros="@du @agr_indef @obl @mas @du-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيا" macros="@du @agr_cons @nom @mas @du-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيَيْ" macros="@du @agr_cons @obl @mas @du-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="الشُّرْطِيانِ" macros="@du @agr_def @nom @mas @du-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="الشُّرْطِيَيْنِ" macros="@du @agr_def @obl @mas @du-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيُونَ" macros="@pl @agr_indef @nom @mas @abs-pl-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيِينَ" macros="@pl @agr_indef @obl @mas @abs-pl-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيُو" macros="@pl @agr_cons @nom @mas @abs-pl-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="شُرْطِيِي" macros="@pl @agr_cons @obl @mas @abs-pl-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="الشُّرْطِيُونَ" macros="@pl @agr_def @nom @mas @abs-pl-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="الشُّرْطِيِينَ" macros="@pl @agr_def @obl @mas @abs-pl-X" pos="N" stem="شُرْطِي-policeman%1:18:00::props" pred="policeman%1:18:00::" class="person"/>
+  <entry word="عالِيٌّ" macros="@sg @agr_indef @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيٍّ" macros="@sg @agr_indef @gen @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيًّا" macros="@sg @agr_indef @acc @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيُّ" macros="@sg @agr_cons @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيِّ" macros="@sg @agr_cons @gen @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّ" macros="@sg @agr_cons @acc @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيُّ" macros="@sg @agr_def @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيِّ" macros="@sg @agr_def @gen @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيَّ" macros="@sg @agr_def @acc @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيّانِ" macros="@du @agr_indef @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّيْنِ" macros="@du @agr_indef @obl @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيّا" macros="@du @agr_cons @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّيْ" macros="@du @agr_cons @obl @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيّانِ" macros="@du @agr_def @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيَّيْنِ" macros="@du @agr_def @obl @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيُّونَ" macros="@pl @agr_indef @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيِّينَ" macros="@pl @agr_indef @obl @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيُّو" macros="@pl @agr_cons @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيِّي" macros="@pl @agr_cons @obl @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيُّونَ" macros="@pl @agr_def @nom @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيِّينَ" macros="@pl @agr_def @obl @mas" pos="Y" stem="عالِيّ-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّةٌ" macros="@sg @agr_indef @nom @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّةٍ" macros="@sg @agr_indef @gen @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّةً" macros="@sg @agr_indef @acc @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّةُ" macros="@sg @agr_cons @nom @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّةِ" macros="@sg @agr_cons @gen @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّةَ" macros="@sg @agr_cons @acc @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيَّةُ" macros="@sg @agr_def @nom @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيَّةِ" macros="@sg @agr_def @gen @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيَّةَ" macros="@sg @agr_def @acc @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيََّتانِ" macros="@du @agr_indef @nom @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيََّتَيْنِ" macros="@du @agr_indef @obl @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيََّتا" macros="@du @agr_cons @nom @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيََّتَيْ" macros="@du @agr_cons @obl @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيََّتانِ" macros="@du @agr_def @nom @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيََّتَيْنِ" macros="@du @agr_def @obl @fem" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّاتٌ" macros="@pl @agr_indef @nom @fem @abs-pl-X" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّاتٍ" macros="@pl @agr_indef @obl @fem @abs-pl-X" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّاتُ" macros="@pl @agr_cons @nom @fem @abs-pl-X" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="عالِيَّاتِ" macros="@pl @agr_cons @obl @fem @abs-pl-X" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيَّاتُ" macros="@pl @agr_def @nom @fem @abs-pl-X" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="الْعالِيَّاتِ" macros="@pl @agr_def @obl @fem @abs-pl-X" pos="Y" stem="عالِيَّة-tall%3:00:00::props" pred="tall%3:00:00::" class="state"/>
+  <entry word="جَمِيلٌ" macros="@sg @agr_indef @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلٍ" macros="@sg @agr_indef @gen @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلًا" macros="@sg @agr_indef @acc @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلُ" macros="@sg @agr_cons @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلِ" macros="@sg @agr_cons @gen @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَ" macros="@sg @agr_cons @acc @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلُ" macros="@sg @agr_def @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلِ" macros="@sg @agr_def @gen @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلَ" macros="@sg @agr_def @acc @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلانِ" macros="@du @agr_indef @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَيْنِ" macros="@du @agr_indef @obl @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلا" macros="@du @agr_cons @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَيْ" macros="@du @agr_cons @obl @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلانِ" macros="@du @agr_def @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلَيْنِ" macros="@du @agr_def @obl @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلُونَ" macros="@pl @agr_indef @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلِينَ" macros="@pl @agr_indef @obl @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلُو" macros="@pl @agr_cons @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلِي" macros="@pl @agr_cons @obl @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلُونَ" macros="@pl @agr_def @nom @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلِينَ" macros="@pl @agr_def @obl @mas" pos="Y" stem="جَمِيل-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَةٌ" macros="@sg @agr_indef @nom @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَةٍ" macros="@sg @agr_indef @gen @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَةً" macros="@sg @agr_indef @acc @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَةُ" macros="@sg @agr_cons @nom @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَةِ" macros="@sg @agr_cons @gen @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَةَ" macros="@sg @agr_cons @acc @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلَةُ" macros="@sg @agr_def @nom @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلَةِ" macros="@sg @agr_def @gen @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلَةَ" macros="@sg @agr_def @acc @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلََتانِ" macros="@du @agr_indef @nom @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلََتَيْنِ" macros="@du @agr_indef @obl @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلََتا" macros="@du @agr_cons @nom @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلََتَيْ" macros="@du @agr_cons @obl @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلََتانِ" macros="@du @agr_def @nom @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلََتَيْنِ" macros="@du @agr_def @obl @fem" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَاتٌ" macros="@pl @agr_indef @nom @fem @abs-pl-X" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَاتٍ" macros="@pl @agr_indef @obl @fem @abs-pl-X" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَاتُ" macros="@pl @agr_cons @nom @fem @abs-pl-X" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="جَمِيلَاتِ" macros="@pl @agr_cons @obl @fem @abs-pl-X" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلَاتُ" macros="@pl @agr_def @nom @fem @abs-pl-X" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="الْجَمِيلَاتِ" macros="@pl @agr_def @obl @fem @abs-pl-X" pos="Y" stem="جَمِيلَة-handsome%5:00:00:beautiful:00props" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="أُشاهِدُ" macros="@pres @1st @sg @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدُ" macros="@pres @3rd @mas @noun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدُ" macros="@pres @3rd @fem @noun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="نُشاهِدُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="شاهِد-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="أُشاهِدُ" macros="@pres @1st @sg @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s1s" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s2ms" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s2fs" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s3ms" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s3fs" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s2d" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s3md" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s3fd" pred="see%2:39:00::"/>
+  <entry word="نُشاهِدُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s1p" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s2mp" pred="see%2:39:00::"/>
+  <entry word="تُشاهِدْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s2fp" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s3mp" pred="see%2:39:00::"/>
+  <entry word="يُشاهِدْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="شاهِد-see%2:39:00::-s3fp" pred="see%2:39:00::"/>
+  <entry word="أُأْكُلُ" macros="@pres @1st @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلُ" macros="@pres @3rd @mas @noun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلُ" macros="@pres @3rd @fem @noun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="نُأْكُلُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="أُأْكُلُ" macros="@pres @1st @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s1s" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s2ms" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s2fs" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s3ms" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s3fs" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s2d" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s3md" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s3fd" pred="eat%2:34:01::"/>
+  <entry word="نُأْكُلُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s1p" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s2mp" pred="eat%2:34:01::"/>
+  <entry word="تُأْكُلْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s2fp" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s3mp" pred="eat%2:34:01::"/>
+  <entry word="يُأْكُلْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:01::-s3fp" pred="eat%2:34:01::"/>
+  <entry word="آكُلُ" macros="@pres @1st @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلُ" macros="@pres @3rd @mas @noun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلُ" macros="@pres @3rd @fem @noun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="نَأْكُلُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="آكُلُ" macros="@pres @1st @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s1s" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s2ms" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s2fs" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s3ms" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s3fs" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s2d" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s3md" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s3fd" pred="eat%2:34:00::"/>
+  <entry word="نَأْكُلُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s1p" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s2mp" pred="eat%2:34:00::"/>
+  <entry word="تَأْكُلْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s2fp" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s3mp" pred="eat%2:34:00::"/>
+  <entry word="يَأْكُلْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="أْكُل-eat%2:34:00::-s3fp" pred="eat%2:34:00::"/>
+  <entry word="أَذْهَبُ" macros="@pres @1st @sg @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبُ" macros="@pres @3rd @mas @noun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبُ" macros="@pres @3rd @fem @noun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="نَذْهَبُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="ذْهَب-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="أَذْهَبُ" macros="@pres @1st @sg @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s1s" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s2ms" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s2fs" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s3ms" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s3fs" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s2d" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s3md" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s3fd" pred="go%2:38:01::"/>
+  <entry word="نَذْهَبُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s1p" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s2mp" pred="go%2:38:01::"/>
+  <entry word="تَذْهَبْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s2fp" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s3mp" pred="go%2:38:01::"/>
+  <entry word="يَذْهَبْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="ذْهَب-go%2:38:01::-s3fp" pred="go%2:38:01::"/>
+  <entry word="أَنامُ" macros="@pres @1st @sg @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="تَنامُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="تَنامِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="يَنامُ" macros="@pres @3rd @mas @noun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="يَنامُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="تَنامُ" macros="@pres @3rd @fem @noun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="تَنامُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="تَنامانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="يَنامانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="تَنامانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="نَنامُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="تَنامُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="تَنامْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="يَنامُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="يَنامْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="نام-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="أَنامُ" macros="@pres @1st @sg @pronoun" pos="V" stem="نام-sleep%2:42:00::-s1s" pred="sleep%2:42:00::"/>
+  <entry word="تَنامُ" macros="@pres @2nd @sg @mas @pronoun" pos="V" stem="نام-sleep%2:42:00::-s2ms" pred="sleep%2:42:00::"/>
+  <entry word="تَنامِينَ" macros="@pres @2nd @sg @fem @pronoun" pos="V" stem="نام-sleep%2:42:00::-s2fs" pred="sleep%2:42:00::"/>
+  <entry word="يَنامُ" macros="@pres @3rd @mas @sg @pronoun" pos="V" stem="نام-sleep%2:42:00::-s3ms" pred="sleep%2:42:00::"/>
+  <entry word="تَنامُ" macros="@pres @3rd @fem @sg @pronoun" pos="V" stem="نام-sleep%2:42:00::-s3fs" pred="sleep%2:42:00::"/>
+  <entry word="تَنامانِ" macros="@pres @2nd @du @pronoun" pos="V" stem="نام-sleep%2:42:00::-s2d" pred="sleep%2:42:00::"/>
+  <entry word="يَنامانِ" macros="@pres @3rd @du @mas @pronoun" pos="V" stem="نام-sleep%2:42:00::-s3md" pred="sleep%2:42:00::"/>
+  <entry word="تَنامانِ" macros="@pres @3rd @du @fem @pronoun" pos="V" stem="نام-sleep%2:42:00::-s3fd" pred="sleep%2:42:00::"/>
+  <entry word="نَنامُ" macros="@pres @1st @non-sg @pronoun" pos="V" stem="نام-sleep%2:42:00::-s1p" pred="sleep%2:42:00::"/>
+  <entry word="تَنامُونَ" macros="@pres @2nd @pl @mas @pronoun" pos="V" stem="نام-sleep%2:42:00::-s2mp" pred="sleep%2:42:00::"/>
+  <entry word="تَنامْنَ" macros="@pres @2nd @pl @fem @pronoun" pos="V" stem="نام-sleep%2:42:00::-s2fp" pred="sleep%2:42:00::"/>
+  <entry word="يَنامُونَ" macros="@pres @3rd @pl @mas @pronoun" pos="V" stem="نام-sleep%2:42:00::-s3mp" pred="sleep%2:42:00::"/>
+  <entry word="يَنامْنَ" macros="@pres @3rd @pl @fem @pronoun" pos="V" stem="نام-sleep%2:42:00::-s3fp" pred="sleep%2:42:00::"/>
+  <entry word="up" pos="Empty" stem="up-empty"/>
+  <macro name="@1st">
+    <fs id="2">
+      <feat attr="PERS" val="1st"/>
+    </fs>
+  </macro>
+  <macro name="@2nd">
+    <fs id="2">
+      <feat attr="PERS" val="2nd"/>
+    </fs>
+  </macro>
+  <macro name="@3rd">
+    <fs id="2">
+      <feat attr="PERS" val="3rd"/>
+    </fs>
+  </macro>
+  <macro name="@abs-pl-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="abs-pl-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@absent">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="absent"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@acc">
+    <fs id="2">
+      <feat attr="CASE" val="acc"/>
+    </fs>
+  </macro>
+  <macro name="@addressee">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="addressee"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@agr_cons">
+    <fs id="2">
+      <feat attr="AGR_DET" val="agr_cons"/>
+    </fs>
+  </macro>
+  <macro name="@agr_def">
+    <fs id="2">
+      <feat attr="AGR_DET" val="agr_def"/>
+    </fs>
+  </macro>
+  <macro name="@agr_indef">
+    <fs id="2">
+      <feat attr="AGR_DET" val="agr_indef"/>
+    </fs>
+  </macro>
+  <macro name="@any_def">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="any_def"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@any_ntype">
+    <fs id="2">
+      <feat attr="NTYPE" val="any_ntype"/>
+    </fs>
+  </macro>
+  <macro name="@any_num-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="any_num-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@closed">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Status">
+          <prop name="closed"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@def">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="def"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@du">
+    <fs id="2">
+      <feat attr="NUM" val="du"/>
+    </fs>
+  </macro>
+  <macro name="@du-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="du-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@fem">
+    <fs id="2">
+      <feat attr="GEN" val="fem"/>
+    </fs>
+  </macro>
+  <macro name="@gen">
+    <fs id="2">
+      <feat attr="CASE" val="gen"/>
+    </fs>
+  </macro>
+  <macro name="@indef">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="indef"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@mas">
+    <fs id="2">
+      <feat attr="GEN" val="mas"/>
+    </fs>
+  </macro>
+  <macro name="@nom">
+    <fs id="2">
+      <feat attr="CASE" val="nom"/>
+    </fs>
+  </macro>
+  <macro name="@non-3rd">
+    <fs id="2">
+      <feat attr="PERS" val="non-3rd"/>
+    </fs>
+  </macro>
+  <macro name="@non-sg">
+    <fs id="2">
+      <feat attr="NUM" val="non-sg"/>
+    </fs>
+  </macro>
+  <macro name="@nonabsent">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="nonabsent"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@noun">
+    <fs id="2">
+      <feat attr="NTYPE" val="noun"/>
+    </fs>
+  </macro>
+  <macro name="@obl">
+    <fs id="2">
+      <feat attr="CASE" val="obl"/>
+    </fs>
+  </macro>
+  <macro name="@open">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Status">
+          <prop name="open"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@past">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Tense">
+          <prop name="past"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pl">
+    <fs id="2">
+      <feat attr="NUM" val="pl"/>
+    </fs>
+  </macro>
+  <macro name="@pl-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="pl-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pres">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Tense">
+          <prop name="pres"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pronoun">
+    <fs id="2">
+      <feat attr="NTYPE" val="pronoun"/>
+    </fs>
+  </macro>
+  <macro name="@sg">
+    <fs id="2">
+      <feat attr="NUM" val="sg"/>
+    </fs>
+  </macro>
+  <macro name="@sg-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="sg-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@speaker">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="speaker"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@syn_closed">
+    <fs id="1">
+      <feat attr="SYN-STATUS" val="syn_closed"/>
+    </fs>
+  </macro>
+  <macro name="@syn_open">
+    <fs id="1">
+      <feat attr="SYN-STATUS" val="syn_open"/>
+    </fs>
+  </macro>
+</morph>

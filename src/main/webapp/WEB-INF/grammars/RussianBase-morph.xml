@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<morph name="RussianBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../morph.xsd">
+  <entry word="." pos="Pun" stem="."/>
+  <entry word="," pos="Punc" stem=","/>
+  <entry word="?" pos="Punc" stem="?"/>
+  <entry word="который" macros="@sg @mas @any_anim @nom" pos="RelPron" stem="который"/>
+  <entry word="которого" macros="@sg @mas @any_anim @gen" pos="RelPron" stem="который"/>
+  <entry word="которому" macros="@sg @mas @any_anim @dat" pos="RelPron" stem="который"/>
+  <entry word="которого" macros="@sg @mas @anim @acc" pos="RelPron" stem="который"/>
+  <entry word="который" macros="@sg @mas @inan @acc" pos="RelPron" stem="который"/>
+  <entry word="которым" macros="@sg @mas @any_anim @abl" pos="RelPron" stem="который"/>
+  <entry word="котором" macros="@sg @mas @any_anim @loc" pos="RelPron" stem="который"/>
+  <entry word="которая" macros="@sg @fem @any_anim @nom" pos="RelPron" stem="который"/>
+  <entry word="которой" macros="@sg @fem @any_anim @gen" pos="RelPron" stem="который"/>
+  <entry word="которой" macros="@sg @fem @any_anim @dat" pos="RelPron" stem="который"/>
+  <entry word="которую" macros="@sg @fem @any_anim @acc" pos="RelPron" stem="который"/>
+  <entry word="которой" macros="@sg @fem @any_anim @abl" pos="RelPron" stem="который"/>
+  <entry word="которой" macros="@sg @fem @any_anim @loc" pos="RelPron" stem="который"/>
+  <entry word="которое" macros="@sg @neu @any_anim @nom" pos="RelPron" stem="который"/>
+  <entry word="которого" macros="@sg @neu @any_anim @gen" pos="RelPron" stem="который"/>
+  <entry word="которому" macros="@sg @neu @any_anim @dat" pos="RelPron" stem="который"/>
+  <entry word="которое" macros="@sg @neu @any_anim @acc" pos="RelPron" stem="который"/>
+  <entry word="которым" macros="@sg @neu @any_anim @abl" pos="RelPron" stem="который"/>
+  <entry word="котором" macros="@sg @neu @any_anim @loc" pos="RelPron" stem="который"/>
+  <entry word="которые" macros="@pl @any_anim @nom" pos="RelPron" stem="который"/>
+  <entry word="которых" macros="@pl @any_anim @gen" pos="RelPron" stem="который"/>
+  <entry word="которым" macros="@pl @any_anim @dat" pos="RelPron" stem="который"/>
+  <entry word="которых" macros="@pl @anim @acc" pos="RelPron" stem="который"/>
+  <entry word="которые" macros="@pl @inan @acc" pos="RelPron" stem="который"/>
+  <entry word="которыми" macros="@pl @any_anim @abl" pos="RelPron" stem="который"/>
+  <entry word="которых" macros="@pl @any_anim @loc" pos="RelPron" stem="который"/>
+  <entry word="я" macros="@1st @sg @nom @speaker @sg-X" pos="Pro" stem="speaker" class="person" pred="context"/>
+  <entry word="меня" macros="@1st @sg @acc @speaker @sg-X" pos="Pro" stem="speaker" class="person" pred="context"/>
+  <entry word="мы" macros="@1st @pl @nom @speaker @pl-X" pos="Pro" stem="speaker" class="person" pred="context"/>
+  <entry word="нас" macros="@1st @pl @acc @speaker @pl-X" pos="Pro" stem="speaker" class="person" pred="context"/>
+  <entry word="ты" macros="@2nd @sg @nom @addressee @sg-X" pos="Pro" stem="addressee" class="animate-being" pred="context"/>
+  <entry word="тебя" macros="@2nd @sg @acc @addressee @sg-X" pos="Pro" stem="addressee" class="animate-being" pred="context"/>
+  <entry word="вы" macros="@2nd @pl @nom @addressee @pl-X" pos="Pro" stem="addressee" class="animate-being" pred="context"/>
+  <entry word="вас" macros="@2nd @pl @acc @addressee @pl-X" pos="Pro" stem="addressee" class="animate-being" pred="context"/>
+  <entry word="он" macros="@3rd @sg @mas @nom @absent @sg-X" pos="Pro" stem="absent" class="animate-being" pred="context"/>
+  <entry word="его" macros="@3rd @sg @mas @acc @absent @sg-X" pos="Pro" stem="absent" class="animate-being" pred="context"/>
+  <entry word="она" macros="@3rd @sg @fem @nom @absent @sg-X" pos="Pro" stem="absent" class="animate-being" pred="context"/>
+  <entry word="её" macros="@3rd @sg @fem @acc @absent @sg-X" pos="Pro" stem="absent" class="animate-being" pred="context"/>
+  <entry word="оно" macros="@3rd @sg @neu @nom @absent @sg-X" pos="Pro" stem="absent" class="animate-being" pred="context"/>
+  <entry word="его" macros="@3rd @sg @neu @acc @absent @sg-X" pos="Pro" stem="absent" class="animate-being" pred="context"/>
+  <entry word="они" macros="@3rd @pl @nom @absent @pl-X" pos="Pro" stem="absent" class="animate-being" pred="context"/>
+  <entry word="их" macros="@3rd @pl @acc @absent @pl-X" pos="Pro" stem="absent" class="animate-being" pred="context"/>
+  <entry word="книга" macros="@sg @fem @nom @inan @sg-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книги" macros="@sg @fem @gen @inan @sg-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книге" macros="@sg @fem @dat @inan @sg-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книгу" macros="@sg @fem @acc @inan @sg-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книгой" macros="@sg @fem @abl @inan @sg-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книге" macros="@sg @fem @loc @inan @sg-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книги" macros="@pl @fem @nom @inan @pl-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книг" macros="@pl @fem @gen @inan @pl-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книгам" macros="@pl @fem @dat @inan @pl-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книги" macros="@pl @fem @acc @inan @pl-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книгами" macros="@pl @fem @abl @inan @pl-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="книгах" macros="@pl @fem @loc @inan @pl-X" pos="N" stem="книга-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="том" macros="@sg @mas @nom @inan @sg-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="тома" macros="@sg @mas @gen @inan @sg-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="тому" macros="@sg @mas @dat @inan @sg-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="том" macros="@sg @mas @acc @inan @sg-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="томом" macros="@sg @mas @abl @inan @sg-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="томе" macros="@sg @mas @loc @inan @sg-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="тома" macros="@pl @mas @nom @inan @pl-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="томов" macros="@pl @mas @gen @inan @pl-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="томам" macros="@pl @mas @dat @inan @pl-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="тома" macros="@pl @mas @acc @inan @pl-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="томами" macros="@pl @mas @abl @inan @pl-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="томах" macros="@pl @mas @loc @inan @pl-X" pos="N" stem="том-book%1:06:00::N" pred="book%1:06:00::" class="thing"/>
+  <entry word="персик" macros="@sg @mas @nom @inan @sg-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персика" macros="@sg @mas @gen @inan @sg-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персику" macros="@sg @mas @dat @inan @sg-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персик" macros="@sg @mas @acc @inan @sg-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персиком" macros="@sg @mas @abl @inan @sg-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персике" macros="@sg @mas @loc @inan @sg-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персика" macros="@pl @mas @nom @inan @pl-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персиков" macros="@pl @mas @gen @inan @pl-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персикам" macros="@pl @mas @dat @inan @pl-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персика" macros="@pl @mas @acc @inan @pl-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персиками" macros="@pl @mas @abl @inan @pl-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="персиках" macros="@pl @mas @loc @inan @pl-X" pos="N" stem="персик-peach%1:13:00::N" pred="peach%1:13:00::" class="thing"/>
+  <entry word="человек" macros="@sg @mas @nom @anim @sg-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человека" macros="@sg @mas @gen @anim @sg-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человеку" macros="@sg @mas @dat @anim @sg-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человека" macros="@sg @mas @acc @anim @sg-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человеком" macros="@sg @mas @abl @anim @sg-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человеке" macros="@sg @mas @loc @anim @sg-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="люди" macros="@pl @mas @nom @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="людей" macros="@pl @mas @gen @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человек" macros="@pl @mas @gen @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="людям" macros="@pl @mas @dat @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человекам" macros="@pl @mas @dat @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="людей" macros="@pl @mas @acc @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="людьми" macros="@pl @mas @abl @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человеками" macros="@pl @mas @abl @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="людях" macros="@pl @mas @loc @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="человеках" macros="@pl @mas @loc @anim @pl-X" pos="N" stem="человек-man%1:18:00::N" pred="man%1:18:00::" class="person"/>
+  <entry word="мусорщик" macros="@sg @mas @nom @anim @sg-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщика" macros="@sg @mas @gen @anim @sg-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщику" macros="@sg @mas @dat @anim @sg-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщика" macros="@sg @mas @acc @anim @sg-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщиком" macros="@sg @mas @abl @anim @sg-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщике" macros="@sg @mas @loc @anim @sg-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщики" macros="@pl @mas @nom @anim @pl-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщиков" macros="@pl @mas @gen @anim @pl-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщикам" macros="@pl @mas @dat @anim @pl-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщиков" macros="@pl @mas @acc @anim @pl-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщиками" macros="@pl @mas @abl @anim @pl-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="мусорщиках" macros="@pl @mas @loc @anim @pl-X" pos="N" stem="мусорщик-garbage_man%1:18:00::N" pred="garbage_man%1:18:00::" class="person"/>
+  <entry word="полисмен" macros="@sg @mas @nom @anim @sg-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисмена" macros="@sg @mas @gen @anim @sg-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисмену" macros="@sg @mas @dat @anim @sg-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисмена" macros="@sg @mas @acc @anim @sg-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисменом" macros="@sg @mas @abl @anim @sg-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисмене" macros="@sg @mas @loc @anim @sg-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисмены" macros="@pl @mas @nom @anim @pl-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисменов" macros="@pl @mas @gen @anim @pl-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисменам" macros="@pl @mas @dat @anim @pl-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисменов" macros="@pl @mas @acc @anim @pl-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисменами" macros="@pl @mas @abl @anim @pl-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полисменах" macros="@pl @mas @loc @anim @pl-X" pos="N" stem="полисмен-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейский" macros="@sg @mas @nom @anim @sg-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейского" macros="@sg @mas @gen @anim @sg-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейскому" macros="@sg @mas @dat @anim @sg-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейского" macros="@sg @mas @acc @anim @sg-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейским" macros="@sg @mas @abl @anim @sg-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейском" macros="@sg @mas @loc @anim @sg-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейские" macros="@pl @mas @nom @anim @pl-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейских" macros="@pl @mas @gen @anim @pl-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейским" macros="@pl @mas @dat @anim @pl-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейских" macros="@pl @mas @acc @anim @pl-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейскими" macros="@pl @mas @abl @anim @pl-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="полицейских" macros="@pl @mas @loc @anim @pl-X" pos="N" stem="полицейский-policeman%1:18:00::N" pred="policeman%1:18:00::" class="person"/>
+  <entry word="высокий" macros="@sg @mas @any_anim @nom" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокого" macros="@sg @mas @any_anim @gen" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокому" macros="@sg @mas @any_anim @dat" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокого" macros="@sg @mas @anim @acc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокий" macros="@sg @mas @inan @acc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высоким" macros="@sg @mas @any_anim @abl" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокой" macros="@sg @mas @any_anim @loc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокая" macros="@sg @fem @any_anim @nom" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокой" macros="@sg @fem @any_anim @gen" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокой" macros="@sg @fem @any_anim @dat" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокую" macros="@sg @fem @any_anim @acc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокой" macros="@sg @fem @any_anim @abl" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокой" macros="@sg @fem @any_anim @loc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокое" macros="@sg @neu @any_anim @nom" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокого" macros="@sg @neu @any_anim @gen" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокому" macros="@sg @neu @any_anim @dat" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокое" macros="@sg @neu @any_anim @acc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высоким" macros="@sg @neu @any_anim @abl" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высоком" macros="@sg @neu @any_anim @loc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокие" macros="@pl @any_anim @nom" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высоких" macros="@pl @any_anim @gen" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высоким" macros="@pl @any_anim @dat" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высоких" macros="@pl @anim @acc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокие" macros="@pl @inan @acc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высокими" macros="@pl @any_anim @abl" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="высоких" macros="@pl @any_anim @loc" pos="Y" stem="высокий-tall%3:00:00::A" pred="tall%3:00:00::" class="state"/>
+  <entry word="интересный" macros="@sg @mas @any_anim @nom" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересного" macros="@sg @mas @any_anim @gen" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересному" macros="@sg @mas @any_anim @dat" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересного" macros="@sg @mas @anim @acc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересный" macros="@sg @mas @inan @acc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересным" macros="@sg @mas @any_anim @abl" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересной" macros="@sg @mas @any_anim @loc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересная" macros="@sg @fem @any_anim @nom" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересной" macros="@sg @fem @any_anim @gen" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересной" macros="@sg @fem @any_anim @dat" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересную" macros="@sg @fem @any_anim @acc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересной" macros="@sg @fem @any_anim @abl" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересной" macros="@sg @fem @any_anim @loc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересное" macros="@sg @neu @any_anim @nom" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересного" macros="@sg @neu @any_anim @gen" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересному" macros="@sg @neu @any_anim @dat" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересное" macros="@sg @neu @any_anim @acc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересным" macros="@sg @neu @any_anim @abl" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересном" macros="@sg @neu @any_anim @loc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересные" macros="@pl @any_anim @nom" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересных" macros="@pl @any_anim @gen" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересным" macros="@pl @any_anim @dat" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересных" macros="@pl @anim @acc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересные" macros="@pl @inan @acc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересными" macros="@pl @any_anim @abl" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="интересных" macros="@pl @any_anim @loc" pos="Y" stem="интересний-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивый" macros="@sg @mas @any_anim @nom" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивого" macros="@sg @mas @any_anim @gen" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивому" macros="@sg @mas @any_anim @dat" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивого" macros="@sg @mas @anim @acc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивый" macros="@sg @mas @inan @acc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивым" macros="@sg @mas @any_anim @abl" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивой" macros="@sg @mas @any_anim @loc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивая" macros="@sg @fem @any_anim @nom" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивой" macros="@sg @fem @any_anim @gen" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивой" macros="@sg @fem @any_anim @dat" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивую" macros="@sg @fem @any_anim @acc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивой" macros="@sg @fem @any_anim @abl" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивой" macros="@sg @fem @any_anim @loc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивое" macros="@sg @neu @any_anim @nom" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивого" macros="@sg @neu @any_anim @gen" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивому" macros="@sg @neu @any_anim @dat" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивое" macros="@sg @neu @any_anim @acc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивым" macros="@sg @neu @any_anim @abl" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивом" macros="@sg @neu @any_anim @loc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивые" macros="@pl @any_anim @nom" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивых" macros="@pl @any_anim @gen" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивым" macros="@pl @any_anim @dat" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивых" macros="@pl @anim @acc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивые" macros="@pl @inan @acc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивыми" macros="@pl @any_anim @abl" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="красивых" macros="@pl @any_anim @loc" pos="Y" stem="красивий-handsome%5:00:00:beautiful:00A" pred="handsome%5:00:00:beautiful:00" class="state"/>
+  <entry word="отправляюсь" macros="@pres @1st @sg" pos="V" stem="отправляться-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отправляешься" macros="@pres @2nd @sg" pos="V" stem="отправляться-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отправляется" macros="@pres @3rd @sg" pos="V" stem="отправляться-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отправляемся" macros="@pres @1st @pl" pos="V" stem="отправляться-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отправляетесь" macros="@pres @2nd @pl" pos="V" stem="отправляться-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отправляются" macros="@pres @3rd @pl" pos="V" stem="отправляться-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отбываю" macros="@pres @1st @sg" pos="V" stem="отбывать-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отбываешь" macros="@pres @2nd @sg" pos="V" stem="отбывать-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отбывает" macros="@pres @3rd @sg" pos="V" stem="отбывать-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отбываем" macros="@pres @1st @pl" pos="V" stem="отбывать-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отбываете" macros="@pres @2nd @pl" pos="V" stem="отбывать-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="отбывают" macros="@pres @3rd @pl" pos="V" stem="отбывать-go%2:38:01::" pred="go%2:38:01::"/>
+  <entry word="сплю" macros="@pres @1st @sg" pos="V" stem="спать-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="спишь" macros="@pres @2nd @sg" pos="V" stem="спать-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="спит" macros="@pres @3rd @sg" pos="V" stem="спать-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="спим" macros="@pres @1st @pl" pos="V" stem="спать-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="спите" macros="@pres @2nd @pl" pos="V" stem="спать-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="спят" macros="@pres @3rd @pl" pos="V" stem="спать-sleep%2:42:00::" pred="sleep%2:42:00::"/>
+  <entry word="оставляю" macros="@pres @1st @sg" pos="V" stem="оставлять-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="оставляешь" macros="@pres @2nd @sg" pos="V" stem="оставлять-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="оставляет" macros="@pres @3rd @sg" pos="V" stem="оставлять-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="оставляем" macros="@pres @1st @pl" pos="V" stem="оставлять-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="оставляете" macros="@pres @2nd @pl" pos="V" stem="оставлять-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="оставляют" macros="@pres @3rd @pl" pos="V" stem="оставлять-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="покидаю" macros="@pres @1st @sg" pos="V" stem="покидать-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="покидаешь" macros="@pres @2nd @sg" pos="V" stem="покидать-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="покидает" macros="@pres @3rd @sg" pos="V" stem="покидать-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="покидаем" macros="@pres @1st @pl" pos="V" stem="покидать-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="покидаете" macros="@pres @2nd @pl" pos="V" stem="покидать-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="покидают" macros="@pres @3rd @pl" pos="V" stem="покидать-drop_out%2:33:00::" pred="drop_out%2:33:00::"/>
+  <entry word="ем" macros="@pres @1st @sg" pos="V" stem="есть-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="ешь" macros="@pres @2nd @sg" pos="V" stem="есть-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="ест" macros="@pres @3rd @sg" pos="V" stem="есть-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="едим" macros="@pres @1st @pl" pos="V" stem="есть-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="едите" macros="@pres @2nd @pl" pos="V" stem="есть-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="едят" macros="@pres @3rd @pl" pos="V" stem="есть-eat%2:34:00::" pred="eat%2:34:00::"/>
+  <entry word="ем" macros="@pres @1st @sg" pos="V" stem="есть-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="ешь" macros="@pres @2nd @sg" pos="V" stem="есть-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="ест" macros="@pres @3rd @sg" pos="V" stem="есть-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="едим" macros="@pres @1st @pl" pos="V" stem="есть-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="едите" macros="@pres @2nd @pl" pos="V" stem="есть-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="едят" macros="@pres @3rd @pl" pos="V" stem="есть-eat%2:34:01::" pred="eat%2:34:01::"/>
+  <entry word="вижу" macros="@pres @1st @sg" pos="V" stem="видеть-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="видишь" macros="@pres @2nd @sg" pos="V" stem="видеть-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="видит" macros="@pres @3rd @sg" pos="V" stem="видеть-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="видим" macros="@pres @1st @pl" pos="V" stem="видеть-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="видите" macros="@pres @2nd @pl" pos="V" stem="видеть-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="видят" macros="@pres @3rd @pl" pos="V" stem="видеть-see%2:39:00::" pred="see%2:39:00::"/>
+  <entry word="up" pos="Empty" stem="up-empty"/>
+  <macro name="@1st">
+    <fs id="2">
+      <feat attr="PERS" val="1st"/>
+    </fs>
+  </macro>
+  <macro name="@2nd">
+    <fs id="2">
+      <feat attr="PERS" val="2nd"/>
+    </fs>
+  </macro>
+  <macro name="@3rd">
+    <fs id="2">
+      <feat attr="PERS" val="3rd"/>
+    </fs>
+  </macro>
+  <macro name="@abl">
+    <fs id="2">
+      <feat attr="CASE" val="abl"/>
+    </fs>
+  </macro>
+  <macro name="@abs-pl-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="abs-pl-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@absent">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="absent"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@acc">
+    <fs id="2">
+      <feat attr="CASE" val="acc"/>
+    </fs>
+  </macro>
+  <macro name="@addressee">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="addressee"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@anim">
+    <fs id="2">
+      <feat attr="ANIM" val="anim"/>
+    </fs>
+  </macro>
+  <macro name="@any_anim">
+    <fs id="2">
+      <feat attr="ANIM" val="any_anim"/>
+    </fs>
+  </macro>
+  <macro name="@any_def">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="any_def"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@any_num-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="any_num-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@closed">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Status">
+          <prop name="closed"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@dat">
+    <fs id="2">
+      <feat attr="CASE" val="dat"/>
+    </fs>
+  </macro>
+  <macro name="@def">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="def"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@du">
+    <fs id="2">
+      <feat attr="NUM" val="du"/>
+    </fs>
+  </macro>
+  <macro name="@du-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="du-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@fem">
+    <fs id="2">
+      <feat attr="GEN" val="fem"/>
+    </fs>
+  </macro>
+  <macro name="@gen">
+    <fs id="2">
+      <feat attr="CASE" val="gen"/>
+    </fs>
+  </macro>
+  <macro name="@inan">
+    <fs id="2">
+      <feat attr="ANIM" val="inan"/>
+    </fs>
+  </macro>
+  <macro name="@indef">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Det">
+          <prop name="indef"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@loc">
+    <fs id="2">
+      <feat attr="CASE" val="loc"/>
+    </fs>
+  </macro>
+  <macro name="@mas">
+    <fs id="2">
+      <feat attr="GEN" val="mas"/>
+    </fs>
+  </macro>
+  <macro name="@neu">
+    <fs id="2">
+      <feat attr="GEN" val="neu"/>
+    </fs>
+  </macro>
+  <macro name="@nom">
+    <fs id="2">
+      <feat attr="CASE" val="nom"/>
+    </fs>
+  </macro>
+  <macro name="@non-3rd">
+    <fs id="2">
+      <feat attr="PERS" val="non-3rd"/>
+    </fs>
+  </macro>
+  <macro name="@non-sg">
+    <fs id="2">
+      <feat attr="NUM" val="non-sg"/>
+    </fs>
+  </macro>
+  <macro name="@nonabsent">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="nonabsent"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@open">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Status">
+          <prop name="open"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@past">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Tense">
+          <prop name="past"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pl">
+    <fs id="2">
+      <feat attr="NUM" val="pl"/>
+    </fs>
+  </macro>
+  <macro name="@pl-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="pl-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@pres">
+    <lf>
+      <satop nomvar="E">
+        <diamond mode="Tense">
+          <prop name="pres"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@sg">
+    <fs id="2">
+      <feat attr="NUM" val="sg"/>
+    </fs>
+  </macro>
+  <macro name="@sg-X">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Num">
+          <prop name="sg-X"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+  <macro name="@speaker">
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="Pers">
+          <prop name="speaker"/>
+        </diamond>
+      </satop>
+    </lf>
+  </macro>
+</morph>

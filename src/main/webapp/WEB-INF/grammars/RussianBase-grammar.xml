@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar name="RussianBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../grammar.xsd">
+  <lexicon file="RussianBase-lexicon.xml"/>
+  <morphology file="RussianBase-morph.xml"/>
+  <rules file="RussianBase-rules.xml"/>
+  <types file="RussianBase-types.xml"/>
+</grammar>

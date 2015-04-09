@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar name="EnglishBase.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../grammar.xsd">
+  <lexicon file="EnglishBase-lexicon.xml"/>
+  <morphology file="EnglishBase-morph.xml"/>
+  <rules file="EnglishBase-rules.xml"/>
+  <types file="EnglishBase-types.xml"/>
+</grammar>

@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types name="english_semantics_vbnet_to.ccg" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../types.xsd">
+  <type name="SEM_NUM"/>
+  <type name="sem_sg" parents="SEM_NUM"/>
+  <type name="sem_pl" parents="SEM_NUM"/>
+  <type name="ontology"/>
+  <type name="Top" parents="ontology"/>
+  <type name="1stOrderEntity" parents="Top"/>
+  <type name="2ndOrderEntity" parents="Top"/>
+  <type name="3rdOrderEntity" parents="Top"/>
+  <type name="Composition" parents="1stOrderEntity"/>
+  <type name="Form" parents="1stOrderEntity"/>
+  <type name="Function" parents="1stOrderEntity"/>
+  <type name="Origin" parents="1stOrderEntity"/>
+  <type name="1stOrderEntity_Condition_Property" parents="Condition Property 1stOrderEntity"/>
+  <type name="Group" parents="Composition"/>
+  <type name="Part" parents="Composition"/>
+  <type name="3rdOrderEntity_Agentive_Experience_Group_Human_Purpose_Social" parents="Human Agentive Experience Purpose Social 3rdOrderEntity Group"/>
+  <type name="3rdOrderEntity_Experience_Function_Group_Human" parents="Function Human Experience 3rdOrderEntity Group"/>
+  <type name="3rdOrderEntity_Group_Human_Quantity" parents="Human Quantity 3rdOrderEntity Group"/>
+  <type name="Agentive_Dynamic_Group_Mental_Purpose" parents="Agentive Mental Purpose Dynamic Group"/>
+  <type name="Agentive_Dynamic_Group_Purpose" parents="Agentive Purpose Dynamic Group"/>
+  <type name="Agentive_Group_Human_Purpose_Social_UnboundedEvent" parents="Human Agentive Purpose Social UnboundedEvent Group"/>
+  <type name="Animal_Group_Object" parents="Object Animal Group"/>
+  <type name="Artifact_Building_Container_Group_Instrument_Object_Vehicle" parents="Object Building Container Instrument Vehicle Artifact Group"/>
+  <type name="Artifact_Building_Group_Natural_Object_Part_Place" parents="Part Object Building Place Artifact Natural Group"/>
+  <type name="Artifact_Building_Group_Object" parents="Object Building Artifact Group"/>
+  <type name="Artifact_Building_Group_Object_Part" parents="Part Object Building Artifact Group"/>
+  <type name="Artifact_Comestible_Group_Substance" parents="Substance Comestible Artifact Group"/>
+  <type name="Artifact_Communication_Group_LanguageRepresentation_Object_Physical_UnboundedEvent_Usage" parents="Object LanguageRepresentation Artifact Communication Physical Usage UnboundedEvent Group"/>
+  <type name="Artifact_Container_Group_Instrument_Object" parents="Object Container Instrument Artifact Group"/>
+  <type name="Artifact_Covering_Furniture_Garment_Group_Instrument_Object" parents="Object Covering Furniture Garment Instrument Artifact Group"/>
+  <type name="Artifact_Covering_Furniture_Group_Instrument_Object" parents="Object Covering Furniture Instrument Artifact Group"/>
+  <type name="Artifact_Function_Group" parents="Function Artifact Group"/>
+  <type name="Artifact_Furniture_Group_Instrument_Object" parents="Object Furniture Instrument Artifact Group"/>
+  <type name="Artifact_Group_ImageRepresentation_Object" parents="Object ImageRepresentation Artifact Group"/>
+  <type name="Artifact_Group_Instrument_Living_Object" parents="Artifact_Group_Instrument_Natural_Object Living"/>
+  <type name="Artifact_Group_Instrument_Natural_Object" parents="Object Instrument Artifact Natural Group"/>
+  <type name="Artifact_Group_Instrument_Object" parents="Object Instrument Artifact Group"/>
+  <type name="Artifact_Group_Instrument_Object_Substance" parents="Object Substance Instrument Artifact Group"/>
+  <type name="Artifact_Group_LanguageRepresentation" parents="LanguageRepresentation Artifact Group"/>
+  <type name="Artifact_Group_LanguageRepresentation_Object" parents="Object LanguageRepresentation Artifact Group"/>
+  <type name="Artifact_Group_LanguageRepresentation_Object_Part" parents="Part Object LanguageRepresentation Artifact Group"/>
+  <type name="Artifact_Group_MoneyRepresentation" parents="MoneyRepresentation Artifact Group"/>
+  <type name="Artifact_Group_MoneyRepresentation_Object" parents="Object MoneyRepresentation Artifact Group"/>
+  <type name="Artifact_Group_Object" parents="Object Artifact Group"/>
+  <type name="Artifact_Group_Object_Software" parents="Object Software Artifact Group"/>
+  <type name="Comestible_Group_Human_Object_Plant" parents="Object Comestible Human Plant Group"/>
+  <type name="Comestible_Group_Human_Substance" parents="Substance Comestible Human Group"/>
+  <type name="Comestible_Group_Liquid" parents="Liquid Comestible Group"/>
+  <type name="Comestible_Group_Natural" parents="Comestible Natural Group"/>
+  <type name="Comestible_Group_Object_Part_Plant" parents="Part Object Comestible Plant Group"/>
+  <type name="Comestible_Group_Object_Plant" parents="Object Comestible Plant Group"/>
+  <type name="Creature_Function_Group" parents="Function Creature Group"/>
+  <type name="Function_Group_Human" parents="Function Human Group"/>
+  <type name="Function_Group_Human_Object" parents="Object Function Human Group"/>
+  <type name="Function_Group_Human_Part" parents="Part Function Human Group"/>
+  <type name="Group_Human" parents="Group_Living Human"/>
+  <type name="Group_Human_Object_Occupation" parents="Object Occupation Human Group"/>
+  <type name="Group_Human_Occupation" parents="Occupation Human Group"/>
+  <type name="Group_Living" parents="Living Group"/>
+  <type name="Group_Natural_Object" parents="Object Natural Group"/>
+  <type name="Group_Natural_Object_Place" parents="Object Place Natural Group"/>
+  <type name="Group_Object_Plant" parents="Object Plant Group"/>
+  <type name="Comestible_Group_Plant" parents="Plant Comestible_Group_Natural"/>
+  <type name="Agentive_Artifact_BoundedEvent_Part_Place_Purpose_Social" parents="Agentive_Artifact_Dynamic_Part_Place_Purpose_Social BoundedEvent"/>
+  <type name="Agentive_Artifact_Dynamic_Part_Place_Purpose_Social" parents="Place Artifact Agentive Purpose Social Dynamic Part"/>
+  <type name="Agentive_BoundedEvent_Existence_Liquid_Natural_Part_Physical_Place" parents="Liquid Place Natural Agentive Existence Physical BoundedEvent Part"/>
+  <type name="Animal_Covering_Object_Part" parents="Object Covering Animal Part"/>
+  <type name="Animal_Covering_Part_Solid" parents="Solid Covering Animal Part"/>
+  <type name="Animal_Object_Part" parents="Living_Object_Part Animal"/>
+  <type name="Artifact_Building_Object_Part_Place" parents="Object Building Place Artifact Part"/>
+  <type name="Artifact_Comestible_Liquid_Part" parents="Liquid Comestible Artifact Part"/>
+  <type name="Artifact_Comestible_MoneyRepresentation_Part_Solid" parents="Solid Comestible MoneyRepresentation Artifact Part"/>
+  <type name="Artifact_Comestible_Part_Solid" parents="Solid Comestible Artifact Part"/>
+  <type name="Artifact_Container_Instrument_Object_Part_Place" parents="Object Container Instrument Place Artifact Part"/>
+  <type name="Artifact_Function_Object_Part" parents="Object Function Artifact Part"/>
+  <type name="Artifact_LanguageRepresentation_Object_Part_Place" parents="Object Place LanguageRepresentation Artifact Part"/>
+  <type name="Artifact_LanguageRepresentation_Part" parents="LanguageRepresentation Artifact Part"/>
+  <type name="Artifact_MoneyRepresentation_Part" parents="MoneyRepresentation Artifact Part"/>
+  <type name="Artifact_Natural_Object_Part_Place" parents="Object Place Artifact Natural Part"/>
+  <type name="Artifact_Natural_Part_Place_Solid" parents="Solid Place Artifact Natural Part"/>
+  <type name="Artifact_Object_Part" parents="Object Artifact Part"/>
+  <type name="Artifact_Object_Part_Physical_Property" parents="Object Artifact Physical Property Part"/>
+  <type name="Artifact_Object_Part_Place" parents="Object Place Artifact Part"/>
+  <type name="Artifact_Object_Part_Representation" parents="Object Representation Artifact Part"/>
+  <type name="Artifact_Part_Place" parents="Place Artifact Part"/>
+  <type name="Artifact_Part_Place_Solid" parents="Solid Place Artifact Part"/>
+  <type name="Artifact_Part_Representation" parents="Representation Artifact Part"/>
+  <type name="Artifact_Part_Solid" parents="Solid Artifact Part"/>
+  <type name="Comestible_Liquid_Living_Part" parents="Function_Liquid_Living_Part Comestible"/>
+  <type name="Comestible_Liquid_Part" parents="Liquid Comestible Part"/>
+  <type name="Comestible_Natural_Part_Solid" parents="Solid Comestible Natural Part"/>
+  <type name="Comestible_Part" parents="Comestible Part"/>
+  <type name="Comestible_Part_Solid" parents="Comestible_Part_Substance Solid"/>
+  <type name="Comestible_Part_Substance" parents="Substance Comestible Part"/>
+  <type name="Condition_Living_Part_Property_Solid" parents="Solid Living Condition Property Part"/>
+  <type name="Container_Living_Part_Solid" parents="Solid Container Living Part"/>
+  <type name="Covering_Human_Object_Part" parents="Covering_Living_Object_Part Human"/>
+  <type name="Covering_Living_Object_Part" parents="Object Covering Living Part"/>
+  <type name="Covering_Living_Part" parents="Covering Living Part"/>
+  <type name="Covering_Living_Part_Solid" parents="Solid Covering Living Part"/>
+  <type name="Covering_Object_Part_Plant" parents="Function_Object_Part_Plant Covering"/>
+  <type name="Experience_Living_Mental_Part" parents="Living Experience Mental Part"/>
+  <type name="Function_Liquid_Living_Part" parents="Liquid Function Living Part"/>
+  <type name="Function_Object_Part_Plant" parents="Object Function Plant Part"/>
+  <type name="Human_Liquid_Object_Part_Place" parents="Object Liquid Place Human Part"/>
+  <type name="Human_Object_Part" parents="Living_Object_Part Human"/>
+  <type name="Human_Object_Part_Place" parents="Natural_Object_Part_Place Human"/>
+  <type name="Human_Part" parents="Living_Part Human"/>
+  <type name="Liquid_Living_Part" parents="Liquid Living Part"/>
+  <type name="Liquid_Natural_Part_Place" parents="Liquid Place Natural Part"/>
+  <type name="Liquid_Natural_Part_Place_Solid" parents="Liquid Solid Place Natural Part"/>
+  <type name="Liquid_Part_Plant" parents="Liquid Plant Part"/>
+  <type name="Living_Object_Part" parents="Natural_Object_Part Living"/>
+  <type name="Living_Part" parents="Living Part"/>
+  <type name="Living_Part_Place" parents="Natural_Part_Place Living"/>
+  <type name="Living_Part_Solid" parents="Living_Part_Substance Natural_Part_Solid"/>
+  <type name="Living_Part_Substance" parents="Natural_Part_Substance Living"/>
+  <type name="Natural_Object_Part" parents="Object Natural Part"/>
+  <type name="Natural_Object_Part_Place" parents="Object Place Natural Part"/>
+  <type name="Natural_Object_Part_Place_Solid" parents="Object Solid Place Natural Part"/>
+  <type name="Natural_Object_Part_Substance" parents="Object Substance Natural Part"/>
+  <type name="Natural_Part_Place" parents="Place Natural Part"/>
+  <type name="Natural_Part_Place_Solid" parents="Solid Place Natural Part"/>
+  <type name="Natural_Part_Solid" parents="Natural_Part_Substance Solid"/>
+  <type name="Natural_Part_Substance" parents="Substance Natural Part"/>
+  <type name="Object_Part_Plant" parents="Object Plant Part"/>
+  <type name="Part_Place" parents="Place Part"/>
+  <type name="Part_Place_Solid" parents="Solid Place Part"/>
+  <type name="Part_Plant_Solid" parents="Part_Plant_Substance Solid"/>
+  <type name="Part_Plant_Substance" parents="Substance Plant Part"/>
+  <type name="Part_Solid" parents="Part_Substance Solid"/>
+  <type name="Part_Substance" parents="Substance Part"/>
+  <type name="Artifact_Garment_Object_Part" parents="Garment Artifact_Function_Object_Part"/>
+  <type name="Artifact_Instrument_Object_Part" parents="Instrument Artifact_Function_Object_Part"/>
+  <type name="Object" parents="Form"/>
+  <type name="Substance" parents="Form"/>
+  <type name="Artifact_Form_Representation" parents="Representation Artifact Form"/>
+  <type name="Form_Natural" parents="Natural Form"/>
+  <type name="3rdOrderEntity_Agentive_Artifact_Communication_LanguageRepresentation_Location_Object_Physical_Usage" parents="LanguageRepresentation Artifact Agentive Communication Location Physical Usage 3rdOrderEntity Object"/>
+  <type name="3rdOrderEntity_Function_Human_Object_Quantity_Social_Usage" parents="Function Human Quantity Social Usage 3rdOrderEntity Object"/>
+  <type name="Agentive_Artifact_Dynamic_ImageRepresentation_Object_Purpose" parents="ImageRepresentation Artifact Agentive Purpose Dynamic Object"/>
+  <type name="Agentive_Artifact_Dynamic_LanguageRepresentation_Object_Purpose" parents="LanguageRepresentation Artifact Agentive Purpose Dynamic Object"/>
+  <type name="Agentive_Function_Human_Object_Purpose_Social_UnboundedEvent" parents="Function Human Agentive Purpose Social UnboundedEvent Object"/>
+  <type name="Animal_Comestible_Object_Solid" parents="Animal_Comestible_Object_Substance Solid"/>
+  <type name="Animal_Comestible_Object_Substance" parents="Substance Comestible Animal Object"/>
+  <type name="Animal_Function_Human_Object" parents="Function Animal Human Object"/>
+  <type name="Animal_Object" parents="Living_Object Animal"/>
+  <type name="Artifact_BoundedEvent_Instrument_Object" parents="Instrument Artifact BoundedEvent Object"/>
+  <type name="Artifact_BoundedEvent_Object_Purpose_Representation_Social" parents="Representation Artifact Purpose Social BoundedEvent Object"/>
+  <type name="Artifact_Building_Location_Object_Physical_Relation" parents="Building Artifact Location Physical Relation Object"/>
+  <type name="Artifact_Building_Object" parents="Artifact_Function_Object Building"/>
+  <type name="Artifact_Building_Object_Place" parents="Building Place Artifact Object"/>
+  <type name="Artifact_Comestible_Object_Substance" parents="Substance Comestible Artifact Object"/>
+  <type name="Artifact_Communication_Instrument_Location_Object_Physical_Static" parents="Instrument Artifact Communication Location Physical Static Object"/>
+  <type name="Artifact_Condition_Instrument_Object_Property" parents="Instrument Artifact Condition Property Object"/>
+  <type name="Artifact_Container_Covering_Instrument_Object" parents="Container Covering Instrument Artifact Object"/>
+  <type name="Artifact_Container_Instrument_Object" parents="Container Instrument Artifact Object"/>
+  <type name="Artifact_Container_Instrument_Object_Vehicle" parents="Container Instrument Vehicle Artifact Object"/>
+  <type name="Artifact_Container_Object_Place" parents="Container Place Artifact Object"/>
+  <type name="Artifact_Covering_Garment_Instrument_Object" parents="Covering Garment Instrument Artifact Object"/>
+  <type name="Artifact_Covering_Garment_Object" parents="Covering Garment Artifact Object"/>
+  <type name="Artifact_Covering_Human_Object_Solid" parents="Solid Covering Artifact Human Object"/>
+  <type name="Artifact_Covering_Instrument_Object" parents="Covering Instrument Artifact Object"/>
+  <type name="Artifact_Covering_Object" parents="Artifact_Function_Object Covering"/>
+  <type name="Artifact_Object_Representation" parents="Artifact_Form_Representation Object"/>
+  <type name="Artifact_Function_Object" parents="Function Artifact Object"/>
+  <type name="Artifact_Garment_Instrument_Object" parents="Garment Instrument Artifact Object"/>
+  <type name="Artifact_Human_Instrument_Object_Occupation_Vehicle" parents="Instrument Occupation Vehicle Artifact Human Object"/>
+  <type name="Artifact_Human_LanguageRepresentation_Object" parents="LanguageRepresentation Artifact Human Object"/>
+  <type name="Artifact_Instrument_Natural_Object_Solid" parents="Solid Instrument Artifact Natural Object"/>
+  <type name="Artifact_Instrument_Object_Place" parents="Instrument Place Artifact Object"/>
+  <type name="Artifact_Instrument_Object_Representation" parents="Instrument Representation Artifact Object"/>
+  <type name="Artifact_Instrument_Object_Solid" parents="Solid Instrument Artifact Object"/>
+  <type name="Artifact_Instrument_Object_Vehicle" parents="Instrument Vehicle Artifact Object"/>
+  <type name="Artifact_Object" parents="Artifact Object"/>
+  <type name="Artifact_Object_Occupation_Representation" parents="Occupation Representation Artifact Object"/>
+  <type name="Artifact_Object_Place" parents="Place Artifact Object"/>
+  <type name="Artifact_Object_Place_Representation" parents="Place Representation Artifact Object"/>
+  <type name="Communication_Experience_Function_Human_Object_Physical_Social_UnboundedEvent_Usage" parents="Function Human Communication Experience Physical Social Usage UnboundedEvent Object"/>
+  <type name="Communication_Function_Human_Object_Physical_Purpose_Social_UnboundedEvent" parents="Function Human Communication Physical Purpose Social UnboundedEvent Object"/>
+  <type name="Condition_Function_Human_Object_Relation_Social" parents="Function Human Condition Social Relation Object"/>
+  <type name="Covering_Natural_Object" parents="Covering Natural Object"/>
+  <type name="Creature_Function_Human_Object" parents="Function Creature Human Object"/>
+  <type name="Creature_Human_Object_Occupation" parents="Occupation Creature Human Object"/>
+  <type name="Creature_Object_Plant" parents="Creature Plant Object"/>
+  <type name="Object_Plant" parents="Form_Natural Plant Object"/>
+  <type name="Function_Human_Object" parents="Living_Object Function Human"/>
+  <type name="Human_Object_Occupation" parents="Living_Object Occupation Human"/>
+  <type name="Living_Object" parents="Natural_Object Living"/>
+  <type name="Natural_Object" parents="Natural Object"/>
+  <type name="Natural_Object_Place" parents="Place Natural Object"/>
+  <type name="Object_Place_Representation" parents="Place Representation Object"/>
+  <type name="Object_Representation" parents="Representation Object"/>
+  <type name="Artifact_Garment_Object" parents="Garment Artifact_Function_Object"/>
+  <type name="Artifact_ImageRepresentation_Object" parents="ImageRepresentation Artifact_Function_Object"/>
+  <type name="Artifact_Instrument_Object" parents="Instrument Artifact_Function_Object"/>
+  <type name="Artifact_LanguageRepresentation_Object" parents="LanguageRepresentation Artifact_Function_Object"/>
+  <type name="Artifact_MoneyRepresentation_Object" parents="MoneyRepresentation Artifact_Function_Object"/>
+  <type name="Gas" parents="Substance"/>
+  <type name="Liquid" parents="Substance"/>
+  <type name="Solid" parents="Substance"/>
+  <type name="Agentive_Communication_Dynamic_Function_Purpose_Social_Substance" parents="Function Agentive Communication Purpose Social Dynamic Substance"/>
+  <type name="Artifact_Comestible_Substance" parents="Artifact_Function_Substance Comestible"/>
+  <type name="Artifact_Function_Substance" parents="Function Artifact Substance"/>
+  <type name="Artifact_LanguageRepresentation_Place_Substance" parents="Place LanguageRepresentation Artifact Substance"/>
+  <type name="Artifact_LanguageRepresentation_Software_Substance" parents="LanguageRepresentation Software Artifact Substance"/>
+  <type name="Artifact_Place_Representation_Substance" parents="Place Representation Artifact Substance"/>
+  <type name="Comestible_Substance" parents="Function_Substance Comestible"/>
+  <type name="Function_Natural_Substance" parents="Function Natural Substance"/>
+  <type name="Function_Substance" parents="Function Substance"/>
+  <type name="Living_Substance" parents="Natural_Substance Living"/>
+  <type name="Natural_Substance" parents="Natural Substance"/>
+  <type name="Physical_Property_Substance" parents="Physical Property Substance"/>
+  <type name="Dynamic_Experience_Gas_Phenomenal_Physical" parents="Phenomenal Experience Physical Dynamic Gas"/>
+  <type name="Gas_Natural" parents="Form_Natural Gas"/>
+  <type name="Function_Gas" parents="Function_Substance Gas"/>
+  <type name="Artifact_Comestible_Liquid" parents="Artifact_Comestible_Substance Liquid"/>
+  <type name="Comestible_Liquid" parents="Function_Liquid Comestible_Substance"/>
+  <type name="Liquid_Natural" parents="Form_Natural Liquid"/>
+  <type name="Function_Liquid" parents="Function_Substance Liquid"/>
+  <type name="Function_Liquid_Natural" parents="Function Natural Liquid"/>
+  <type name="Liquid_Living" parents="Living Liquid_Natural"/>
+  <type name="3rdOrderEntity_Quantity_Solid" parents="Quantity 3rdOrderEntity Solid"/>
+  <type name="Animal_Comestible_Solid" parents="Comestible Animal Solid"/>
+  <type name="Artifact_Comestible_Solid" parents="Artifact_Function_Solid Artifact_Comestible_Substance"/>
+  <type name="Artifact_Covering_Solid" parents="Artifact_Function_Solid Covering"/>
+  <type name="Artifact_Function_Solid" parents="Artifact_Function_Substance Solid"/>
+  <type name="Artifact_Solid" parents="Artifact Solid"/>
+  <type name="BoundedEvent_Solid" parents="BoundedEvent Solid"/>
+  <type name="Condition_Living_Physical_Property_Solid" parents="Living Condition Physical Property Solid"/>
+  <type name="Function_Natural_Solid" parents="Function_Natural_Substance Solid"/>
+  <type name="Living_Solid" parents="Natural_Solid Living_Substance"/>
+  <type name="Natural_Solid" parents="Natural_Substance Solid"/>
+  <type name="Artifact_LanguageRepresentation_Solid" parents="Artifact_LanguageRepresentation_Substance Artifact_Function_Solid"/>
+  <type name="Artifact_Garment_Substance" parents="Garment Artifact_Function_Substance"/>
+  <type name="Artifact_Instrument_Substance" parents="Instrument Artifact_Function_Substance"/>
+  <type name="Artifact_LanguageRepresentation_Substance" parents="LanguageRepresentation Artifact_Function_Substance"/>
+  <type name="Building" parents="Function"/>
+  <type name="Comestible" parents="Function"/>
+  <type name="Container" parents="Function"/>
+  <type name="Covering" parents="Function"/>
+  <type name="Furniture" parents="Function"/>
+  <type name="Garment" parents="Function"/>
+  <type name="Instrument" parents="Function"/>
+  <type name="Occupation" parents="Function"/>
+  <type name="Place" parents="Function"/>
+  <type name="Representation" parents="Function"/>
+  <type name="Software" parents="Function"/>
+  <type name="Vehicle" parents="Function"/>
+  <type name="Agentive_Condition_Dynamic_Function_Purpose_Social" parents="Agentive Condition Purpose Social Dynamic Function"/>
+  <type name="Artifact_Function" parents="Artifact Function"/>
+  <type name="Creature_Function" parents="Creature Function"/>
+  <type name="Function_Living" parents="Living Function"/>
+  <type name="Function_Property" parents="Property Function"/>
+  <type name="Artifact_Garment" parents="Artifact_Function Garment"/>
+  <type name="Artifact_Instrument" parents="Artifact_Function Instrument"/>
+  <type name="Artifact_Instrument_Physical_Property" parents="Artifact Physical Property Instrument"/>
+  <type name="3rdOrderEntity_Place" parents="3rdOrderEntity Place"/>
+  <type name="3rdOrderEntity_Place_Quantity_Social_Usage" parents="Quantity Social Usage 3rdOrderEntity Place"/>
+  <type name="Artifact_LanguageRepresentation_Place" parents="LanguageRepresentation Artifact Place"/>
+  <type name="Artifact_Place_Representation" parents="Representation Artifact Place"/>
+  <type name="Dynamic_Experience_Phenomenal_Physical_Place" parents="Phenomenal Experience Physical Dynamic Place"/>
+  <type name="Location_Physical_Place_Relation" parents="Location Physical Relation Place"/>
+  <type name="Natural_Place" parents="Natural Place"/>
+  <type name="Place_Static" parents="Static Place"/>
+  <type name="ImageRepresentation" parents="Representation"/>
+  <type name="LanguageRepresentation" parents="Representation"/>
+  <type name="MoneyRepresentation" parents="Representation"/>
+  <type name="Artifact_Communication_Physical_Purpose_Representation_Social_UnboundedEvent" parents="Artifact Communication Physical Purpose Social UnboundedEvent Representation"/>
+  <type name="Artifact_Representation" parents="Artifact_Function Representation"/>
+  <type name="Artifact_ImageRepresentation" parents="Artifact_Representation ImageRepresentation"/>
+  <type name="3rdOrderEntity_Artifact_LanguageRepresentation_Quantity_Software" parents="Software Artifact Quantity 3rdOrderEntity LanguageRepresentation"/>
+  <type name="Artifact_Communication_Experience_LanguageRepresentation_Physical_Social_UnboundedEvent_Usage" parents="Artifact Communication Experience Physical Social Usage UnboundedEvent LanguageRepresentation"/>
+  <type name="Artifact_LanguageRepresentation" parents="Artifact_Representation LanguageRepresentation"/>
+  <type name="Artifact_LanguageRepresentation_Software" parents="Software Artifact LanguageRepresentation"/>
+  <type name="Agentive_MoneyRepresentation_Purpose_Social_UnboundedEvent" parents="Agentive Purpose Social UnboundedEvent MoneyRepresentation"/>
+  <type name="Artifact_MoneyRepresentation" parents="Artifact_Representation MoneyRepresentation"/>
+  <type name="BoundedEvent_MoneyRepresentation" parents="BoundedEvent MoneyRepresentation"/>
+  <type name="Condition_MoneyRepresentation_Property" parents="Condition Property MoneyRepresentation"/>
+  <type name="Artifact" parents="Origin"/>
+  <type name="Natural" parents="Origin"/>
+  <type name="Living" parents="Natural"/>
+  <type name="Animal" parents="Living"/>
+  <type name="Creature" parents="Living"/>
+  <type name="Human" parents="Living"/>
+  <type name="Plant" parents="Living"/>
+  <type name="SituationComponent" parents="2ndOrderEntity"/>
+  <type name="SituationType" parents="2ndOrderEntity"/>
+  <type name="Cause" parents="SituationComponent"/>
+  <type name="Communication" parents="SituationComponent"/>
+  <type name="Condition" parents="SituationComponent"/>
+  <type name="Existence" parents="SituationComponent"/>
+  <type name="Experience" parents="SituationComponent"/>
+  <type name="Location" parents="SituationComponent"/>
+  <type name="Manner" parents="SituationComponent"/>
+  <type name="Mental" parents="SituationComponent"/>
+  <type name="Modal" parents="SituationComponent"/>
+  <type name="Physical" parents="SituationComponent"/>
+  <type name="Possession" parents="SituationComponent"/>
+  <type name="Purpose" parents="SituationComponent"/>
+  <type name="Quantity" parents="SituationComponent"/>
+  <type name="Social" parents="SituationComponent"/>
+  <type name="Time" parents="SituationComponent"/>
+  <type name="Usage" parents="SituationComponent"/>
+  <type name="Agentive" parents="Cause"/>
+  <type name="Phenomenal" parents="Cause"/>
+  <type name="Stimulating" parents="Cause"/>
+  <type name="3rdOrderEntity_BoundedEvent_Cause_Quantity_Time" parents="Quantity Time BoundedEvent 3rdOrderEntity Cause"/>
+  <type name="3rdOrderEntity_Cause_Dynamic" parents="Dynamic 3rdOrderEntity Cause"/>
+  <type name="3rdOrderEntity_Cause_Modal_Social_Usage" parents="Modal Social Usage 3rdOrderEntity Cause"/>
+  <type name="3rdOrderEntity_Cause_Purpose" parents="Purpose 3rdOrderEntity Cause"/>
+  <type name="3rdOrderEntity_Cause_Purpose_Social" parents="Purpose Social 3rdOrderEntity Cause"/>
+  <type name="BoundedEvent_Cause" parents="BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Condition" parents="Condition BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Condition_Existence_Experience_Physical_UnboundedEvent" parents="Condition Existence Experience Physical BoundedEvent UnboundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Condition_Existence_Physical" parents="Condition Existence Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Condition_Experience_Physical_UnboundedEvent" parents="Condition Experience Physical BoundedEvent UnboundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Condition_Location_Mental_Physical" parents="Condition Location Mental Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Condition_Location_Physical" parents="Condition Location Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Condition_Physical" parents="Condition Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Condition_Physical_Static" parents="Condition Physical BoundedEvent Static Cause"/>
+  <type name="BoundedEvent_Cause_Condition_Possession" parents="Condition Possession BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Existence" parents="Existence BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Existence_Experience_Mental_Physical" parents="Existence Experience Mental Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Existence_Experience_Mental_Physical_Static" parents="Existence Experience Mental Physical BoundedEvent Static Cause"/>
+  <type name="BoundedEvent_Cause_Existence_Experience_Physical" parents="Existence Experience Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Existence_Physical" parents="Existence Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Existence_Physical_Social" parents="Existence Physical Social BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Existence_Physical_Static" parents="Existence Physical BoundedEvent Static Cause"/>
+  <type name="BoundedEvent_Cause_Existence_Property" parents="Existence BoundedEvent Property Cause"/>
+  <type name="BoundedEvent_Cause_Experience_Physical" parents="Experience Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Experience_Physical_UnboundedEvent" parents="Experience Physical BoundedEvent UnboundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Location_Manner_Physical" parents="Location Manner Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Location_Physical" parents="Location Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Location_Physical_Possession_Relation" parents="Location Physical Possession BoundedEvent Relation Cause"/>
+  <type name="BoundedEvent_Cause_Location_Physical_Relation" parents="Location Physical BoundedEvent Relation Cause"/>
+  <type name="BoundedEvent_Cause_Physical" parents="Physical BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Physical_Quantity" parents="Physical Quantity BoundedEvent Cause"/>
+  <type name="BoundedEvent_Cause_Physical_Quantity_Relation" parents="Physical Quantity BoundedEvent Relation Cause"/>
+  <type name="BoundedEvent_Cause_Quantity" parents="Quantity BoundedEvent Cause"/>
+  <type name="Cause_Communication_Dynamic" parents="Communication Dynamic Cause"/>
+  <type name="Cause_Communication_Dynamic_Experience_Location_Physical" parents="Communication Experience Location Physical Dynamic Cause"/>
+  <type name="Cause_Condition_Dynamic" parents="Condition Dynamic Cause"/>
+  <type name="Cause_Condition_Dynamic_Physical_Property" parents="Condition Physical Dynamic Property Cause"/>
+  <type name="Cause_Condition_Physical_Property" parents="Condition Physical Property Cause"/>
+  <type name="Cause_Condition_Social_UnboundedEvent" parents="Condition Social UnboundedEvent Cause"/>
+  <type name="Cause_Dynamic" parents="Dynamic Cause"/>
+  <type name="Cause_Dynamic_Experience_Location_Mental" parents="Experience Location Mental Dynamic Cause"/>
+  <type name="Cause_Dynamic_Experience_Location_Physical" parents="Experience Location Physical Dynamic Cause"/>
+  <type name="Cause_Dynamic_Experience_Physical" parents="Experience Physical Dynamic Cause"/>
+  <type name="Cause_Dynamic_Location" parents="Location Dynamic Cause"/>
+  <type name="Cause_Dynamic_Location_Manner_Physical" parents="Location Manner Physical Dynamic Cause"/>
+  <type name="Cause_Dynamic_Location_Physical" parents="Location Physical Dynamic Cause"/>
+  <type name="Cause_Dynamic_Mental" parents="Mental Dynamic Cause"/>
+  <type name="Cause_Dynamic_Modal_Property" parents="Modal Dynamic Property Cause"/>
+  <type name="Cause_Dynamic_Physical" parents="Physical Dynamic Cause"/>
+  <type name="Cause_Dynamic_Physical_Static" parents="Physical Dynamic Static Cause"/>
+  <type name="Cause_Dynamic_Quantity" parents="Quantity Dynamic Cause"/>
+  <type name="Cause_Dynamic_Relation" parents="Dynamic Relation Cause"/>
+  <type name="Cause_Dynamic_Time" parents="Time Dynamic Cause"/>
+  <type name="Cause_Modal_Property" parents="Modal Property Cause"/>
+  <type name="3rdOrderEntity_Agentive_BoundedEvent_Communication_Manner_Purpose_Social_Usage" parents="Communication Manner Purpose Social Usage BoundedEvent 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_BoundedEvent_Purpose_Quantity_Social_Usage" parents="3rdOrderEntity_Agentive_Dynamic_Purpose_Quantity_Social_Usage BoundedEvent"/>
+  <type name="3rdOrderEntity_Agentive_Communication" parents="Communication 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Condition_Dynamic_Experience_Quantity_Social" parents="Communication Condition Experience Quantity Social Dynamic 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Condition_Dynamic_Modal" parents="Communication Condition Modal Dynamic 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Condition_Modal" parents="Communication Condition Modal 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Condition_Social_Usage" parents="Communication Condition Social Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Condition_Usage" parents="Communication Condition Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Dynamic_Purpose_Social" parents="Communication Purpose Social Dynamic 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Location_Modal" parents="Communication Location Modal 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Location_Modal_Social_Usage" parents="Communication Location Modal Social Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Location_Modal_Time" parents="Communication Location Modal Time 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Location_Modal_Usage" parents="Communication Location Modal Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Location_Physical_Usage" parents="Communication Location Physical Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Location_Purpose_Usage" parents="Communication Location Purpose Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Location_Social_Usage" parents="Communication Location Social Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Location_Usage" parents="Communication Location Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Manner_Usage" parents="Communication Manner Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Modal" parents="Communication Modal 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Modal_Purpose" parents="Communication Modal Purpose 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Modal_Social" parents="Communication Modal Social 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Modal_Usage" parents="Communication Modal Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Possession_Purpose_Usage" parents="Communication Possession Purpose Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Possession_Social" parents="Communication Possession Social 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Purpose_Time" parents="Communication Purpose Time 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Purpose_Usage" parents="Communication Purpose Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Time_Usage" parents="Communication Time Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Communication_Usage" parents="Communication Usage 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Dynamic_Existence_Purpose_Quantity_Stimulating_Time" parents="Stimulating Existence Purpose Quantity Time Dynamic 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Dynamic_Purpose" parents="Purpose Dynamic 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Dynamic_Purpose_Quantity" parents="Purpose Quantity Dynamic 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Dynamic_Purpose_Quantity_Social_Usage" parents="Purpose Quantity Social Usage Dynamic 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Experience_Property_Purpose_Social" parents="Experience Purpose Social Property 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Experience_Purpose_Social" parents="Experience Purpose Social 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Experience_Social" parents="Experience Social 3rdOrderEntity Agentive"/>
+  <type name="3rdOrderEntity_Agentive_Social_Usage" parents="Social Usage 3rdOrderEntity Agentive"/>
+  <type name="Agentive_BoundedEvent" parents="Agentive_Dynamic BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Communication" parents="Communication BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Condition_Existence_Physical_Possession_Purpose_Relation" parents="Communication Condition Existence Physical Possession Purpose BoundedEvent Relation Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Condition_Experience_Mental_Purpose_Social" parents="Communication Condition Experience Mental Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Condition_Experience_Purpose_Social" parents="Communication Condition Experience Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Condition_Modal" parents="Communication Condition Modal BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Condition_Modal_Purpose_Social" parents="Communication Condition Modal Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Condition_Purpose_Social" parents="Communication Condition Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Condition_Purpose_Social_UnboundedEvent" parents="Communication Condition Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Existence_Mental_Physical_Property_Purpose" parents="Communication Existence Mental Physical Purpose BoundedEvent Property Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Existence_Mental_Physical_Purpose" parents="Communication Existence Mental Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Existence_Mental_Purpose" parents="Communication Existence Mental Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Existence_Physical" parents="Communication Existence Physical BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Existence_Physical_Purpose" parents="Communication Existence Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Existence_Purpose_Social" parents="Communication Existence Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Existence_Purpose_Social_Static" parents="Communication Existence Purpose Social BoundedEvent Static Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Existence_Purpose_Social_UnboundedEvent" parents="Communication Existence Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Experience_Mental_Modal_Purpose_Social_Time" parents="Communication Experience Mental Modal Purpose Social Time BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Experience_Purpose_Relation_Social_UnboundedEvent" parents="Communication Experience Purpose Social BoundedEvent UnboundedEvent Relation Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Location_Mental_Purpose" parents="Communication Location Mental Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Location_Purpose" parents="Communication Location Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Location_Purpose_Time" parents="Communication Location Purpose Time BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Manner_Modal_Purpose_Usage" parents="Communication Manner Modal Purpose Usage BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Mental" parents="Communication Mental BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Mental_Property_Purpose_Social" parents="Communication Mental Purpose Social BoundedEvent Property Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Mental_Purpose" parents="Communication Mental Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Mental_Purpose_Social_UnboundedEvent" parents="Communication Mental Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Mental_Social_UnboundedEvent" parents="Communication Mental Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Physical_Purpose" parents="Communication Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Physical_Purpose_Social_Stimulating" parents="Stimulating Communication Physical Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Possession_Purpose" parents="Communication Possession Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Possession_Purpose_Social" parents="Communication Possession Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Purpose" parents="Communication Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Purpose_Social" parents="Communication Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Purpose_Social_UnboundedEvent" parents="Communication Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Purpose_Static" parents="Communication Purpose BoundedEvent Static Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Social" parents="Communication Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Social_Time_Usage" parents="Communication Social Time Usage BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Communication_Social_UnboundedEvent" parents="Communication Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Existence_Physical" parents="Condition Existence Physical BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Existence_Physical_Possession_Relation" parents="Condition Existence Physical Possession BoundedEvent Relation Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Existence_Physical_Purpose_Social_UnboundedEvent" parents="Condition Existence Physical Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Experience_Purpose" parents="Condition Experience Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Location_Physical" parents="Condition Location Physical BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Location_Physical_Purpose" parents="Condition Location Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Physical" parents="Condition Physical BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Physical_Possession_Purpose_Social_UnboundedEvent" parents="Condition Physical Possession Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Physical_Purpose" parents="Condition Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Possession" parents="Condition Possession BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Possession_Purpose" parents="Condition Possession Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Possession_Purpose_Social_UnboundedEvent" parents="Condition Possession Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Purpose" parents="Condition Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Condition_Purpose_Social" parents="Condition Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Existence" parents="Existence BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Existence_Location_Physical" parents="Existence Location Physical BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Existence_Mental_Purpose" parents="Existence Mental Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Existence_Physical" parents="Existence Physical BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Existence_Physical_Purpose" parents="Existence Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Existence_Physical_Purpose_Social" parents="Existence Physical Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Existence_Physical_Social" parents="Existence Physical Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Existence_Purpose" parents="Existence Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Experience_Mental_Physical_Purpose" parents="Experience Mental Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Experience_Purpose_Social" parents="Experience Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Experience_Social" parents="Experience Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Manner_Physical_Purpose" parents="Location Manner Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Manner_Physical_Purpose_Social" parents="Location Manner Physical Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Manner_Physical_Purpose_Social_UnboundedEvent" parents="Location Manner Physical Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical" parents="Agentive_Dynamic_Location_Physical BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Possession" parents="Location Physical Possession BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Possession_Purpose" parents="Location Physical Possession Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Possession_Purpose_Quantity" parents="Location Physical Possession Purpose Quantity BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Purpose" parents="Location Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Purpose_Quantity" parents="Location Physical Purpose Quantity BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Purpose_Social" parents="Location Physical Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Purpose_Social_UnboundedEvent" parents="Location Physical Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Social" parents="Location Physical Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Physical_Social_UnboundedEvent" parents="Location Physical Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Location_Social" parents="Agentive_Dynamic_Location_Social BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Mental" parents="Agentive_Dynamic_Mental BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Mental_Physical_Purpose" parents="Mental Physical Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Mental_Physical_Purpose_Quantity" parents="Mental Physical Purpose Quantity BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Mental_Possession_Property_Purpose" parents="Mental Possession Purpose BoundedEvent Property Agentive"/>
+  <type name="Agentive_BoundedEvent_Mental_Property_Purpose" parents="Mental Purpose BoundedEvent Property Agentive"/>
+  <type name="Agentive_BoundedEvent_Mental_Purpose" parents="Agentive_Dynamic_Mental_Purpose BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Mental_Purpose_Social" parents="Mental Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Mental_Purpose_Static" parents="Mental Purpose BoundedEvent Static Agentive"/>
+  <type name="Agentive_BoundedEvent_Physical_Purpose_Quantity" parents="Physical Purpose Quantity BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Physical_Purpose_Social" parents="Agentive_Dynamic_Physical_Purpose_Social BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Physical_Purpose_Social_UnboundedEvent" parents="Physical Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Possession_Purpose" parents="Possession Purpose BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Possession_Purpose_Social" parents="Possession Purpose Social BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Possession_Purpose_Social_UnboundedEvent" parents="Possession Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Property" parents="BoundedEvent Property Agentive"/>
+  <type name="Agentive_BoundedEvent_Purpose" parents="Agentive_Dynamic_Purpose BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Purpose_Social" parents="Agentive_Dynamic_Purpose_Social BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Purpose_Social_Static_UnboundedEvent_Usage" parents="Purpose Social Usage BoundedEvent UnboundedEvent Static Agentive"/>
+  <type name="Agentive_BoundedEvent_Purpose_Social_UnboundedEvent" parents="Purpose Social BoundedEvent UnboundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Purpose_Social_Usage" parents="Purpose Social Usage BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Purpose_Usage" parents="Purpose Usage BoundedEvent Agentive"/>
+  <type name="Agentive_BoundedEvent_Quantity" parents="Agentive_Dynamic_Quantity BoundedEvent"/>
+  <type name="Agentive_BoundedEvent_Social" parents="Agentive_Dynamic_Social BoundedEvent"/>
+  <type name="Agentive_Communication_Condition_Dynamic_Experience_Purpose_Social" parents="Communication Condition Experience Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Condition_Dynamic_Experience_Social" parents="Communication Condition Experience Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Condition_Dynamic_Purpose_Social" parents="Communication Condition Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Condition_Dynamic_Social" parents="Communication Condition Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Condition_Manner_Property" parents="Communication Condition Manner Property Agentive"/>
+  <type name="Agentive_Communication_Condition_Mental_Purpose_Social_UnboundedEvent" parents="Communication Condition Mental Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Dynamic" parents="Cause_Communication_Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Experience_Purpose_Social" parents="Communication Experience Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Experience_Social" parents="Communication Experience Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Manner_Purpose_Social" parents="Communication Manner Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Modal_Purpose_Social" parents="Communication Modal Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Purpose" parents="Communication Purpose Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Purpose_Quantity_Social" parents="Communication Purpose Quantity Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Purpose_Social" parents="Communication Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Purpose_Social_Time" parents="Communication Purpose Social Time Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Purpose_Social_Usage" parents="Communication Purpose Social Usage Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Social" parents="Communication Social Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Social_Usage" parents="Communication Social Usage Dynamic Agentive"/>
+  <type name="Agentive_Communication_Dynamic_Usage" parents="Communication Usage Dynamic Agentive"/>
+  <type name="Agentive_Communication_Existence_Purpose_Social_UnboundedEvent" parents="Communication Existence Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Experience_Physical_Social_UnboundedEvent" parents="Communication Experience Physical Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Location_Physical_Purpose_UnboundedEvent_Usage" parents="Communication Location Physical Purpose Usage UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Manner_Property" parents="Communication Manner Property Agentive"/>
+  <type name="Agentive_Communication_Manner_Purpose_UnboundedEvent" parents="Communication Manner Purpose UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Manner_UnboundedEvent" parents="Communication Manner UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Manner_UnboundedEvent_Usage" parents="Communication Manner Usage UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Mental_Modal_Property" parents="Communication Mental Modal Property Agentive"/>
+  <type name="Agentive_Communication_Mental_Modal_UnboundedEvent" parents="Communication Mental Modal UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Mental_Property_Social_UnboundedEvent" parents="Communication Mental Social UnboundedEvent Property Agentive"/>
+  <type name="Agentive_Communication_Mental_Purpose_Social_UnboundedEvent" parents="Communication Mental Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Purpose_Relation_Social_UnboundedEvent" parents="Communication Purpose Social UnboundedEvent Relation Agentive"/>
+  <type name="Agentive_Communication_Purpose_SituationType" parents="Communication Purpose SituationType Agentive"/>
+  <type name="Agentive_Communication_Purpose_Social_UnboundedEvent" parents="Communication Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Quantity_Social_UnboundedEvent_Usage" parents="Communication Quantity Social Usage UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_Social_UnboundedEvent" parents="Communication Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Condition_Dynamic_Purpose" parents="Condition Purpose Dynamic Agentive"/>
+  <type name="Agentive_Condition_Dynamic_Purpose_Social" parents="Condition Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Condition_Manner_Physical_UnboundedEvent" parents="Condition Manner Physical UnboundedEvent Agentive"/>
+  <type name="Agentive_Condition_Mental_Purpose_Social_UnboundedEvent" parents="Condition Mental Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Condition_Physical_Purpose_Social_UnboundedEvent" parents="Condition Physical Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Condition_Purpose_Relation_Social_UnboundedEvent" parents="Condition Purpose Social UnboundedEvent Relation Agentive"/>
+  <type name="Agentive_Condition_Purpose_Social_UnboundedEvent" parents="Condition Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Dynamic" parents="Cause_Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Experience" parents="Experience Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Experience_Mental_Modal_Purpose_Social_Time" parents="Experience Mental Modal Purpose Social Time Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Experience_Mental_Purpose_Static" parents="Experience Mental Purpose Dynamic Static Agentive"/>
+  <type name="Agentive_Dynamic_Experience_Physical" parents="Cause_Dynamic_Experience_Physical Agentive"/>
+  <type name="Agentive_Dynamic_Experience_Physical_Purpose_Social" parents="Experience Physical Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Experience_Property" parents="Experience Dynamic Property Agentive"/>
+  <type name="Agentive_Dynamic_Location" parents="Cause_Dynamic_Location Agentive"/>
+  <type name="Agentive_Dynamic_Location_Manner_Physical" parents="Cause_Dynamic_Location_Manner_Physical Agentive"/>
+  <type name="Agentive_Dynamic_Location_Physical" parents="Cause_Dynamic_Location_Physical Agentive"/>
+  <type name="Agentive_Dynamic_Location_Physical_Possession_Quantity_Relation" parents="Location Physical Possession Quantity Dynamic Relation Agentive"/>
+  <type name="Agentive_Dynamic_Location_Social" parents="Location Social Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Mental" parents="Cause_Dynamic_Mental Agentive"/>
+  <type name="Agentive_Dynamic_Mental_Purpose" parents="Mental Purpose Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Physical_Purpose" parents="Physical Purpose Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Physical_Purpose_Social" parents="Physical Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Possession_Social" parents="Possession Social Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Property_Purpose" parents="Purpose Dynamic Property Agentive"/>
+  <type name="Agentive_Dynamic_Purpose" parents="Purpose Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Purpose_Social" parents="Purpose Social Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Quantity" parents="Cause_Dynamic_Quantity Agentive"/>
+  <type name="Agentive_Dynamic_Social" parents="Social Dynamic Agentive"/>
+  <type name="Agentive_Dynamic_Social_Static" parents="Social Dynamic Static Agentive"/>
+  <type name="Agentive_Dynamic_Time" parents="Cause_Dynamic_Time Agentive"/>
+  <type name="Agentive_Existence_Possession_Purpose_Social_UnboundedEvent" parents="Existence Possession Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Experience_Manner_Phenomenal_Physical_Purpose_Social_UnboundedEvent" parents="Phenomenal Experience Manner Physical Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Experience_Phenomenal_Physical_Purpose_Social_UnboundedEvent" parents="Phenomenal Experience Physical Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Location_Physical_Purpose_Social_UnboundedEvent" parents="Location Physical Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Location_Physical_Purpose_UnboundedEvent_Usage" parents="Location Physical Purpose Usage UnboundedEvent Agentive"/>
+  <type name="Agentive_Manner_Physical_Purpose_UnboundedEvent" parents="Manner Physical Purpose UnboundedEvent Agentive"/>
+  <type name="Agentive_Manner_Property_Purpose_UnboundedEvent" parents="Manner Purpose UnboundedEvent Property Agentive"/>
+  <type name="Agentive_Manner_Purpose_UnboundedEvent" parents="Manner Purpose UnboundedEvent Agentive"/>
+  <type name="Agentive_Manner_Social_UnboundedEvent" parents="Manner Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Mental_Physical_Property_Purpose_Social_UnboundedEvent" parents="Mental Physical Purpose Social UnboundedEvent Property Agentive"/>
+  <type name="Agentive_Mental_Purpose_Social_UnboundedEvent" parents="Mental Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Mental_Purpose_UnboundedEvent" parents="Mental Purpose UnboundedEvent Agentive"/>
+  <type name="Agentive_Mental_UnboundedEvent" parents="Mental UnboundedEvent Agentive"/>
+  <type name="Agentive_Physical_Purpose_Social_UnboundedEvent" parents="Physical Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Physical_Social_UnboundedEvent" parents="Physical Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Possession_Property_Purpose_Social" parents="Possession Purpose Social Property Agentive"/>
+  <type name="Agentive_Possession_Purpose_Social_UnboundedEvent" parents="Possession Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Property_Purpose_Social_UnboundedEvent" parents="Purpose Social UnboundedEvent Property Agentive"/>
+  <type name="Agentive_Purpose_Social_Static_UnboundedEvent" parents="Purpose Social UnboundedEvent Static Agentive"/>
+  <type name="Agentive_Purpose_Social_UnboundedEvent" parents="Purpose Social UnboundedEvent Agentive"/>
+  <type name="Agentive_Communication_UnboundedEvent" parents="UnboundedEvent Agentive_Communication_Dynamic"/>
+  <type name="Agentive_Communication_Purpose_UnboundedEvent" parents="UnboundedEvent Agentive_Communication_Purpose_SituationType"/>
+  <type name="3rdOrderEntity_Communication_Experience_Phenomenal_Physical_Social_UnboundedEvent_Usage" parents="Communication Experience Physical Social Usage UnboundedEvent 3rdOrderEntity Phenomenal"/>
+  <type name="3rdOrderEntity_Communication_Manner_Modal_Phenomenal_Social_Usage" parents="Communication Manner Modal Social Usage 3rdOrderEntity Phenomenal"/>
+  <type name="3rdOrderEntity_Communication_Phenomenal_Social_Usage" parents="Communication Social Usage 3rdOrderEntity Phenomenal"/>
+  <type name="3rdOrderEntity_Experience_Phenomenal_Quantity_Time" parents="Experience Quantity Time 3rdOrderEntity Phenomenal"/>
+  <type name="BoundedEvent_Communication_Experience_Phenomenal_Physical" parents="Communication Experience Physical BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Communication_Manner_Phenomenal_Physical" parents="Communication Manner Physical BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Communication_Phenomenal" parents="Communication BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Communication_Phenomenal_Physical" parents="Communication Physical BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Condition_Experience_Phenomenal_Physical" parents="Condition Experience Physical BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Condition_Experience_Phenomenal_Physical_UnboundedEvent" parents="Condition Experience Physical BoundedEvent UnboundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Condition_Phenomenal_Physical" parents="Condition Physical BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Condition_Phenomenal_Physical_Property" parents="Condition Physical BoundedEvent Property Phenomenal"/>
+  <type name="BoundedEvent_Experience_Location_Manner_Phenomenal_Physical" parents="Experience Location Manner Physical BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Experience_Location_Phenomenal_Physical" parents="Experience Location Physical BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Experience_Phenomenal" parents="Experience BoundedEvent Phenomenal"/>
+  <type name="BoundedEvent_Experience_Phenomenal_Physical" parents="Dynamic_Experience_Phenomenal_Physical BoundedEvent"/>
+  <type name="BoundedEvent_Experience_Phenomenal_Physical_Quantity" parents="Experience Physical Quantity BoundedEvent Phenomenal"/>
+  <type name="Condition_Dynamic_Experience_Phenomenal_Physical" parents="Condition Experience Physical Dynamic Phenomenal"/>
+  <type name="Condition_Dynamic_Experience_Phenomenal_Physical_Property" parents="Condition Experience Physical Dynamic Property Phenomenal"/>
+  <type name="Condition_Dynamic_Experience_Phenomenal_Physical_Social_Static" parents="Condition Experience Physical Social Dynamic Static Phenomenal"/>
+  <type name="Condition_Experience_Mental_Phenomenal_Physical_UnboundedEvent" parents="Condition Experience Mental Physical UnboundedEvent Phenomenal"/>
+  <type name="Condition_Experience_Phenomenal_Physical_UnboundedEvent" parents="Condition Experience Physical UnboundedEvent Phenomenal"/>
+  <type name="Condition_Phenomenal_Physical_Property" parents="Condition_Phenomenal_Physical_Static Property"/>
+  <type name="Condition_Phenomenal_Physical_SituationType" parents="Condition Physical SituationType Phenomenal"/>
+  <type name="Dynamic_Experience_Phenomenal_Physical" parents="Experience Physical Dynamic Phenomenal"/>
+  <type name="Dynamic_Experience_Phenomenal_Physical_Property" parents="Experience Physical Dynamic Property Phenomenal"/>
+  <type name="Dynamic_Location_Phenomenal_Physical" parents="Location Physical Dynamic Phenomenal"/>
+  <type name="Dynamic_Phenomenal_Physical" parents="Physical Dynamic Phenomenal"/>
+  <type name="Condition_Phenomenal_Physical_Static" parents="Static Condition_Phenomenal_Physical_SituationType"/>
+  <type name="Condition_Phenomenal_Physical_UnboundedEvent" parents="UnboundedEvent Condition_Phenomenal_Physical_SituationType"/>
+  <type name="3rdOrderEntity_BoundedEvent_Communication_Quantity_Social_Stimulating_Time" parents="Communication Quantity Social Time BoundedEvent 3rdOrderEntity Stimulating"/>
+  <type name="3rdOrderEntity_Communication_Condition_Stimulating" parents="Communication Condition 3rdOrderEntity Stimulating"/>
+  <type name="3rdOrderEntity_Communication_Condition_Stimulating_Usage" parents="Communication Condition Usage 3rdOrderEntity Stimulating"/>
+  <type name="3rdOrderEntity_Communication_Social_Stimulating" parents="Communication Social 3rdOrderEntity Stimulating"/>
+  <type name="3rdOrderEntity_Communication_Stimulating_Usage" parents="Communication Usage 3rdOrderEntity Stimulating"/>
+  <type name="3rdOrderEntity_Existence_Quantity_Stimulating" parents="Existence Quantity 3rdOrderEntity Stimulating"/>
+  <type name="3rdOrderEntity_Existence_Quantity_Stimulating_Time" parents="Existence Quantity Time 3rdOrderEntity Stimulating"/>
+  <type name="3rdOrderEntity_Existence_Stimulating" parents="Existence 3rdOrderEntity Stimulating"/>
+  <type name="BoundedEvent_Communication_Condition_Modal_Stimulating" parents="Communication Condition Modal BoundedEvent Stimulating"/>
+  <type name="BoundedEvent_Communication_Manner_Stimulating" parents="Communication Manner BoundedEvent Stimulating"/>
+  <type name="BoundedEvent_Communication_Social_Stimulating" parents="Communication Social BoundedEvent Stimulating"/>
+  <type name="BoundedEvent_Communication_Social_Stimulating_Usage" parents="Communication Social Usage BoundedEvent Stimulating"/>
+  <type name="BoundedEvent_Experience_Physical_Stimulating" parents="Dynamic_Experience_Physical_Stimulating BoundedEvent"/>
+  <type name="Communication_Condition_Manner_Stimulating_UnboundedEvent" parents="Communication Condition Manner UnboundedEvent Stimulating"/>
+  <type name="Communication_Dynamic_Stimulating" parents="Communication Dynamic Stimulating"/>
+  <type name="Communication_Manner_Modal_Stimulating_UnboundedEvent" parents="Communication Manner Modal UnboundedEvent Stimulating"/>
+  <type name="Dynamic_Experience_Physical_Stimulating" parents="Experience Physical Dynamic Stimulating"/>
+  <type name="Experience_SituationType_Stimulating_Time" parents="Experience Time SituationType Stimulating"/>
+  <type name="3rdOrderEntity_Communication" parents="3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Condition" parents="Condition 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Condition_Modal" parents="Condition Modal 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Condition_Modal_Possession_Purpose_Social" parents="Condition Modal Possession Purpose Social 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Condition_Possession_Social" parents="Condition Possession Social 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Condition_Possession_Social_Usage" parents="Condition Possession Social Usage 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Condition_Social" parents="Condition Social 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Experience_Physical_Social_UnboundedEvent_Usage" parents="Experience Physical Social Usage UnboundedEvent 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Experience_Social" parents="Experience Social 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Location" parents="Location 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Manner_Modal_Quantity_Social" parents="Manner Modal Quantity Social 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Manner_Modal_Social" parents="Manner Modal Social 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Manner_Purpose" parents="Manner Purpose 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Manner_Social_Usage" parents="Manner Social Usage 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Modal" parents="Modal 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Modal_Purpose" parents="Modal Purpose 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Modal_Purpose_Usage" parents="Modal Purpose Usage 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Modal_Social" parents="Modal Social 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Physical_Social_Usage" parents="Physical Social Usage 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Purpose" parents="Purpose 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Purpose_Social_Usage" parents="Purpose Social Usage 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Purpose_Usage" parents="Purpose Usage 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Quantity" parents="Quantity 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Social" parents="Social 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Social_Usage" parents="Social Usage 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Time" parents="Time 3rdOrderEntity Communication"/>
+  <type name="3rdOrderEntity_Communication_Usage" parents="Usage 3rdOrderEntity Communication"/>
+  <type name="BoundedEvent_Communication" parents="Dynamic_Communication BoundedEvent"/>
+  <type name="BoundedEvent_Communication_Condition_Experience_Physical" parents="Condition Experience Physical BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Condition_Manner" parents="Condition Manner BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Condition_Modal" parents="Condition Modal BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Condition_Modal_Social" parents="Condition Modal Social BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Experience_Mental" parents="Experience Mental BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Experience_Physical" parents="Experience Physical BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Experience_Social_Usage" parents="Experience Social Usage BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Location_Purpose" parents="Location Purpose BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Manner_Mental" parents="Manner Mental BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Manner_Physical_Social" parents="Manner Physical Social BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Manner_Social" parents="Manner Social BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Manner_Social_Usage" parents="Manner Social Usage BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Mental" parents="Mental BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Mental_Social" parents="Mental Social BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Physical" parents="Physical BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Purpose_Social" parents="Purpose Social BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Purpose_Social_Usage" parents="Purpose Social Usage BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Quantity_Social" parents="Quantity Social BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Quantity_Social_Usage" parents="Quantity Social Usage BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Social" parents="Social BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Social_Time" parents="Social Time BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Social_Time_Usage" parents="Social Time Usage BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Social_Usage" parents="Social Usage BoundedEvent Communication"/>
+  <type name="BoundedEvent_Communication_Time" parents="Time BoundedEvent Communication"/>
+  <type name="Communication_Condition_Dynamic" parents="Condition Dynamic Communication"/>
+  <type name="Communication_Condition_Dynamic_Manner" parents="Condition Manner Dynamic Communication"/>
+  <type name="Communication_Condition_Manner_Quantity_UnboundedEvent" parents="Condition Manner Quantity UnboundedEvent Communication"/>
+  <type name="Communication_Condition_Manner_UnboundedEvent" parents="Condition Manner UnboundedEvent Communication"/>
+  <type name="Communication_Condition_Manner_UnboundedEvent_Usage" parents="Condition Manner Usage UnboundedEvent Communication"/>
+  <type name="Communication_Condition_Property" parents="Condition Property Communication"/>
+  <type name="Communication_Dynamic" parents="Dynamic Communication"/>
+  <type name="Communication_Dynamic_Experience_Physical" parents="Experience Physical Dynamic Communication"/>
+  <type name="Communication_Dynamic_Manner" parents="Manner Dynamic Communication"/>
+  <type name="Communication_Dynamic_Mental_Social" parents="Mental Social Dynamic Communication"/>
+  <type name="Communication_Dynamic_Purpose" parents="Purpose Dynamic Communication"/>
+  <type name="Communication_Dynamic_Usage" parents="Usage Dynamic Communication"/>
+  <type name="Communication_Experience_Manner_Physical_UnboundedEvent" parents="Experience Manner Physical UnboundedEvent Communication"/>
+  <type name="Communication_Experience_Manner_Property" parents="Experience Manner Property Communication"/>
+  <type name="Communication_Experience_Manner_UnboundedEvent" parents="Experience Manner UnboundedEvent Communication"/>
+  <type name="Communication_Experience_Mental" parents="Experience Mental Communication"/>
+  <type name="Communication_Experience_Mental_UnboundedEvent" parents="Experience Mental UnboundedEvent Communication"/>
+  <type name="Communication_Experience_Modal_Physical_UnboundedEvent" parents="Experience Modal Physical UnboundedEvent Communication"/>
+  <type name="Communication_Experience_Physical_Property_Social_UnboundedEvent_Usage" parents="Experience Physical Social Usage UnboundedEvent Property Communication"/>
+  <type name="Communication_Experience_Physical_Social_UnboundedEvent_Usage" parents="Experience Physical Social Usage UnboundedEvent Communication"/>
+  <type name="Communication_Experience_Physical_UnboundedEvent" parents="Experience Physical UnboundedEvent Communication"/>
+  <type name="Communication_Location_Physical_Static" parents="Location Physical Static Communication"/>
+  <type name="Communication_Manner_Modal_Property_Social" parents="Manner Modal Social Property Communication"/>
+  <type name="Communication_Manner_Physical_Purpose_Social_UnboundedEvent" parents="Manner Physical Purpose Social UnboundedEvent Communication"/>
+  <type name="Communication_Manner_Property" parents="Manner Property Communication"/>
+  <type name="Communication_Manner_Property_Social_Usage" parents="Manner Social Usage Property Communication"/>
+  <type name="Communication_Manner_Purpose_Social_Static_Usage" parents="Manner Purpose Social Usage Static Communication"/>
+  <type name="Communication_Manner_Social_Static_Usage" parents="Manner Social Usage Static Communication"/>
+  <type name="Communication_Manner_Static_Usage" parents="Manner Usage Static Communication"/>
+  <type name="Communication_Manner_UnboundedEvent" parents="Manner UnboundedEvent Communication"/>
+  <type name="Communication_Mental_Property_Social" parents="Mental Social Property Communication"/>
+  <type name="Communication_Mental_Quantity_Social_UnboundedEvent" parents="Mental Quantity Social UnboundedEvent Communication"/>
+  <type name="Communication_Mental_Social_UnboundedEvent_Usage" parents="Mental Social Usage UnboundedEvent Communication"/>
+  <type name="Communication_Mental_UnboundedEvent" parents="Mental UnboundedEvent Communication"/>
+  <type name="Communication_Physical_Purpose_Social_UnboundedEvent" parents="Physical Purpose Social UnboundedEvent Communication"/>
+  <type name="Communication_Physical_UnboundedEvent_Usage" parents="Physical Usage UnboundedEvent Communication"/>
+  <type name="Communication_Property" parents="Property Communication"/>
+  <type name="Communication_Relation" parents="Relation Communication"/>
+  <type name="Dynamic_Communication" parents="Dynamic Communication"/>
+  <type name="3rdOrderEntity_Condition_Modal" parents="Modal 3rdOrderEntity Condition"/>
+  <type name="3rdOrderEntity_Condition_Modal_Social" parents="Modal Social 3rdOrderEntity Condition"/>
+  <type name="BoundedEvent_Condition" parents="BoundedEvent Condition"/>
+  <type name="BoundedEvent_Condition_Experience_Physical" parents="Experience Physical BoundedEvent Condition"/>
+  <type name="BoundedEvent_Condition_Experience_Physical_Property" parents="Experience Physical BoundedEvent Property Condition"/>
+  <type name="BoundedEvent_Condition_Location_Physical_Possession" parents="Location Physical Possession BoundedEvent Condition"/>
+  <type name="BoundedEvent_Condition_Physical" parents="Physical BoundedEvent Condition"/>
+  <type name="BoundedEvent_Condition_Possession" parents="Possession BoundedEvent Condition"/>
+  <type name="BoundedEvent_Condition_Quantity" parents="Quantity BoundedEvent Condition"/>
+  <type name="Condition_Dynamic_Physical" parents="Physical Dynamic Condition"/>
+  <type name="Condition_Experience_Mental_Property" parents="Experience Mental Property Condition"/>
+  <type name="Condition_Mental_Property" parents="Mental Property Condition"/>
+  <type name="Condition_Physical_Property" parents="Physical Property Condition"/>
+  <type name="Condition_Physical_Property_Social" parents="Physical Social Property Condition"/>
+  <type name="Condition_Possession_UnboundedEvent" parents="Possession UnboundedEvent Condition"/>
+  <type name="Condition_Property" parents="Condition_SituationType Property"/>
+  <type name="Condition_Property_Social" parents="Social Property Condition"/>
+  <type name="Condition_Relation" parents="Condition_SituationType Relation"/>
+  <type name="Condition_Relation_Social" parents="Social Relation Condition"/>
+  <type name="Condition_Relation_Social_Time" parents="Social Time Relation Condition"/>
+  <type name="Condition_SituationType" parents="SituationType Condition"/>
+  <type name="Condition_Social_Static" parents="Social Static Condition"/>
+  <type name="Condition_UnboundedEvent" parents="UnboundedEvent Condition_SituationType"/>
+  <type name="3rdOrderEntity_Existence" parents="3rdOrderEntity Existence"/>
+  <type name="3rdOrderEntity_Existence_Experience_Quantity_Time" parents="Experience Quantity Time 3rdOrderEntity Existence"/>
+  <type name="3rdOrderEntity_Existence_Quantity_Time" parents="Quantity Time 3rdOrderEntity Existence"/>
+  <type name="BoundedEvent_Existence" parents="BoundedEvent Existence"/>
+  <type name="BoundedEvent_Existence_Physical" parents="Physical BoundedEvent Existence"/>
+  <type name="Dynamic_Existence_Experience_Mental" parents="Experience Mental Dynamic Existence"/>
+  <type name="Dynamic_Existence_Property" parents="Dynamic Property Existence"/>
+  <type name="Dynamic_Existence_Property_Quantity_Relation" parents="Quantity Dynamic Property Relation Existence"/>
+  <type name="Existence_Experience_UnboundedEvent" parents="Experience UnboundedEvent Existence"/>
+  <type name="Existence_Property" parents="Existence_Static Property"/>
+  <type name="Existence_Static" parents="Static Existence"/>
+  <type name="Existence_UnboundedEvent" parents="UnboundedEvent Existence"/>
+  <type name="3rdOrderEntity_Dynamic_Experience_Mental" parents="Mental Dynamic 3rdOrderEntity Experience"/>
+  <type name="3rdOrderEntity_Experience" parents="3rdOrderEntity Experience"/>
+  <type name="3rdOrderEntity_Experience_Physical_Time" parents="Physical Time 3rdOrderEntity Experience"/>
+  <type name="3rdOrderEntity_Experience_Quantity_Time" parents="Quantity Time 3rdOrderEntity Experience"/>
+  <type name="3rdOrderEntity_Experience_Social_Time" parents="Social Time 3rdOrderEntity Experience"/>
+  <type name="3rdOrderEntity_Experience_Time" parents="Time 3rdOrderEntity Experience"/>
+  <type name="BoundedEvent_Experience" parents="Dynamic_Experience BoundedEvent"/>
+  <type name="BoundedEvent_Experience_Physical" parents="Dynamic_Experience_Physical BoundedEvent"/>
+  <type name="BoundedEvent_Experience_Time" parents="Time BoundedEvent Experience"/>
+  <type name="Dynamic_Experience" parents="Dynamic Experience"/>
+  <type name="Dynamic_Experience_Mental" parents="Mental Dynamic Experience"/>
+  <type name="Dynamic_Experience_Mental_Modal_Physical_Property" parents="Mental Modal Physical Dynamic Property Experience"/>
+  <type name="Dynamic_Experience_Mental_Physical" parents="Mental Physical Dynamic Experience"/>
+  <type name="Dynamic_Experience_Mental_Physical_Property" parents="Mental Physical Dynamic Property Experience"/>
+  <type name="Dynamic_Experience_Mental_Possession" parents="Mental Possession Dynamic Experience"/>
+  <type name="Dynamic_Experience_Mental_Quantity" parents="Mental Quantity Dynamic Experience"/>
+  <type name="Dynamic_Experience_Mental_Social" parents="Mental Social Dynamic Experience"/>
+  <type name="Dynamic_Experience_Physical" parents="Physical Dynamic Experience"/>
+  <type name="Dynamic_Experience_Physical_Property" parents="Physical Dynamic Property Experience"/>
+  <type name="Experience_Location_Mental_Static" parents="Location Mental Static Experience"/>
+  <type name="Experience_Manner_Mental_Modal_Property_Purpose" parents="Manner Mental Modal Purpose Property Experience"/>
+  <type name="Experience_Mental" parents="Mental Experience"/>
+  <type name="Experience_Mental_Modal_Property" parents="Mental Modal Property Experience"/>
+  <type name="Experience_Mental_Modal_Social_Time" parents="Mental Modal Social Time Experience"/>
+  <type name="Experience_Mental_Property" parents="Experience_Mental_Static Property"/>
+  <type name="Experience_Mental_Relation" parents="Experience_Mental_Static Relation"/>
+  <type name="Experience_Mental_SituationType" parents="Mental SituationType Experience"/>
+  <type name="Experience_Mental_Social_Time" parents="Mental Social Time Experience"/>
+  <type name="Experience_Modal_Physical_Property" parents="Modal Physical Property Experience"/>
+  <type name="Experience_Property_Quantity_Time" parents="Quantity Time Property Experience"/>
+  <type name="Experience_SituationType" parents="SituationType Experience"/>
+  <type name="Experience_Mental_Static" parents="Static Experience_Mental_SituationType"/>
+  <type name="Experience_Static" parents="Static Experience_SituationType"/>
+  <type name="Experience_UnboundedEvent" parents="UnboundedEvent Experience_SituationType"/>
+  <type name="3rdOrderEntity_Location" parents="3rdOrderEntity Location"/>
+  <type name="3rdOrderEntity_Location_Physical_Quantity_Relation_Social_Usage" parents="Physical Quantity Social Usage Relation 3rdOrderEntity Location"/>
+  <type name="BoundedEvent_Location" parents="Dynamic_Location BoundedEvent"/>
+  <type name="BoundedEvent_Location_Physical" parents="Dynamic_Location_Physical BoundedEvent"/>
+  <type name="BoundedEvent_Location_Physical_Possession" parents="Physical Possession BoundedEvent Location"/>
+  <type name="BoundedEvent_Location_Static" parents="Dynamic_Location_Static BoundedEvent"/>
+  <type name="Dynamic_Location" parents="Dynamic Location"/>
+  <type name="Dynamic_Location_Manner" parents="Manner Dynamic Location"/>
+  <type name="Dynamic_Location_Manner_Physical" parents="Manner Physical Dynamic Location"/>
+  <type name="Dynamic_Location_Physical" parents="Physical Dynamic Location"/>
+  <type name="Dynamic_Location_Physical_Possession_Relation" parents="Physical Possession Dynamic Relation Location"/>
+  <type name="Dynamic_Location_Physical_Relation" parents="Dynamic_Location_Physical_Static Relation"/>
+  <type name="Dynamic_Location_Physical_Social" parents="Physical Social Dynamic Location"/>
+  <type name="Dynamic_Location_Physical_Static" parents="Physical Dynamic Static Location"/>
+  <type name="Dynamic_Location_Quantity_Relation" parents="Quantity Dynamic Relation Location"/>
+  <type name="Dynamic_Location_Relation" parents="Dynamic_Location_Static Relation"/>
+  <type name="Dynamic_Location_Social" parents="Social Dynamic Location"/>
+  <type name="Dynamic_Location_Static" parents="Dynamic Static Location"/>
+  <type name="Location_Physical_Possession_Property" parents="Physical Possession Property Location"/>
+  <type name="Location_Physical_Property" parents="Location_Physical_Static Property"/>
+  <type name="Location_Physical_Purpose_UnboundedEvent_Usage" parents="Physical Purpose Usage UnboundedEvent Location"/>
+  <type name="Location_Physical_Relation" parents="Location_Physical_Static Relation"/>
+  <type name="Location_Physical_Static" parents="Physical Static Location"/>
+  <type name="Location_Property_Relation" parents="Property Relation Location"/>
+  <type name="Location_Relation" parents="Relation Location"/>
+  <type name="3rdOrderEntity_Manner_Modal" parents="Modal 3rdOrderEntity Manner"/>
+  <type name="3rdOrderEntity_Manner_Physical" parents="Physical 3rdOrderEntity Manner"/>
+  <type name="Manner_Physical_Property" parents="Physical Property Manner"/>
+  <type name="Manner_Property" parents="Property Manner"/>
+  <type name="Manner_Property_Social" parents="Social Property Manner"/>
+  <type name="Manner_UnboundedEvent_Usage" parents="Usage UnboundedEvent Manner"/>
+  <type name="BoundedEvent_Mental" parents="Dynamic_Mental BoundedEvent"/>
+  <type name="BoundedEvent_Mental_Modal" parents="Modal BoundedEvent Mental"/>
+  <type name="Dynamic_Mental" parents="Dynamic Mental"/>
+  <type name="Mental_Property" parents="Property Mental"/>
+  <type name="Mental_Purpose" parents="Purpose Mental"/>
+  <type name="3rdOrderEntity_Modal" parents="3rdOrderEntity Modal"/>
+  <type name="3rdOrderEntity_Modal_Physical" parents="Physical 3rdOrderEntity Modal"/>
+  <type name="3rdOrderEntity_Modal_Physical_Quantity_Relation" parents="Physical Quantity Relation 3rdOrderEntity Modal"/>
+  <type name="3rdOrderEntity_Modal_Quantity" parents="Quantity 3rdOrderEntity Modal"/>
+  <type name="Modal_Property" parents="Property Modal"/>
+  <type name="Modal_Property_Relation_Social" parents="Social Property Relation Modal"/>
+  <type name="Modal_Property_Social" parents="Social Property Modal"/>
+  <type name="3rdOrderEntity_Physical_Property" parents="Property 3rdOrderEntity Physical"/>
+  <type name="3rdOrderEntity_Physical_Quantity_Usage" parents="Quantity Usage 3rdOrderEntity Physical"/>
+  <type name="BoundedEvent_Physical" parents="Dynamic_Physical BoundedEvent"/>
+  <type name="Dynamic_Physical" parents="Dynamic Physical"/>
+  <type name="Physical_Property" parents="Property Physical"/>
+  <type name="Physical_Property_Quantity" parents="Quantity Property Physical"/>
+  <type name="Physical_Quantity_Relation" parents="Quantity Relation Physical"/>
+  <type name="Dynamic_Possession" parents="Dynamic Possession"/>
+  <type name="Dynamic_Possession_Social" parents="Social Dynamic Possession"/>
+  <type name="Possession_Relation" parents="Relation Possession"/>
+  <type name="3rdOrderEntity_Purpose" parents="3rdOrderEntity Purpose"/>
+  <type name="3rdOrderEntity_Purpose_Quantity_Social_Time" parents="Quantity Social Time 3rdOrderEntity Purpose"/>
+  <type name="3rdOrderEntity_Purpose_Quantity_Time_Usage" parents="Quantity Time Usage 3rdOrderEntity Purpose"/>
+  <type name="3rdOrderEntity_Purpose_Quantity_Usage" parents="Quantity Usage 3rdOrderEntity Purpose"/>
+  <type name="3rdOrderEntity_Purpose_Social" parents="Social 3rdOrderEntity Purpose"/>
+  <type name="3rdOrderEntity_Purpose_Usage" parents="Usage 3rdOrderEntity Purpose"/>
+  <type name="BoundedEvent_Purpose_Social" parents="Social BoundedEvent Purpose"/>
+  <type name="3rdOrderEntity_Quantity" parents="3rdOrderEntity Quantity"/>
+  <type name="3rdOrderEntity_Quantity_Relation" parents="Relation 3rdOrderEntity Quantity"/>
+  <type name="3rdOrderEntity_Quantity_Social" parents="Social 3rdOrderEntity Quantity"/>
+  <type name="3rdOrderEntity_Quantity_Social_Time" parents="Social Time 3rdOrderEntity Quantity"/>
+  <type name="3rdOrderEntity_Quantity_Social_Usage" parents="Social Usage 3rdOrderEntity Quantity"/>
+  <type name="3rdOrderEntity_Quantity_Time" parents="Time 3rdOrderEntity Quantity"/>
+  <type name="3rdOrderEntity_Quantity_Usage" parents="Usage 3rdOrderEntity Quantity"/>
+  <type name="Dynamic_Quantity" parents="Dynamic Quantity"/>
+  <type name="Dynamic_Quantity_Social" parents="Social Dynamic Quantity"/>
+  <type name="Dynamic_Quantity_Static" parents="Dynamic Static Quantity"/>
+  <type name="Property_Quantity" parents="Property Quantity"/>
+  <type name="Quantity_Relation" parents="Quantity_Static Relation"/>
+  <type name="Quantity_Static" parents="Static Quantity"/>
+  <type name="3rdOrderEntity_Social" parents="3rdOrderEntity Social"/>
+  <type name="BoundedEvent_Social_Static" parents="BoundedEvent Static Social"/>
+  <type name="Dynamic_Social" parents="Dynamic Social"/>
+  <type name="Property_Social" parents="Property Social"/>
+  <type name="Relation_Social" parents="Relation Social"/>
+  <type name="Social_Static" parents="Static Social"/>
+  <type name="Social_Time_UnboundedEvent" parents="Time UnboundedEvent Social"/>
+  <type name="BoundedEvent_Time" parents="BoundedEvent Time"/>
+  <type name="Property_Time" parents="Property Time"/>
+  <type name="Relation_Time" parents="Relation Time"/>
+  <type name="3rdOrderEntity_Usage" parents="3rdOrderEntity Usage"/>
+  <type name="BoundedEvent_Usage" parents="BoundedEvent Usage"/>
+  <type name="Dynamic" parents="SituationType"/>
+  <type name="Static" parents="SituationType"/>
+  <type name="BoundedEvent" parents="Dynamic"/>
+  <type name="UnboundedEvent" parents="Dynamic"/>
+  <type name="BoundedEvent_Property" parents="Property BoundedEvent"/>
+  <type name="Property" parents="Static"/>
+  <type name="Relation" parents="Static"/>
+  <type name="det"/>
+  <type name="definite" parents="det"/>
+  <type name="indefinite" parents="det"/>
+  <type name="num"/>
+  <type name="sg" parents="num"/>
+  <type name="pl" parents="num"/>
+</types>
