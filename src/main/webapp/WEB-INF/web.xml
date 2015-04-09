@@ -19,4 +19,12 @@
   <servlet-name>JarTest</servlet-name>
   <url-pattern>/jartest</url-pattern>
  </servlet-mapping>
+ <servlet>
+    <servlet-name>KalamParseGenServlet</servlet-name>
+    <servlet-class>kalam.KalamParseGenServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>KalamParseGenServlet</servlet-name>
+    <url-pattern>/kalam</url-pattern>
+ </servlet-mapping>
 </web-app>
