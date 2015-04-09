@@ -11,7 +11,15 @@ import java.net.*;
 
 import org.jgrapht.*;
 import org.jgrapht.graph.*;
-
+import opennlp.ccg.grammar.*;
+import opennlp.ccg.hylo.*;
+import opennlp.ccg.lexicon.MorphItem;
+import opennlp.ccg.lexicon.Word;
+import opennlp.ccg.ngrams.StandardNgramModel;
+import opennlp.ccg.parse.*;
+import opennlp.ccg.realize.*;
+import opennlp.ccg.synsem.*;
+import opennlp.ccg.util.GroupMap;
 
 /**
  * Servlet implementation class JarTest
