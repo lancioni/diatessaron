@@ -33,7 +33,7 @@ public class JarTest extends HttpServlet {
 	  public void init() throws ServletException
 	  {
 	      // Do required initialization
-	      message = "هذا هو الجارتست";
+	      message = "هذا هو الجارتست@!";
 	  }
 
 	  public void doGet(HttpServletRequest request,
