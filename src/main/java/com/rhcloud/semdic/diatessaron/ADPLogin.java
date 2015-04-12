@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ADPLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String message;
+	private ServletContext ctx = null;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -31,6 +33,7 @@ public class ADPLogin extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 	      message = "تسجيل الدخول";
+	      ctx = config.getServletContext(); 
 	}
 
 	/**
