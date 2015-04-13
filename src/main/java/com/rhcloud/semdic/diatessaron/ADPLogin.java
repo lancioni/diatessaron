@@ -2,6 +2,7 @@ package com.rhcloud.semdic.diatessaron;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Enumeration;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -46,7 +47,17 @@ public class ADPLogin extends HttpServlet {
 
 	      // Actual logic goes here.
 	      PrintWriter out = response.getWriter();
-	      out.println("<h1 align=\"right\">" + message + "</h1>");
+			Enumeration<String> en=request.getParameterNames();
+			 
+			while(en.hasMoreElements())
+			{
+				Object objOri=en.nextElement();
+				String param=(String)objOri;
+				String value=request.getParameter(param);
+				out.println("Parameter Name is '"+param+"' and Parameter Value is '"+value+"'");
+			}	      
+			out.println("<h1 align=\"right\">" + message + "</h1>");
+	      out.println("<p>username: " + request.getParameter("email") + "</p>");
 	}
 
 	/**
@@ -54,6 +65,23 @@ public class ADPLogin extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		  // Set response content type
+		  response.setCharacterEncoding("UTF-8");
+	      response.setContentType("text/html");
+
+	      // Actual logic goes here.
+	      PrintWriter out = response.getWriter();
+			Enumeration<String> en=request.getParameterNames();
+			 
+			while(en.hasMoreElements())
+			{
+				Object objOri=en.nextElement();
+				String param=(String)objOri;
+				String value=request.getParameter(param);
+				out.println("Parameter Name is '"+param+"' and Parameter Value is '"+value+"'");
+			}	      
+			out.println("<h1 align=\"right\">" + message + "</h1>");
+	      out.println("<p>username: " + request.getParameter("email") + "</p>");
 	}
 
 }
