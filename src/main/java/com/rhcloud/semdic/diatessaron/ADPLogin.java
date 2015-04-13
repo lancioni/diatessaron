@@ -57,7 +57,7 @@ public class ADPLogin extends HttpServlet {
 				out.println("Parameter Name is '"+param+"' and Parameter Value is '"+value+"'");
 			}	      
 			out.println("<h1 align=\"right\">" + message + "</h1>");
-	      out.println("<p>username: " + request.getParameter("email") + "</p>");
+	      out.println("<p>username: " + request.getParameter("username") + "</p>");
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class ADPLogin extends HttpServlet {
 				out.println("Parameter Name is '"+param+"' and Parameter Value is '"+value+"'");
 			}	      
 			out.println("<h1 align=\"right\">" + message + "</h1>");
-	      out.println("<p>username: " + request.getParameter("email") + "</p>");
+	      out.println("<p>username: " + request.getParameter("username") + "</p>");
 	}
 
 }
