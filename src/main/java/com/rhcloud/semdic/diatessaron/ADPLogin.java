@@ -49,13 +49,15 @@ public class ADPLogin extends HttpServlet {
 	      PrintWriter out = response.getWriter();
 			Enumeration<String> en=request.getParameterNames();
 			 
+			out.println("<ul>");
 			while(en.hasMoreElements())
 			{
 				Object objOri=en.nextElement();
 				String param=(String)objOri;
 				String value=request.getParameter(param);
-				out.println("Parameter Name is '"+param+"' and Parameter Value is '"+value+"'");
+				out.println("<li>Parameter Name is '"+param+"' and Parameter Value is '"+value+"'</li>");
 			}	      
+			out.println("</ul>");
 			out.println("<h1 align=\"right\">" + message + "</h1>");
 	      out.println("<p>username: " + request.getParameter("username") + "</p>");
 	}
@@ -78,7 +80,7 @@ public class ADPLogin extends HttpServlet {
 				Object objOri=en.nextElement();
 				String param=(String)objOri;
 				String value=request.getParameter(param);
-				out.println("Parameter Name is '"+param+"' and Parameter Value is '"+value+"'");
+				out.println("<p>Parameter Name is '"+param+"' and Parameter Value is '"+value+"'");
 			}	      
 			out.println("<h1 align=\"right\">" + message + "</h1>");
 	      out.println("<p>username: " + request.getParameter("username") + "</p>");
