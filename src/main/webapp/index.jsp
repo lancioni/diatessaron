@@ -60,7 +60,7 @@
 <%
 		if ("wrong".equals(request.getParameter("pwdMessage"))) {
 			%>
-			<font color=red>Either user name or password is wrong.</font>
+			<font color=red>Either username or password is wrong.</font>
 			<hr/>
 		<%
 		} 
