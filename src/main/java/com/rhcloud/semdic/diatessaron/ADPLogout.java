@@ -47,12 +47,13 @@ public class ADPLogout extends HttpServlet {
     		session.invalidate();
     	}
     	//no encoding because we have invalidated the session
-		RequestDispatcher rd = ctx.getRequestDispatcher("/index.jsp");
+		//RequestDispatcher rd = ctx.getRequestDispatcher("/index.jsp");
 		//PrintWriter out= response.getWriter();
-		request.removeAttribute("pwdMessage");
+		request.removeAttribute("error");
 		//out.println("<font color=red>Either user name or password is wrong.</font>");
-		rd.include(request, response);
-
+		//rd.include(request, response);
+    	//request.setAttribute("error", "Unknown login, please try again."); // Set error.
+        request.getRequestDispatcher("index.jsp").forward(request, response); // Forward to same page so that you can display error.
     	//response.sendRedirect("index.jsp");
     }
 

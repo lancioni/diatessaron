@@ -57,10 +57,11 @@
 		            <h1>The Arabic Diatessaron Project</h1>
 		        </hgroup>
 		        <hr/>
+		        
 <%
-		if ("wrong".equals(request.getParameter("pwdMessage"))) {
+		if (request.getAttribute("error") != null ) {
 			%>
-			<font color=red>Either username or password is wrong.</font>
+			<font color=red><%=request.getAttribute("error") %></font>
 			<hr/>
 		<%
 		} 

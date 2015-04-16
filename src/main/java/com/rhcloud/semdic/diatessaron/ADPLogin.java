@@ -75,11 +75,8 @@ public class ADPLogin extends HttpServlet {
 			String encodedURL = response.encodeRedirectURL("ADPLoginSuccess.jsp");
 			response.sendRedirect(encodedURL);
 		}else{
-			RequestDispatcher rd = ctx.getRequestDispatcher("/index.jsp?pwdMessage=wrong");
-			//PrintWriter out= response.getWriter();
-			request.setAttribute("pwdMessage", "wrong");
-			//out.println("<font color=red>Either user name or password is wrong.</font>");
-			rd.include(request, response);
+	    	request.setAttribute("error", "Unknown login, please try again."); // Set error.
+	        request.getRequestDispatcher("index.jsp").forward(request, response); // Forward to same page so that you can display error.
 		}
 
 		/*
