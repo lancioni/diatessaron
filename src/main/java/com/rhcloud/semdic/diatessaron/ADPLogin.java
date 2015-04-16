@@ -75,9 +75,10 @@ public class ADPLogin extends HttpServlet {
 			String encodedURL = response.encodeRedirectURL("ADPLoginSuccess.jsp");
 			response.sendRedirect(encodedURL);
 		}else{
-			RequestDispatcher rd = ctx.getRequestDispatcher("/index.html");
-			PrintWriter out= response.getWriter();
-			out.println("<font color=red>Either user name or password is wrong.</font>");
+			RequestDispatcher rd = ctx.getRequestDispatcher("/index.jsp?pwdMessage=wrong");
+			//PrintWriter out= response.getWriter();
+			request.setAttribute("pwdMessage", "wrong");
+			//out.println("<font color=red>Either user name or password is wrong.</font>");
 			rd.include(request, response);
 		}
 

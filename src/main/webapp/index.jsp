@@ -1,5 +1,8 @@
-<!doctype html>
-<html lang="en">
+<?xml version="1.0" encoding="utf-8" ?>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -54,7 +57,17 @@
 		            <h1>The Arabic Diatessaron Project</h1>
 		        </hgroup>
 		        <hr/>
-		        <div class="row">
+<%
+		if ("wrong".equals(request.getParameter("pwdMessage"))) {
+			%>
+			<font color=red>Either user name or password is wrong.</font>
+			<hr/>
+		<%
+		} 
+		else {
+		}
+	%>			
+			<div class="row">
 		    		<form class="form-inline" action="ADPLogin" method="POST">
 				        <div class="form-group">
 				            <label class="sr-only" for="inputEmail">Email</label>
@@ -82,7 +95,7 @@
 				  	</section>
 		          	<section class="col-xs-12 col-sm-6 col-md-6">
 		                <h2>What are the goals?</h2>
-		                <p>ADP’s final goal is to provide a number of tools 
+		                <p>ADPâs final goal is to provide a number of tools 
 		                that can enable scholars to query, compare and investigate 
 		                effectively all known variants of the text, 
 		                that will be encoded as far as possible 
@@ -91,8 +104,8 @@
 				</div>
 		    	<div class="row">
 		          <section class="col-xs-12 col-sm-6 col-md-6">
-		          	<h2>Tatian’s Diatessaron</h2>
-		          		<p>The Diatessaron (c. 160–175) is the most important early Gospel harmony, a unified
+		          	<h2>Tatianâs Diatessaron</h2>
+		          		<p>The Diatessaron (c. 160â175) is the most important early Gospel harmony, a unified
 		                narrative of the Four Gospels; its author, Tatian, was a Christian Assyrian apologist,
 		               	disciple of Justin Martyr in Rome. Tatian originally wrote the Diatessaron in Greek
 		               	and Syriac: the Greek version is virtually entirely lost, the Syriac version survives
@@ -102,7 +115,7 @@
 	                <h2>The Arabic Diatessaron</h2>
 	                <p>The oldest extant translation of the Diatessaron is an Arabic text 
 	                from the 11<sup>th</sup>sup> century, a translation from the Syriac
-	                by Abū al-Faraj Ibn Ṭayyib. The variants of this text are the core
+	                by AbÅ« al-Faraj Ibn á¹¬ayyib. The variants of this text are the core
 	                of the ADP.</p>
 		          </section>
 		        </div>
