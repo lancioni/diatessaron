@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import javax.servlet.RequestDispatcher;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpSession;
+
 /**
  * Servlet implementation class ADPLogin
  */
@@ -20,6 +24,8 @@ public class ADPLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String message;
 	private ServletContext ctx = null;
+	private final String userID = "admin";
+	private final String password = "password";
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -54,7 +60,29 @@ public class ADPLogin extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void output(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		  // Set response content type
+
+	     // get request parameters for userID and password
+		String user = request.getParameter("username");
+		String pwd = request.getParameter("pwd");
+		
+		if(userID.equals(user) && password.equals(pwd)){
+			HttpSession session = request.getSession();
+			session.setAttribute("user", "Giuliano");
+			//setting session to expire in 30 mins
+			session.setMaxInactiveInterval(30*60);
+			Cookie userName = new Cookie("user", user);
+			response.addCookie(userName);
+			String encodedURL = response.encodeRedirectURL("ADPLoginSuccess.jsp");
+			response.sendRedirect(encodedURL);
+		}else{
+			RequestDispatcher rd = ctx.getRequestDispatcher("/index.html");
+			PrintWriter out= response.getWriter();
+			out.println("<font color=red>Either user name or password is wrong.</font>");
+			rd.include(request, response);
+		}
+
+		/*
+		// Set response content type
 		  response.setCharacterEncoding("UTF-8");
 	      response.setContentType("text/html");
 
@@ -72,7 +100,7 @@ public class ADPLogin extends HttpServlet {
 			}	      
 			out.println("</ul>");
 			out.println("<h1 align=\"right\">" + message + "</h1>");
-	      out.println("<p>username: " + request.getParameter("username") + "</p>");
+	      out.println("<p>username: " + request.getParameter("username") + "</p>");*/
 	}
 
 }
