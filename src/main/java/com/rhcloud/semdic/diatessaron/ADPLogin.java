@@ -16,6 +16,9 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpSession;
 
+import org.bson.Document;
+import org.bson.conversions.Bson;
+
 import com.mongodb.DB;
 import com.mongodb.Mongo;
 import com.mongodb.DBCollection;
@@ -25,7 +28,10 @@ import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.MongoIterable;
 import com.mongodb.util.JSON;
 
 /**
@@ -102,6 +108,11 @@ public class ADPLogin extends HttpServlet {
 	     // get request parameters for userID and password
 		String user = request.getParameter("username");
 		String pwd = request.getParameter("pwd");
+		MongoCollection<Document> coll = mongoDB.getCollection("users");
+        DBObject qryParse = (DBObject) JSON.parse("{'_id':'giuliano'}");
+		FindIterable<Document> foundDocs = coll.find((Bson) qryParse);
+		System.out.println(foundDocs.first().toString());
+		
 		//System.out.println(qryWord(mongoDB, "{'english_words.word':'book'}"));
 		if(userID.equals(user) && password.equals(pwd)){
 			HttpSession session = request.getSession();
