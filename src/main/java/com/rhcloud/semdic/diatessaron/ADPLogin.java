@@ -11,10 +11,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpSession;
+
+import com.mongodb.DB;
+import com.mongodb.Mongo;
 
 /**
  * Servlet implementation class ADPLogin
@@ -26,7 +28,14 @@ public class ADPLogin extends HttpServlet {
 	private ServletContext ctx = null;
 	private final String userID = "admin";
 	private final String password = "password";
-       
+	private Mongo mongo;
+    private DB mongoDB;
+    private String host;
+    private String sport;
+    private String db;
+    String dbuser;
+    String dbpwd;
+    int port;
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -38,9 +47,24 @@ public class ADPLogin extends HttpServlet {
 	/**
 	 * @see Servlet#init(ServletConfig)
 	 */
+	@SuppressWarnings("deprecation")
 	public void init(ServletConfig config) throws ServletException {
 	      message = "تسجيل الدخول";
-	      ctx = config.getServletContext(); 
+	      ctx = config.getServletContext();
+	      host = System.getenv("OPENSHIFT_MONGODB_DB_HOST");
+	      sport = System.getenv("OPENSHIFT_MONGODB_DB_PORT");
+	      db = System.getenv("OPENSHIFT_APP_NAME");
+	      dbuser = System.getenv("OPENSHIFT_MONGODB_DB_USERNAME");
+	      dbpwd = System.getenv("OPENSHIFT_MONGODB_DB_PASSWORD");
+	      System.out.println("host=" + host);
+	      System.out.println("sport=" + sport);
+	      System.out.println("db=" + db);
+	      System.out.println("dbuser=" + dbuser);
+	      System.out.println("dbpwd=" + dbpwd);
+	      port = Integer.decode(sport);
+          mongo = new Mongo(host , port);
+          mongoDB = mongo.getDB(db);
+	      
 	}
 
 	/**
