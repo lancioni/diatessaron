@@ -109,14 +109,24 @@ public class ADPLogin extends HttpServlet {
 		String user = request.getParameter("username");
 		String pwd = request.getParameter("pwd");
 		MongoCollection<Document> coll = mongoDB.getCollection("users");
-        DBObject qryParse = (DBObject) JSON.parse("{'_id':'giuliano'}");
+        DBObject qryParse = (DBObject) JSON.parse("{'_id':'"
+        		+ user
+        		+ "',"
+        		+ "'pwd':'"
+        		+ pwd
+        		+ "'}");
 		FindIterable<Document> foundDocs = coll.find((Bson) qryParse);
-		System.out.println(foundDocs.first().toString());
+		Document firstDoc = foundDocs.first();
+		/*if (firstDoc != null) 
+			System.out.println(firstDoc.toString());
+		else
+			System.out.println("invalid user or password");*/
+			
 		
 		//System.out.println(qryWord(mongoDB, "{'english_words.word':'book'}"));
-		if(userID.equals(user) && password.equals(pwd)){
+		if (firstDoc != null) {
 			HttpSession session = request.getSession();
-			session.setAttribute("user", "Giuliano");
+			session.setAttribute("user", user);
 			//setting session to expire in 30 mins
 			session.setMaxInactiveInterval(30*60);
 			Cookie userName = new Cookie("user", user);
