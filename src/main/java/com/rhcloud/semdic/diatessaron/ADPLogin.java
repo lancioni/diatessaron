@@ -99,7 +99,7 @@ public class ADPLogin extends HttpServlet {
 			String encodedURL = response.encodeRedirectURL("ADPLoginSuccess.jsp");
 			response.sendRedirect(encodedURL);
 		}else{
-	    	request.setAttribute("error", "Unknown login, please try again."); // Set error.
+	    	request.setAttribute("error", "Unknown user or password, please try again."); // Set error.
 	        request.getRequestDispatcher("index.jsp").forward(request, response); // Forward to same page so that you can display error.
 		}
 
