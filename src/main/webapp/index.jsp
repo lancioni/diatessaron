@@ -96,7 +96,7 @@
 				  	</section>
 		          	<section class="col-xs-12 col-sm-6 col-md-6">
 		                <h2>What are the goals?</h2>
-		                <p>ADP's final goal is to provide a number of tools 
+		                <p>ADP’s final goal is to provide a number of tools 
 		                that can enable scholars to query, compare and investigate 
 		                effectively all known variants of the text, 
 		                that will be encoded as far as possible 
@@ -105,7 +105,7 @@
 				</div>
 		    	<div class="row">
 		          <section class="col-xs-12 col-sm-6 col-md-6">
-		          	<h2>Tatian's Diatessaron</h2>
+		          	<h2>Tatian’s Diatessaron</h2>
 		          		<p>The Diatessaron (c. 160/175) is the most important early Gospel harmony, a unified
 		                narrative of the Four Gospels; its author, Tatian, was a Christian Assyrian apologist,
 		               	disciple of Justin Martyr in Rome. Tatian originally wrote the Diatessaron in Greek
