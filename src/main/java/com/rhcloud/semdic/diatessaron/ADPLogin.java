@@ -2,6 +2,7 @@ package com.rhcloud.semdic.diatessaron;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.Enumeration;
 
 import javax.servlet.ServletConfig;
@@ -17,6 +18,15 @@ import javax.servlet.http.HttpSession;
 
 import com.mongodb.DB;
 import com.mongodb.Mongo;
+import com.mongodb.DBCollection;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+import com.mongodb.DBCursor;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoCredential;
+import com.mongodb.ServerAddress;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.util.JSON;
 
 /**
  * Servlet implementation class ADPLogin
@@ -28,8 +38,8 @@ public class ADPLogin extends HttpServlet {
 	private ServletContext ctx = null;
 	private final String userID = "admin";
 	private final String password = "password";
-	private Mongo mongo;
-    private DB mongoDB;
+    MongoClient mongo;
+    MongoDatabase mongoDB;
     private String host;
     private String sport;
     private String db;
@@ -62,9 +72,13 @@ public class ADPLogin extends HttpServlet {
 	      System.out.println("dbuser=" + dbuser);
 	      System.out.println("dbpwd=" + dbpwd);
 	      port = Integer.decode(sport);
-          mongo = new Mongo(host , port);
-          mongoDB = mongo.getDB(db);
-	      
+	      if (dbuser == null)
+		      mongo = new MongoClient(host, port);
+	      else {
+		      MongoCredential credential = MongoCredential.createCredential(dbuser, db, dbpwd.toCharArray());
+		      mongo = new MongoClient(new ServerAddress(host, port), Arrays.asList(credential));
+	      }
+	      mongoDB = mongo.getDatabase(db);
 	}
 
 	/**
@@ -88,7 +102,7 @@ public class ADPLogin extends HttpServlet {
 	     // get request parameters for userID and password
 		String user = request.getParameter("username");
 		String pwd = request.getParameter("pwd");
-		
+		//System.out.println(qryWord(mongoDB, "{'english_words.word':'book'}"));
 		if(userID.equals(user) && password.equals(pwd)){
 			HttpSession session = request.getSession();
 			session.setAttribute("user", "Giuliano");
@@ -104,5 +118,23 @@ public class ADPLogin extends HttpServlet {
 		}
 
 	}
+	
+/*	StringBuilder qryWord(DB mdb, String qry) {
+        StringBuilder strOut = new StringBuilder("");
+                                   try {
+        mdb.requestStart();
+        DBCollection coll = mdb.getCollection("wn");
+        DBObject qryParse = (DBObject) JSON.parse(qry);
+        DBCursor cursorDoc = coll.find(qryParse);
+        while (cursorDoc.hasNext()) {
+            strOut.append(cursorDoc.next().toString());
+        }
+        }
+                    finally {
+            mdb.requestDone();
+                       }
+        return strOut;
+}*/
+
 
 }
