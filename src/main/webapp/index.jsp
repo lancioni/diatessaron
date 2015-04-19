@@ -122,7 +122,7 @@
 		        </div>
 		        <hr/>
 		        <footer>
-		          <div class="logo"><span class="glyphicon glyphicon-copyright-mark"></span> 2015 <a href="https://host.uniroma3.it/docenti/lancioni/">Giuliano Lancioni</a></div>
+		          <div class="logo"><span class="glyphicon glyphicon-copyright-mark"></span> 2015 <a href="http://host.uniroma3.it/docenti/lancioni/">Giuliano Lancioni</a></div>
 		        </footer>
 			</section>
 		    <script src="js/jquery-1.11.2.min.js"></script>
