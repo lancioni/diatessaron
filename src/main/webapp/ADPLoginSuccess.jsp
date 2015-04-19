@@ -79,7 +79,7 @@
 		<br/>
 		<!-- need to encode all the URLs where we want session information to be passed -->
 		<a href="<%=response.encodeURL("ADPCheckoutPage.jsp") %>">Checkout Page</a>
-		<form action="<%=response.encodeURL("ADPLogoutServlet") %>" method="post">
+		<form action="<%=response.encodeURL("ADPLogout") %>" method="post">
 			<input type="submit" value="Logout" />
 		</form>
 			</section>

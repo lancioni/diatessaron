@@ -103,26 +103,6 @@ public class ADPLogin extends HttpServlet {
 	        request.getRequestDispatcher("index.jsp").forward(request, response); // Forward to same page so that you can display error.
 		}
 
-		/*
-		// Set response content type
-		  response.setCharacterEncoding("UTF-8");
-	      response.setContentType("text/html");
-
-	      // Actual logic goes here.
-	      PrintWriter out = response.getWriter();
-			Enumeration<String> en=request.getParameterNames();
-			 
-			out.println("<ul>");
-			while(en.hasMoreElements())
-			{
-				Object objOri=en.nextElement();
-				String param=(String)objOri;
-				String value=request.getParameter(param);
-				out.println("<li>Parameter Name is '"+param+"' and Parameter Value is '"+value+"'</li>");
-			}	      
-			out.println("</ul>");
-			out.println("<h1 align=\"right\">" + message + "</h1>");
-	      out.println("<p>username: " + request.getParameter("username") + "</p>");*/
 	}
 
 }
