@@ -2,7 +2,9 @@ package com.rhcloud.semdic.diatessaron;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Enumeration;
 
 import javax.servlet.ServletConfig;
@@ -19,6 +21,7 @@ import javax.servlet.http.HttpSession;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 
+import com.mongodb.BasicDBList;
 import com.mongodb.DB;
 import com.mongodb.Mongo;
 import com.mongodb.DBCollection;
@@ -133,6 +136,24 @@ public class ADPLogin extends HttpServlet {
 			response.addCookie(userName);
 			String encodedURL = response.encodeRedirectURL("ADPLoginSuccess.jsp");
 			response.sendRedirect(encodedURL);
+			MongoCollection<Document> diacoll = mongoDB.getCollection("diatessaron");
+			/*DBObject qryV1 = (DBObject) JSON.parse("{'_id':'1','verses._id':'1'}");
+			DBObject projection = (DBObject) JSON.parse("{'verses.$':'1'}");
+			FindIterable<Document> foundQryV1 = diacoll.find((Bson) qryV1).projection((Bson) projection);
+			Document firstQryV1 = foundQryV1.first();
+			if (firstQryV1 != null) {
+				ArrayList verses = (ArrayList) firstQryV1.get("verses");
+				
+			}*/
+			BasicDBObject query=new BasicDBObject("_id","1").append("verses._id", "1");
+			DBObject projection = (DBObject) JSON.parse("{'verses.$':'1'}");
+			FindIterable<Document> f = diacoll.find(query).projection((Bson) projection);
+			Document First = f.first();
+			ArrayList verses = (ArrayList) First.get("verses");
+			Object verse = verses.get(0);
+			System.out.println(verse.toString());
+			System.out.println(((Document) verse).get("text"));
+			ctx.setAttribute("diacoll", mongoDB.getCollection("diatessaron"));
 		}else{
 	    	request.setAttribute("error", "Unknown user or password, please try again."); // Set error.
 	        request.getRequestDispatcher("index.jsp").forward(request, response); // Forward to same page so that you can display error.

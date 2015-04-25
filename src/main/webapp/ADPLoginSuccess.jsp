@@ -78,6 +78,8 @@
 		User=<%=user %>
 		<br/>
 		<!-- need to encode all the URLs where we want session information to be passed -->
+		<!-- db.diatessaron.find({'verses': {"$elemMatch": {'_id': '2'}}},
+{'verses.$': 1}) -->
 		<a href="<%=response.encodeURL("ADPCheckoutPage.jsp") %>">Checkout Page</a>
 		<form action="<%=response.encodeURL("ADPLogout") %>" method="post">
 			<input type="submit" value="Logout" />

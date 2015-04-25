@@ -13,6 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.bson.Document;
+
+import com.mongodb.client.MongoCollection;
+
 /**
  * Servlet implementation class ADPLogout
  */
@@ -30,6 +34,8 @@ public class ADPLogout extends HttpServlet {
        
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	response.setContentType("text/html");
+    	MongoCollection<Document> diacoll = (MongoCollection<Document>) ctx.getAttribute("diacoll");
+    	System.out.println("CTX: " + diacoll.toString());
     	Cookie[] cookies = request.getCookies();
     	if(cookies != null){
     	for(Cookie cookie : cookies){
