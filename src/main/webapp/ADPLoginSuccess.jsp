@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.mongodb.client.FindIterable"%>
+<%@page import="org.bson.Document"%>
+<%@page import="org.bson.conversions.Bson"%>
+<%@page import="com.mongodb.DBObject"%>
+<%@page import="com.mongodb.BasicDBObject"%>
+<%@page import="com.mongodb.client.MongoCollection"%>
+<%@page import="com.mongodb.util.JSON"%>
+
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -80,6 +89,20 @@
 		<!-- need to encode all the URLs where we want session information to be passed -->
 		<!-- db.diatessaron.find({'verses': {"$elemMatch": {'_id': '2'}}},
 {'verses.$': 1}) -->
+	<%
+
+     ServletContext ctx = request.getServletContext();
+	MongoCollection<Document> diacoll = (MongoCollection<Document>) ctx.getAttribute("diacoll");
+	BasicDBObject query=new BasicDBObject("_id","1").append("verses._id", "1");
+	DBObject projection = (DBObject) JSON.parse("{'verses.$':'1'}");
+	FindIterable<Document> f = diacoll.find(query).projection((Bson) projection);
+	Document First = f.first();
+	@SuppressWarnings("unchecked")
+	ArrayList<Object> verses = (ArrayList<Object>) First.get("verses");
+	Document verse = (Document) verses.get(0);
+	String text = (String) verse.get("text");
+	%>
+	<br><%=text %></br>
 		<a href="<%=response.encodeURL("ADPCheckoutPage.jsp") %>">Checkout Page</a>
 		<form action="<%=response.encodeURL("ADPLogout") %>" method="post">
 			<input type="submit" value="Logout" />
