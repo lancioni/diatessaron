@@ -145,14 +145,6 @@ public class ADPLogin extends HttpServlet {
 				ArrayList verses = (ArrayList) firstQryV1.get("verses");
 				
 			}*/
-			BasicDBObject query=new BasicDBObject("_id","1").append("verses._id", "1");
-			DBObject projection = (DBObject) JSON.parse("{'verses.$':'1'}");
-			FindIterable<Document> f = diacoll.find(query).projection((Bson) projection);
-			Document First = f.first();
-			ArrayList verses = (ArrayList) First.get("verses");
-			Object verse = verses.get(0);
-			System.out.println(verse.toString());
-			System.out.println(((Document) verse).get("text"));
 			ctx.setAttribute("diacoll", mongoDB.getCollection("diatessaron"));
 		}else{
 	    	request.setAttribute("error", "Unknown user or password, please try again."); // Set error.
