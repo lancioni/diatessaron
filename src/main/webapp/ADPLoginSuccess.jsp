@@ -102,7 +102,7 @@
 	Document verse = (Document) verses.get(0);
 	String text = (String) verse.get("text");
 	%>
-	<br><%=text %></br>
+	<p class="arabic" style="font-size:20px" dir="rtl"><%=text %></p>
 		<a href="<%=response.encodeURL("ADPCheckoutPage.jsp") %>">Checkout Page</a>
 		<form action="<%=response.encodeURL("ADPLogout") %>" method="post">
 			<input type="submit" value="Logout" />
