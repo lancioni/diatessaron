@@ -137,6 +137,15 @@ public class ADPLogin extends HttpServlet {
 			String encodedURL = response.encodeRedirectURL("ADPLoginSuccess.jsp");
 			response.sendRedirect(encodedURL);
 			MongoCollection<Document> diacoll = mongoDB.getCollection("diatessaron");
+
+			/*DBObject qryV1 = (DBObject) JSON.parse("{'_id':'1','verses._id':'1'}");
+			DBObject projection = (DBObject) JSON.parse("{'verses.$':'1'}");
+			FindIterable<Document> foundQryV1 = diacoll.find((Bson) qryV1).projection((Bson) projection);
+			Document firstQryV1 = foundQryV1.first();
+			if (firstQryV1 != null) {
+				ArrayList verses = (ArrayList) firstQryV1.get("verses");
+				
+			}*/
 			ctx.setAttribute("diacoll", mongoDB.getCollection("diatessaron"));
 		}else{
 	    	request.setAttribute("error", "Unknown user or password, please try again."); // Set error.
