@@ -71,8 +71,8 @@
 			<div class="row">
 		    		<form class="form-inline" action="ADPLogin" method="POST">
 				        <div class="form-group">
-				            <label class="sr-only" for="inputEmail">Email</label>
-				            <input type="name" name="username" class="form-control" id="inputEmail" placeholder="Email">
+				            <label class="sr-only" for="inputEmail">Username</label>
+				            <input type="name" name="username" class="form-control" id="inputEmail" placeholder="Username">
 				        </div>
 				        <div class="form-group">
 				            <label class="sr-only" for="inputPassword">Password</label>
