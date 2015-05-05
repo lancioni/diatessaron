@@ -41,7 +41,7 @@ public class ADPLogout extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	response.setContentType("text/html");
     	@SuppressWarnings("unchecked")
-		MongoCollection<Document> diacoll = (MongoCollection<Document>) ctx.getAttribute("diacoll");
+		/*MongoCollection<Document> diacoll = (MongoCollection<Document>) ctx.getAttribute("diacoll");
 		BasicDBObject query=new BasicDBObject("_id","1").append("verses._id", "1");
 		DBObject projection = (DBObject) JSON.parse("{'verses.$':'1'}");
 		FindIterable<Document> f = diacoll.find(query).projection((Bson) projection);
@@ -49,7 +49,7 @@ public class ADPLogout extends HttpServlet {
 		@SuppressWarnings("unchecked")
 		ArrayList<Object> verses = (ArrayList<Object>) First.get("verses");
 		Object verse = verses.get(0);
-		System.out.println(((Document) verse).get("text"));
+		System.out.println(((Document) verse).get("text"));*/
     	Cookie[] cookies = request.getCookies();
     	if(cookies != null){
     	for(Cookie cookie : cookies){
