@@ -75,11 +75,12 @@
                         function(responseText) { 
 //                                $('#wait').text(responseText);
 							var aLoading = responseText.loading;
-							var chapters_options = ''
+							var chapters_options = '';
                             for (var i=0; i<aLoading.length; i++) {
                                 chapters_options += '\n<option dir="ltr" value=' + aLoading[i] + '>' + aLoading[i] + '</option>';
                                 }
                             var chapter = $( "#chapter" );
+                            alert(chapters_options);
 							chapter.append(chapters_options);
                         },
                     'json');
