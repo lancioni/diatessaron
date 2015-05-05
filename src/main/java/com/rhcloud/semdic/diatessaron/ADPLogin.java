@@ -134,7 +134,7 @@ public class ADPLogin extends HttpServlet {
 			session.setMaxInactiveInterval(30*60);
 			Cookie userName = new Cookie("user", user);
 			response.addCookie(userName);
-			String encodedURL = response.encodeRedirectURL("ADPLoginSuccess.jsp");
+			String encodedURL = response.encodeRedirectURL("ADPSearchPage.jsp");
 			response.sendRedirect(encodedURL);
 			MongoCollection<Document> diacoll = mongoDB.getCollection("diatessaron");
 
