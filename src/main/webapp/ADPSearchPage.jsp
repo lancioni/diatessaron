@@ -78,12 +78,18 @@
 		        		</select>
 		            </div>
 		        </form>
-		<form action="<%=response.encodeURL("ADPLogout") %>" method="post">
-			<input type="submit" value="Logout" />
-		</form>
+		        <hr/>
+				<form action="<%=response.encodeURL("ADPLogout") %>" method="post" class="navbar-form navbar-left">
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary">Logout</button>
+					</div>
+				</form>
 		        
 		    </section>
 		</div>	
+		        <footer>
+		          <div class="logo"><span class="glyphicon glyphicon-copyright-mark"></span> 2015 <a href="http://host.uniroma3.it/docenti/lancioni/">Giuliano Lancioni</a></div>
+		        </footer>
 	    <script src="js/jquery-1.11.2.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script>
