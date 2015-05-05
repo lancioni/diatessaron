@@ -104,7 +104,7 @@ public class ADPSearch extends HttpServlet {
     	
 		BasicDBObject query=new BasicDBObject();
 		DBObject projection = (DBObject) JSON.parse("{'_id':'1'}");
-		FindIterable<Document> f = diacoll.find(query).projection((Bson) projection);
+		FindIterable<Document> f = diacoll.find(query).sort(new BasicDBObject("_id", 1)) .projection((Bson) projection);
 		final JSONArray outarray = new JSONArray();
 		f.forEach(new Block<Document>() {
 		    @Override

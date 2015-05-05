@@ -80,7 +80,6 @@
                                 chapters_options += '\n<option dir="ltr" value=' + aLoading[i] + '>' + aLoading[i] + '</option>';
                                 }
                             var chapter = $( "#chapter" );
-                            alert(chapters_options);
 							chapter.append(chapters_options);
                         },
                     'json');
