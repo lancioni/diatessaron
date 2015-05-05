@@ -77,7 +77,7 @@
 							var aLoading = responseText.loading;
 							var chapters_options = ''
                             for (var i=0; i<aLoading.length; i++) {
-                                chapters_options += '\n<option dir="ltr" value=" ' + aLoading[i] + '">' + aLoading[i] + '</option>';
+                                chapters_options += '\n<option dir="ltr" value=' + aLoading[i] + '>' + aLoading[i] + '</option>';
                                 }
                             var chapter = $( "#chapter" );
 							chapter.append(chapters_options);
