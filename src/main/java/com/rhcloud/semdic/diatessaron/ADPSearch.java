@@ -20,6 +20,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
 import com.mongodb.BasicDBObject;
 import com.mongodb.Block;
 import com.mongodb.DBObject;
@@ -79,31 +82,23 @@ public class ADPSearch extends HttpServlet {
 		}
 	}
 	protected void output(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, JSONException {
-		/*@SuppressWarnings("unchecked")
-		BasicDBObject query=new BasicDBObject("_id","1").append("verses._id", "1");
-		DBObject projection = (DBObject) JSON.parse("{'verses.$':'1'}");
-		FindIterable<Document> f = diacoll.find(query).projection((Bson) projection);
-		Document First = f.first();
-		@SuppressWarnings("unchecked")
-		ArrayList<Object> verses = (ArrayList<Object>) First.get("verses");
-		Document verse = (Document) verses.get(0);
-		String text = (String) verse.get("text");*/
         response.setContentType("text/html; charset=utf-8");
         out = response.getWriter();
         json = new JSONObject();
         //Logs map of request parameters
         Map<String, String[]>params = request.getParameterMap();
         if (params.containsKey("loading")) {
-        	System.out.println(params.get("loading")[0]);
         	populate(request, response);
         }
-        //json.put("loading", "loaded!");
+        else if (params.containsKey("chapter")) {
+        	populate_verses(request, response, Integer.parseInt(params.get("chapter")[0]));
+        }
         out.print(json);
 	}
     void populate(HttpServletRequest request, HttpServletResponse response) throws JSONException {
     	
 		BasicDBObject query=new BasicDBObject();
-		DBObject projection = (DBObject) JSON.parse("{'_id':'1'}");
+		DBObject projection = new BasicDBObject("_id", 1);
 		FindIterable<Document> f = diacoll.find(query).sort(new BasicDBObject("_id", 1)) .projection((Bson) projection);
 		final JSONArray outarray = new JSONArray();
 		f.forEach(new Block<Document>() {
@@ -113,6 +108,22 @@ public class ADPSearch extends HttpServlet {
 		    }
 		});
 		json.put("loading", outarray);
-		//System.out.println(First.get("_id").toString());
+    }
+    void populate_verses(HttpServletRequest request, HttpServletResponse response, int chapter) throws JSONException {
+    	BasicDBObject query = new BasicDBObject("_id", chapter);
+    	DBObject projection = new BasicDBObject("verses._id", 1);
+    	projection.put("_id",0);
+    	FindIterable<Document> f = diacoll.find(query).sort(new BasicDBObject("_id", 1)).projection((Bson) projection);
+		final JSONArray outarray = new JSONArray();
+		f.forEach(new Block<Document>() {
+		    @Override
+		    public void apply(final Document document) {
+		    	Gson gson = new GsonBuilder().create();
+		    	JsonArray verses = gson.toJsonTree(document.get("verses")).getAsJsonArray();
+		        outarray.put(verses);
+		    }
+		});
+		
+		json.put("verses", outarray);
     }
 }	

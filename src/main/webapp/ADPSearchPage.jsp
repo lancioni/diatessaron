@@ -71,19 +71,31 @@
 		    	<hgroup>
 		            <h1>The Arabic Diatessaron Project</h1>
 		        </hgroup>
-		        <form role="search" class="navbar-form navbar-left">
-		        	<div class="form-group">
-		        	Chapter
+		        <form role="search" class="form-horizontal">
+		        <div class="row">
+		        	<div class="col-xs-6">
+		        	
+		        		<label for="chapter">Chapter</label>
 		        		<select placeholder="Chapter" class="form-control" id="chapter" dir="rtl">
 		        		</select>
+		        	</div>
+		        	<div class="col-xs-6">
+		        		<label for="verse">Verse</label>
+		        		<select placeholder="Verse" class="form-control" id="verse" dir="rtl">
+		        		</select>
+		            </div>
 		            </div>
 		        </form>
+		        </section>
 		        <hr/>
-				<form action="<%=response.encodeURL("ADPLogout") %>" method="post" class="navbar-form navbar-left">
-					<div class="form-group">
+		    <section class='container-fluid'>
+		        <div class="row">
+		        <div class="col-xs-6">
+				<form class="form-horizontal" action="<%=response.encodeURL("ADPLogout") %>" method="post">
 						<button type="submit" class="btn btn-primary">Logout</button>
-					</div>
 				</form>
+				</div>
+					</div>
 		        
 		    </section>
 		</div>	
@@ -93,6 +105,31 @@
 	    <script src="js/jquery-1.11.2.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script>
+	    	$( "#chapter" ).change(function(event) {
+		    	var chapter = $( "#chapter" )
+                $.post(
+                        "ADPSearch", 
+                        {chapter: chapter.val()},
+                        function(responseJson) {
+							//var aVerses = $.parseJSON(responseText.verses);
+							var verses_options = '';
+							$.each(responseJson, function(key,value) {
+								var aVerses = JSON.parse(value); //$.parseJSON(value);
+								var verses_options = '';
+	                            for (var i=0; i<aVerses.length; i++) {
+	                                verses_options += '\n<option value=' + aVerses[i]['_id'] + '>' + aVerses[i]['_id'] + '</option>';
+	                                }
+	                            var verse = $( "#verse" );
+								verse.append(verses_options);
+								//chapter.trigger("change");
+ 
+								//alert(JSON.parse(value)[0]['_id']);
+								//alert(JSON.stringify(aVerses[0]));
+							}
+							)
+                        },
+                        'json')
+	    	});
 	    	$(document).ready(function(event) {
                 $.post(
                         "ADPSearch", 
@@ -108,6 +145,7 @@
                                 }
                             var chapter = $( "#chapter" );
 							chapter.append(chapters_options);
+							chapter.trigger("change");
                         },
                     'json');
 	    	});
