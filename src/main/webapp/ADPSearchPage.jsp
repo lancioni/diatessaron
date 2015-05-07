@@ -145,12 +145,12 @@
 	        				        accordions += '\n<div class="panel panel-default">';
 	        				        accordions += '<div class="panel-heading">';
 	        				        accordions += '<h4 class="panel-title" dir="rtl">';
-	        				        accordions += '<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">';
+	        				        accordions += '<a data-toggle="collapse" data-parent="#accordion" href="#collapse'+ cur_verse + '">';
 	        				        accordions += cur_verse + '. ' + cur_verse_text + '</a>';
 	        				        accordions += '</h4>';
 	        				        accordions += '</div>';
 	        				        sel_in = (sel_verse == cur_verse) ? ' in' : '';
-	        				        accordions += '<div id="collapseOne" class="panel-collapse collapse'+ sel_in + '">'; //in">';
+	        				        accordions += '<div id="collapse'+ cur_verse + '" class="panel-collapse collapse'+ sel_in + '">'; //in">';
 	        				        accordions += '<div class="panel-body">';
 	        				        accordions += '<p>';
 	        				        accordions += 'Translation (to be added...)';
