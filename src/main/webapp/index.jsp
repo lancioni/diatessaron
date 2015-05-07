@@ -69,7 +69,7 @@
 		}
 	%>			
 			<div class="row">
-		    		<form class="form-inline" action="ADPLogin" method="POST">
+		    		<form class="form-inline" action="ADPLogin" method="post">
 				        <div class="form-group">
 				            <label class="sr-only" for="inputEmail">Username</label>
 				            <input type="name" name="username" class="form-control" id="inputEmail" placeholder="Username">

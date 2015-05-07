@@ -112,6 +112,7 @@ public class ADPSearch extends HttpServlet {
     void populate_verses(HttpServletRequest request, HttpServletResponse response, int chapter) throws JSONException {
     	BasicDBObject query = new BasicDBObject("_id", chapter);
     	DBObject projection = new BasicDBObject("verses._id", 1);
+    	projection.put("verses.text", 1);
     	projection.put("_id",0);
     	FindIterable<Document> f = diacoll.find(query).sort(new BasicDBObject("_id", 1)).projection((Bson) projection);
 		final JSONArray outarray = new JSONArray();

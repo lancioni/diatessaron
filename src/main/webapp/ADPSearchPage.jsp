@@ -69,36 +69,54 @@
 			</nav>
 		    <section class='container-fluid'>
 		    	<hgroup>
+		    	<div class="row">
+		            						<div class="col-xs-10">
 		            <h1>The Arabic Diatessaron Project</h1>
+		            </div>
+		            						<div class="col-xs-2">
+		    		<form class="form-inline" action="<%=response.encodeURL("ADPLogout") %>" method="post">
+				        <button type="submit" class="btn btn-primary">Logout</button>
+				    </form>
+				    </div>
+		            </div>
 		        </hgroup>
 		        <form role="search" class="form-horizontal">
 		        <div class="row">
-		        	<div class="col-xs-6">
+				  </div>
+		        	<div class="col-xs-2">
 		        	
 		        		<label for="chapter">Chapter</label>
+		        		</div>
+		        	<div class="col-xs-2">
 		        		<select placeholder="Chapter" class="form-control" id="chapter" dir="rtl">
 		        		</select>
 		        	</div>
-		        	<div class="col-xs-6">
+		        	<div class="col-xs-2">
+		        	</div>
+		        	<div class="col-xs-2">
 		        		<label for="verse">Verse</label>
+		        		</div>
+		        	<div class="col-xs-2">
 		        		<select placeholder="Verse" class="form-control" id="verse" dir="rtl">
 		        		</select>
 		            </div>
+		            <div class="col-xs-1">
+		            </div>
 		            </div>
 		        </form>
-		        </section>
-		        <hr/>
-		    <section class='container-fluid'>
-		        <div class="row">
-		        <div class="col-xs-6">
-				<form class="form-horizontal" action="<%=response.encodeURL("ADPLogout") %>" method="post">
-						<button type="submit" class="btn btn-primary">Logout</button>
-				</form>
-				</div>
-					</div>
 		        
-		    </section>
-		</div>	
+		        </div>
+						<div class="row">
+						<div class="col-xs-1">
+						</div>
+				</div>
+			
+		        </section>
+		        
+				<div class="bs-example">
+				    <div class="panel-group" id="accordion">
+				    </div>
+				</div>
 		        <footer>
 		          <div class="logo"><span class="glyphicon glyphicon-copyright-mark"></span> 2015 <a href="http://host.uniroma3.it/docenti/lancioni/">Giuliano Lancioni</a></div>
 		        </footer>
@@ -116,15 +134,40 @@
 							$.each(responseJson, function(key,value) {
 								var aVerses = JSON.parse(value); //$.parseJSON(value);
 								var verses_options = '';
+								var accordions = '';
+								//alert($( ".carousel-indicators" ).html());
+								var sel_verse = $( 'verse' ).val();
+								var cur_verse;
 	                            for (var i=0; i<aVerses.length; i++) {
-	                                verses_options += '\n<option value=' + aVerses[i]['_id'] + '>' + aVerses[i]['_id'] + '</option>';
+		                            cur_verse = aVerses[i]['_id'];
+		                            cur_verse_text = aVerses[i]['text'];
+	                                verses_options += '\n<option value=' + cur_verse + '>' + cur_verse + '</option>';
+	        				        accordions += '\n<div class="panel panel-default">';
+	        				        accordions += '<div class="panel-heading">';
+	        				        accordions += '<h4 class="panel-title" dir="rtl">';
+	        				        accordions += '<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">';
+	        				        accordions += cur_verse + '. ' + cur_verse_text + '</a>';
+	        				        accordions += '</h4>';
+	        				        accordions += '</div>';
+	        				        sel_in = (sel_verse == cur_verse) ? ' in' : '';
+	        				        accordions += '<div id="collapseOne" class="panel-collapse collapse'+ sel_in + '">'; //in">';
+	        				        accordions += '<div class="panel-body">';
+	        				        accordions += '<p>';
+	        				        accordions += 'Translation (to be added...)';
+	        				        accordions += '</p>';
+	        				        accordions += '</div>';
+	        				        accordions += '</div>';
+	        				        accordions += '</div>';
+	    	                                
 	                                }
 	                            var verse = $( "#verse" );
-								verse.append(verses_options);
+								verse.html(verses_options);
+								
+								//alert(carouselIndicators);
+								var accordion = $( "#accordion" );
+								accordion.html( accordions );
 								//chapter.trigger("change");
  
-								//alert(JSON.parse(value)[0]['_id']);
-								//alert(JSON.stringify(aVerses[0]));
 							}
 							)
                         },
