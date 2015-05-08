@@ -70,10 +70,10 @@
 		    <section class='container-fluid'>
 		    	<hgroup>
 		    	<div class="row">
-		            						<div class="col-xs-10">
+		            						<div class="col-sm-10">
 		            <h1>The Arabic Diatessaron Project</h1>
 		            </div>
-		            						<div class="col-xs-2">
+		            						<div class="col-sm-2">
 		    		<form class="form-inline" action="<%=response.encodeURL("ADPLogout") %>" method="post">
 				        <button type="submit" class="btn btn-primary">Logout</button>
 				    </form>
@@ -83,31 +83,31 @@
 		        <form role="search" class="form-horizontal">
 		        <div class="row">
 				  </div>
-		        	<div class="col-xs-2">
+		        	<div class="col-sm-4">
 		        	
 		        		<label for="chapter">Chapter</label>
 		        		</div>
-		        	<div class="col-xs-2">
+		        	<div class="col-sm-2">
 		        		<select placeholder="Chapter" class="form-control" id="chapter" dir="rtl">
 		        		</select>
 		        	</div>
-		        	<div class="col-xs-2">
+		        	<div class="col-sm-2">
 		        	</div>
-		        	<div class="col-xs-2">
+		        	<div class="col-sm-2">
 		        		<label for="verse">Verse</label>
 		        		</div>
-		        	<div class="col-xs-2">
+		        	<div class="col-sm-2">
 		        		<select placeholder="Verse" class="form-control" id="verse" dir="rtl">
 		        		</select>
 		            </div>
-		            <div class="col-xs-1">
+		            <div class="col-sm-1">
 		            </div>
 		            </div>
 		        </form>
 		        
 		        </div>
 						<div class="row">
-						<div class="col-xs-1">
+						<div class="col-sm-1">
 						</div>
 				</div>
 			
