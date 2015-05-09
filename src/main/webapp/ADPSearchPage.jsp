@@ -146,9 +146,9 @@
 	                                verses_options += '\n<option value=' + cur_verse + '>' + cur_verse + '</option>';
 	        				        accordions += '\n<div class="panel panel-default">';
 	        				        accordions += '<div class="panel-heading">';
-	        				        accordions += '<h4 class="panel-title" dir="rtl">';
+	        				        accordions += '<h4 class="panel-title" dir="rtl" id="'+ cur_verse + '">';
 	        				        accordions += '<a data-toggle="collapse" data-parent="#accordion" href="#collapse'+ cur_verse + '">';
-	        				        accordions += cur_verse + '. ' + cur_verse_text + '</a>';
+	        				        accordions += cur_verse + '&nbsp;' + cur_verse_text + '</a>';
 	        				        accordions += '</h4>';
 	        				        accordions += '</div>';
 	        				        sel_in = (sel_verse == cur_verse) ? ' in' : '';
