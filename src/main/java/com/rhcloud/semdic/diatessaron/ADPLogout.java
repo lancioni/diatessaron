@@ -38,18 +38,16 @@ public class ADPLogout extends HttpServlet {
 	      ctx = config.getServletContext(); 
 	}
        
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	output(request, response);
+    }
+    
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	output(request, response);
+    }
+    
+    protected void output(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	response.setContentType("text/html");
-    	@SuppressWarnings("unchecked")
-		/*MongoCollection<Document> diacoll = (MongoCollection<Document>) ctx.getAttribute("diacoll");
-		BasicDBObject query=new BasicDBObject("_id","1").append("verses._id", "1");
-		DBObject projection = (DBObject) JSON.parse("{'verses.$':'1'}");
-		FindIterable<Document> f = diacoll.find(query).projection((Bson) projection);
-		Document First = f.first();
-		@SuppressWarnings("unchecked")
-		ArrayList<Object> verses = (ArrayList<Object>) First.get("verses");
-		Object verse = verses.get(0);
-		System.out.println(((Document) verse).get("text"));*/
     	Cookie[] cookies = request.getCookies();
     	if(cookies != null){
     	for(Cookie cookie : cookies){
@@ -67,14 +65,8 @@ public class ADPLogout extends HttpServlet {
     		session.invalidate();
     	}
     	//no encoding because we have invalidated the session
-		//RequestDispatcher rd = ctx.getRequestDispatcher("/index.jsp");
-		//PrintWriter out= response.getWriter();
 		request.removeAttribute("error");
-		//out.println("<font color=red>Either user name or password is wrong.</font>");
-		//rd.include(request, response);
-    	//request.setAttribute("error", "Unknown login, please try again."); // Set error.
         request.getRequestDispatcher("index.jsp").forward(request, response); // Forward to same page so that you can display error.
-    	//response.sendRedirect("index.jsp");
     }
 
 }

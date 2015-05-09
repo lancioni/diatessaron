@@ -63,7 +63,7 @@
 		                </div>
 		            </form>
 		            <ul class="nav navbar-nav navbar-right">
-		                <li><a href="#">Login</a></li>
+		                <li><a href="ADPLogout" id="menu_logout">Logout</a></li>
 		            </ul>
 				</div>
 			</nav>
@@ -74,8 +74,8 @@
 		            <h1>The Arabic Diatessaron Project</h1>
 		            </div>
 		            						<div class="col-sm-2">
-		    		<form class="form-inline" action="<%=response.encodeURL("ADPLogout") %>" method="post">
-				        <button type="submit" class="btn btn-primary">Logout</button>
+		    		<form class="form-inline" id="frm_logout" action="<%=response.encodeURL("ADPLogout") %>" method="post">
+				        <button type="submit" class="btn btn-primary" id="btn_logout">Logout</button>
 				    </form>
 				    </div>
 		            </div>
@@ -123,6 +123,8 @@
 	    <script src="js/jquery-1.11.2.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script>
+	    	$( "#menu_logout" ).click(function(event) {
+		    	$ ("frm_logout").submit()})
 	    	$( "#chapter" ).change(function(event) {
 		    	var chapter = $( "#chapter" )
                 $.post(
@@ -140,7 +142,7 @@
 								var cur_verse;
 	                            for (var i=0; i<aVerses.length; i++) {
 		                            cur_verse = aVerses[i]['_id'];
-		                            cur_verse_text = aVerses[i]['text'];
+		                            cur_verse_text = aVerses[i]['text'].replace(' .','.').replace(' ،','،').replace(' ٭','');
 	                                verses_options += '\n<option value=' + cur_verse + '>' + cur_verse + '</option>';
 	        				        accordions += '\n<div class="panel panel-default">';
 	        				        accordions += '<div class="panel-heading">';

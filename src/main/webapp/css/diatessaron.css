@@ -1,7 +1,10 @@
 @CHARSET "utf-8";
+body {
+	background-image: url("../images/persian-diatessaron-four-evangelists_light.jpg");
+}
 .diatessaron{
 	margin: 20px;
-    background-image: url("../images/persian-diatessaron-four-evangelists_light.jpg");
+    
     }
 .h2{
     margin: 0;     
