@@ -126,10 +126,15 @@
 	    	$( "#menu_logout" ).click(function(event) {
 		    	$ ("frm_logout").submit()})
 	    	$( "#chapter" ).change(function(event) {
-		    	var chapter = $( "#chapter" )
+		    	var chapter = $( "#chapter" );
+		    	var verse = 1;
+		    	var limit = 5;
                 $.post(
                         "ADPSearch", 
-                        {chapter: chapter.val()},
+                        {chapter: chapter.val(),
+                            verse: Math.floor(verse/limit),
+                            limit: limit
+                            },
                         function(responseJson) {
 							//var aVerses = $.parseJSON(responseText.verses);
 							var verses_options = '';

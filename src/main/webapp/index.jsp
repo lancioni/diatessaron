@@ -54,7 +54,7 @@
 		    </nav>
 		    <section class='container-fluid'>
 		    	<hgroup>
-		            <h1>The Arabic Diatessaron Project</h1>
+		            <h1>The Arabic Diatessaron Project (beta version)</h1>
 		        </hgroup>
 		        <hr/>
 		        
