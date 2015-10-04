@@ -45,7 +45,7 @@ public class ADPLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String message;
 	private ServletContext ctx = null;
-	private final String userID = "admin";
+	private final String userID = "guest";
 	private final String password = "password";
     MongoClient mongo;
     MongoDatabase mongoDB;
